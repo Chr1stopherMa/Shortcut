@@ -114,6 +114,7 @@ List each team member and:
  > **Answer:**
 
   **Group Responsibilities (in detail):** 
+  
     * Project Liaison (2 members)
       * Primary point of communication between partner coordinator and group
       * Must attend every meeting
