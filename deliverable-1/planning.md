@@ -1,36 +1,16 @@
 # YOUR PRODUCT/TEAM NAME
-> _Note:_ This document is meant to evolve throughout the planning phase of your project.   That is, it makes sense for you commit regularly to this file while working on the project (especially edits/additions/deletions to the _Highlights_ section). Most importantly, it is a reflection of all the planning you work you've done in the first iteration. 
- > **This document will serve as a master plan between your team, your partner and your TA.**
 
 ## Product Details
  
 #### Q1: What are you planning to build?
-
- > Short (1 - 2 min' read)
- * Start with a single sentence, high-level description of the product.
- * Be clear - Describe the problem you are solving in simple terms.
- * Be concrete. For example:
-    * What are you planning to build? Is it a website, mobile app,
-   browser extension, command-line app, etc.?      
-    * When describing the problem/need, give concrete examples of common use cases.
-    * Assume your the reader knows nothing about the problem domain and provide the necessary context. 
- * Focus on *what* your product does, and avoid discussing *how* you're going to implement it.      
-   For example: This is not the time or the place to talk about which programming language and/or framework you are planning to use.
- * **Feel free (and very much encouraged) to include useful diagrams, mock-ups and/or links**.
-
- > **Answer:**
   
-  We aim to create a shortcuts mobile application that leads seniors to others applications they use frequently without any complications. Seniors often have issues learning and using new technology, so they need a product that simplifies this task. This is especially useful as over the past few months, social networking apps have become the primary mode of communication due to COVID-19. Although the younger population is comfortable with this change, it poses a problem for seniors. We hope that our application can simplify the steps it takes to navigate different apps including WhatsApp, Google, YouTube, Zoom, Email and Facebook. To do so, we plan to include short tutorial screens that cover basic functionality of frequently used applications. For example, we would create a short tutorial on how to create a post or upload pictures and videos to a Facebook timeline. These tasks seem simple for everyday users; however, for seniors, this is a difficult task as they are not familiar with the app’s common features. In addition, we plan to simplify the user interface for seniors by listing out the most frequently used apps on a single screen. This will make it easier for them to navigate to different applications, as they can simply tap the appropriate icon instead of finding the app on their phone. In all, we hope to create a product that matches everyday functionality with an intuitive and senior-friendly interface. Please view this link for a basic layout of the product we plan to develop: https://www.figma.com/file/UrS4a8gLm4335G4ybKZXF5/CSC301-Seniors-App?node-id=0%3A1.
+  We aim to create a shortcuts mobile application that leads seniors to others applications they use frequently without any complications. Seniors often have issues learning and using new technology, so they need a product that simplifies this task. This is especially useful as over the past few months, social networking apps have become the primary mode of communication due to COVID-19. Although the younger population is comfortable with this change, it poses a problem for seniors. We hope that our application can simplify the steps it takes to navigate different apps including WhatsApp, Google, YouTube, Zoom, Email and Facebook. To do so, we plan to include short tutorial screens that cover basic functionality of frequently used applications. For example, we would create a short tutorial on how to create a post or upload pictures and videos to a Facebook timeline. These tasks seem simple for everyday users; however, for seniors, this is a difficult task as they are not familiar with the app’s common features. In addition, we plan to simplify the user interface for seniors by listing out the most frequently used apps on a single screen. This will make it easier for them to navigate to different applications, as they can simply tap the appropriate icon instead of finding the app on their phone. In all, we hope to create a product that matches everyday functionality with an intuitive and senior-friendly interface. 
+  
+  Please view this link for a basic layout of the product we plan to develop: https://www.figma.com/file/UrS4a8gLm4335G4ybKZXF5/CSC301-Seniors-App?node-id=0%3A1.
 
 
 #### Q2: Who are your target users?
 
-  > Short (1 - 2 min' read max)
- * Be specific (e.g. a 'a third-year university student studying Computer Science' and not 'a student')
- * **Feel free (but not obligated) to use personas.         
-   You can create your personas as part of this Markdown file, or add a link to an external site (for example, [Xtensio](https://xtensio.com/user-persona/)).**
-
-> **Answer:**
   * Edith, aged 82, lives alone in Toronto. She misses her grandkids a lot but cannot visit them due to COVID-19. Her daughter often tells her to video call them using Zoom, but she finds the process too complicated and intimidating.
   * Reginald, aged 64, is applying for government benefits. He needs to check his email consistently for updates, but he keeps forgetting how to access his inbox and where to look for new emails.
   * Ruth, aged 75, is a very extroverted woman who wants to keep in contact with her friends from her walking club using Facebook; however, she cannot figure out how to add new friends.
@@ -38,32 +18,12 @@
 
 #### Q3: Why would your users choose your product? What are they using today to solve their problem/need?
 
-> Short (1 - 2 min' read max)
- * We want you to "connect the dots" for us - Why does your product (as described in your answer to Q1) fits the needs of your users (as described in your answer to Q2)?
- * Explain the benefits of your product explicitly & clearly. For example:
-    * Save users time (how much?)
-    * Allow users to discover new information (which information? And, why couldn't they discover it before?)
-    * Provide users with more accurate and/or informative data (what kind of data? Why is it useful to them?)
-    * Does this application exist in another form? If so, how does your differ and provide value to the users?
-    * How does this align with your partner's organization's values/mission/mandate?
-
-> **Answer:**
-
   The product will help users navigate the apps they use frequently. Today, they are using the default UI of their OS, reading/watching tutorials online, and attending workshops. Our app would save users time, as it would simplify this process by providing any instructions they need right in the app. Our target users are seniors who are not familiar with their phone applications but want to use social networking apps to stay connected with their friends and family, or for entertainment. Although other shortcut apps exist that allow users to contact people quickly during an emergency, our app would exist for recreational purposes. Before COVID-19, seniors were able to seek help from other individuals they encountered; however, due to social distancing, they are left to figure out the steps of navigating apps on their own, which is a daunting task for them. Our app’s aim is to provide basic instructions on the main features for each app listed in question 1. 
   
   Our partner’s organization, Toronto Family Services holds workshops and group events to help people in the community resolve issues they face on a regular basis; this includes helping seniors adjust to the “new normal” of COVID-19. However, the seminars that were once held in person have all become virtual, making it challenging for seniors to join Zoom workshops and participate in them. Our app aims to provide simple tutorials so that they can join online workshops with ease and get any other guidance they need regarding using different apps in the product itself. We hope that by explicitly defining the steps needed to navigate each app, our target users will find the process less intimidating. 
 
 
 #### Q4: How will you build it?
-
-> Short (1-2 min' read max)
- * What is the technology stack? Specify any and all languages, frameworks, libraries, PaaS products or tools. 
- * How will you deploy the application?
- * Describe the architecture - what are the high level components or patterns you will use? Diagrams are useful here. 
- * Will you be using third party applications or APIs? If so, what are they?
- * What is your testing strategy?
-
- > **Answer:**
   
   * Languages
     * Kotlin, Java (Android Studio)
@@ -81,13 +41,6 @@
 
 #### Q5: What are the user stories that make up the MVP?
 
- * At least 5 user stories concerning the main features of the application - note that this can broken down further
- * You must follow proper user story format (as taught in lecture) ```As a <user of the app>, I want to <do something in the app> in order to <accomplish some goal>```
- * If you have a partner, these must be reviewed and accepted by them
- * The user stories should be written in Github and each one must have clear acceptance criteria.
-
- > **Answer:**
-
   * As a senior coordinator of Senior Community Connections, I want to have an app that can easily redirect the user to other apps in order to help the seniors tackle their limitations to access new technology.
   * As a senior user, I want to navigate to the Zoom app without having to click any small buttons so that I can call my son.
   * As a senior who has never used a mobile device before, I want to edit my profile on Facebook as I do on a desktop easily using this app.
@@ -97,24 +50,13 @@
   * As a senior user who is not logged into Facebook/Zoom/Email/Whatsapp, I want to see all the steps needed in order to sign in
   * As a senior user, I want to see a tutorial on how to send and receive pictures and videos on WhatsApp so that I can communicate with my friends and family
 
-
-----
+---
 
 ## Process Details
 
 #### Q6: What are the roles & responsibilities on the team?
 
-Describe the different roles on the team and the responsibilities associated with each role. 
- * Roles should reflect the structure of your team and be appropriate for your project. Not necessarily one role to one team member.
-
-List each team member and:
- * A description of their role(s) and responsibilities including the components they'll work on and non-software related work
- * 3 technical strengths and weaknesses each (e.g. languages, frameworks, libraries, development methodologies, etc.)
-
- > **Answer:**
-
   **Group Responsibilities (in detail):** 
-  
     * Project Liaison (2 members)
       * Primary point of communication between partner coordinator and group
       * Must attend every meeting
@@ -133,7 +75,7 @@ List each team member and:
 
   * Members and Responsibilities:
 
-    * Christopher Ma
+    * **Christopher Ma**
       * Role/Responsibilities: 
         * Project Liaison
         * Backend-Logic (YouTube)
@@ -141,7 +83,7 @@ List each team member and:
       * Strengths: Python, C, Unit Testing, Vanilla Javascript
       * Weaknesses: Javascript frameworks, SQL, UI Testing
  
-    * Basil Wong
+    * **Basil Wong**
       * Role/Responsibilities: 
         * Task Manager
         * Backend Logic (WhatsApp)
@@ -149,7 +91,7 @@ List each team member and:
       * Strengths: SQL, Python, Java
       * Weaknesses: Javascript, C, UI design
   
-    * Rabia’h Malik
+    * **Rabia’h Malik**
       * Role/Responsibilities:
         * Scribe
         * Android front end
@@ -157,7 +99,7 @@ List each team member and:
       * Strengths: Python, Java, basic JavaScript & React
       * Weaknesses: Databases, Unit Testing, C
 
-    * Gabriel Bailey
+    * **Gabriel Bailey**
       * Role/Responsibilities: 
         * Meeting Moderator
         * Backend Logic (Email)
@@ -166,7 +108,7 @@ List each team member and:
       * Strengths: Python, Java?, C
       * Weaknesses: Framework management, databases
  
-    * Ashas Memon
+    * **Ashas Memon**
       * Role/Responsibilities:
         * Task Manager
         * Backend Logic (Google)
@@ -175,7 +117,7 @@ List each team member and:
       * Strengths: Python, Java, SQL
       * Weaknesses: Javascript (React), C, UI design
  
-    * Archie Sri
+    * **Archie Sri**
       * Role/Responsibilities: 
         * Project Liaison
         * Backend-Logic (Zoom)
@@ -185,18 +127,6 @@ List each team member and:
 
 
 #### Q7: What operational events will you have as a team?
-
-Describe meetings (and other events) you are planning to have. 
- * When and where? Recurring or ad hoc? In-person or online?
- * What's the purpose of each meeting?
- * Other events could be coding sessions, code reviews, quick weekly sync meeting online, etc.
- * You must have at least 2 meetings with your project partner (if you have one) before D1 is due. Describe them here:
-   * What did you discuss during the meetings?
-   * What were the outcomes of each meeting?
-   * You must provide meeting minutes.
-   * You must have a regular meeting schedule established by the second meeting.  
-
-> **Answer:**
 
   Zoom meetings with our partner are scheduled every Thursday at 2pm. During each meeting, we will report our progress and get feedback from our project partner. We also have recurring online group meetings on Saturdays at 12 pm to discuss our progress and any setbacks/conflicts we faced and our goals for the following week. 
 
@@ -209,17 +139,6 @@ Describe meetings (and other events) you are planning to have.
   
 #### Q8: What artifacts will you use to self-organize?
 
-List/describe the artifacts you will produce in order to organize your team.       
-
- * Artifacts can be To-Do lists, Task boards, schedule(s), meeting minutes, etc.
- * We want to understand:
-   * How do you keep track of what needs to get done?
-   * How do you prioritize tasks?
-   * How do tasks get assigned to team members?
-   * How do you determine the status of work from inception to completion?
-
-> **Answer:**
-
   * **Google Docs:** Used to record meeting minutes, shared with the whole group and updated weekly
   * **Github Issues:** Used to keep track of tasks to be completed; assigning and prioritizing tasks is the responsibility of the Task Managers, with input from the rest of the group
   * **FaceBook Messenger Group:** Primary place of communication, where we discuss ideas and resolve any conflicts
@@ -228,20 +147,6 @@ List/describe the artifacts you will produce in order to organize your team.
 
 
 #### Q9: What are the rules regarding how your team works?
-
-Describe your team's working culture.
-
-**Communications:**
- * What is the expected frequency? What methods/channels are appropriate? 
- * If you have a partner project, what is your process (in detail) for communicating with your partner?
- 
-**Meetings:**
- * How are people held accountable for attending meetings, completing action items? Is there a moderator or process?
- 
-**Conflict Resolution:**
- * List at least three team scenarios/conflicts you discussed in lecture and how you decided you will resolve them. Indecisions? Non-responsive team members? Any other scenarios you can think of?
-
-> **Answer:**
 
   * **Communications:**
     * Weekly messenger audio calls to keep track of team progress
@@ -268,19 +173,6 @@ Describe your team's working culture.
 
 ----
 ### Highlights
-
-Specify 3 - 5 key decisions and/or insights that came up during your meetings
-and/or collaborative process.
-
- * Short (5 min' read max)
- * Decisions can be related to the product and/or the team process.
-    * Mention which alternatives you were considering.
-    * Present the arguments for each alternative.
-    * Explain why the option you decided on makes the most sense for your team/product/users.
- * Essentially, we want to understand how (and why) you ended up with your current product and process plan.
- * This section is useful for important information regarding your decision making process that may not necessarily fit in other sections. 
-
- > **Answer:**
 
   We chose the applications we would add shortcuts for from a survey presented by the partner coordinator based on the applications used most frequently by seniors in their organization. From there, we researched if the applications’ UI could be simplified to be more user-friendly. We found that for example with Facebook, we would have to first apply for a developer license and wait for approval before accessing their app features; a fully functioning application would also need to be approved before being deployed. Since the timeline to create our product is rather short, we decided to create an app which displays detailed tutorials of the main features of a frequently used app before redirecting the user to said app. This way, we would not need external permission to modify any existing app’s features or layout and it would work well given the timeline.
 
