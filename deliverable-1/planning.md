@@ -6,7 +6,8 @@
   
   We aim to create a shortcuts mobile application that leads seniors to others applications they use frequently without any complications. Seniors often have issues learning and using new technology, so they need a product that simplifies this task. This is especially useful as over the past few months, social networking apps have become the primary mode of communication due to COVID-19. Although the younger population is comfortable with this change, it poses a problem for seniors. We hope that our application can simplify the steps it takes to navigate different apps including WhatsApp, Google, YouTube, Zoom, Email and Facebook. To do so, we plan to include short tutorial screens that cover basic functionality of frequently used applications. For example, we would create a short tutorial on how to create a post or upload pictures and videos to a Facebook timeline. These tasks seem simple for everyday users; however, for seniors, this is a difficult task as they are not familiar with the app’s common features. In addition, we plan to simplify the user interface for seniors by listing out the most frequently used apps on a single screen. This will make it easier for them to navigate to different applications, as they can simply tap the appropriate icon instead of finding the app on their phone. In all, we hope to create a product that matches everyday functionality with an intuitive and senior-friendly interface. 
   
-  Please view this link for a basic layout of the product we plan to develop: https://www.figma.com/file/UrS4a8gLm4335G4ybKZXF5/CSC301-Seniors-App?node-id=0%3A1.
+  Please view this link for a basic layout of the product we plan to develop: 
+  https://www.figma.com/file/UrS4a8gLm4335G4ybKZXF5/CSC301-Seniors-App?node-id=0%3A1.
 
 
 #### Q2: Who are your target users?
@@ -57,6 +58,7 @@
 #### Q6: What are the roles & responsibilities on the team?
 
   **Group Responsibilities (in detail):** 
+  
     * Project Liaison (2 members)
       * Primary point of communication between partner coordinator and group
       * Must attend every meeting
