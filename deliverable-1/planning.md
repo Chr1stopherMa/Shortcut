@@ -1,4 +1,4 @@
-# YOUR PRODUCT/TEAM NAME
+# Shortcut+
 
 ## Product Details
  
@@ -56,9 +56,8 @@
 ## Process Details
 
 #### Q6: What are the roles & responsibilities on the team?
-
-  **Group Responsibilities (in detail):** 
-  
+ 
+  * **Group Responsibilities (in detail):** 
     * Project Liaison (2 members)
       * Primary point of communication between partner coordinator and group
       * Must attend every meeting
@@ -76,7 +75,6 @@
       * Responsible for taking minutes during each partner and group meeting, updating documents accordingly
 
   * Members and Responsibilities:
-
     * **Christopher Ma**
       * Role/Responsibilities: 
         * Project Liaison
@@ -107,7 +105,7 @@
         * Backend Logic (Email)
         * UI Testing
         * iOS front end
-      * Strengths: Python, Java?, C
+      * Strengths: Python, Java, C
       * Weaknesses: Framework management, databases
  
     * **Ashas Memon**
