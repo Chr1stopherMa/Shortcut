@@ -106,7 +106,7 @@
         * UI Testing
         * iOS front end
       * Strengths: Python, Java, C
-      * Weaknesses: Framework management, databases
+      * Weaknesses: Framework management, databases, CI/CD
  
     * **Ashas Memon**
       * Role/Responsibilities:
