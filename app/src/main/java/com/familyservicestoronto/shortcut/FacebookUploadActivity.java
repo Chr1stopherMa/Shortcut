@@ -6,12 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class FacebookAddFriendActivity extends AppCompatActivity {
+public class FacebookUploadActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_facebook_add_friend);
+        setContentView(R.layout.activity_facebook_upload);
     }
 
     public void onClickGoToFacebookTut(View view) {

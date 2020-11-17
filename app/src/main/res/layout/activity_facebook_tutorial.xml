@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FacebookTutorial">
+    tools:context=".FacebookTutorialActivity">
 
     <Button
         android:id="@+id/EditProfileButton"
@@ -22,6 +22,7 @@
         android:layout_width="241dp"
         android:layout_height="68dp"
         android:text="@string/upload_picture_video"
+        android:onClick="onClickGoToUploadTut"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,6 +34,7 @@
         android:layout_width="241dp"
         android:layout_height="68dp"
         android:text="@string/add_a_friend"
+        android:onClick="onClickGoToAddFriendTut"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,6 +59,7 @@
         android:layout_width="123dp"
         android:layout_height="52dp"
         android:text="@string/back"
+        android:onClick="onClickGoToHome"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.055"
