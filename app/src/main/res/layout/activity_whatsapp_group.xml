@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/newGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Contact/Group"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000D53"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="355dp"
+        android:layout_height="96dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105"
+        app:srcCompat="@drawable/whatsapp1" />
+
+    <TextView
+        android:id="@+id/addgroup"
+        android:layout_width="196dp"
+        android:layout_height="72dp"
+        android:text="1. First click on this logo, it can located at the bottom right corner of your app"
+        android:textColor="#FA0404"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.151" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="321dp"
+        android:layout_height="158dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.298"
+        app:srcCompat="@drawable/whatsapp3" />
+
+    <TextView
+        android:id="@+id/addgroup2"
+        android:layout_width="171dp"
+        android:layout_height="121dp"
+        android:text="2. Then you will see the icons on the left! Pick the one you want!"
+        android:textColor="#F80404"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="203dp"
+        tools:layout_editor_absoluteY="226dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="318dp"
+        android:layout_height="179dp"
+        app:srcCompat="@drawable/whatsapp2"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="329dp" />
+
+    <TextView
+        android:id="@+id/addgroup3"
+        android:layout_width="196dp"
+        android:layout_height="72dp"
+        android:text="3. Now you can pick the people that you would like to add to the group"
+        android:textColor="#FA0404"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.716"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.57" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="229dp"
+        android:layout_height="203dp"
+        app:srcCompat="@drawable/whatsapp4"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="448dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
