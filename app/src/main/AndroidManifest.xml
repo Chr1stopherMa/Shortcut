@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Shortcut">
         <activity android:name=".FacebookEditProfileActivity" />
+        <activity android:name=".YoutubeSearchVideoActivity" />
         <activity android:name=".FacebookUploadActivity" />
         <activity android:name=".FacebookAddFriendActivity" />
         <activity android:name=".FacebookTutorialActivity" />
