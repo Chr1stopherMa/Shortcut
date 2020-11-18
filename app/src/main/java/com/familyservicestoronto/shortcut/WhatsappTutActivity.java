@@ -15,15 +15,18 @@ public class WhatsappTutActivity extends AppCompatActivity {
     }
 
     public void onClickNewContact(View view) {
-
+        Intent intentContact = new Intent(this, WhatsappNewContactActivity.class);
+        startActivity(intentContact);
     }
 
     public void onClickPhoto(View view) {
-
+        Intent intentPhoto = new Intent(this, WhatsappUploadActivity.class);
+        startActivity(intentPhoto);
     }
 
     public void onClickProfile(View view) {
-
+        Intent intentPhoto = new Intent(this, WhatsappProfileActivity.class);
+        startActivity(intentPhoto);
     }
 
     public void onClickBack(View view) {

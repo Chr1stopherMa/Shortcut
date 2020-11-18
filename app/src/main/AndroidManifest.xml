@@ -14,6 +14,9 @@
         <activity android:name=".FacebookUploadActivity" />
         <activity android:name=".FacebookAddFriendActivity" />
         <activity android:name=".FacebookTutorialActivity" />
+        <activity android:name=".WhatsappNewContactActivity" />
+        <activity android:name=".WhatsappUploadActivity" />
+        <activity android:name=".WhatsappProfileActivity" />
         <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +24,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".WhatsappTutActivity" />
     </application>
 
 </manifest>

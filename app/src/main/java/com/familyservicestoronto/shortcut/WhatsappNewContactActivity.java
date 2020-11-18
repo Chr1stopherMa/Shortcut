@@ -6,12 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class WhatsappUploadActivity extends AppCompatActivity {
+public class WhatsappNewContactActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_whatsapp_upload);
+        setContentView(R.layout.activity_whatsapp_group);
     }
 
     public void onClickGoToWhatsappTut(View view) {
