@@ -5,13 +5,23 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.view.View;
+import android.widget.Button;
 
 public class WhatsappTutActivity extends AppCompatActivity {
+Button bopen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_whatsapp_tutorial);
+        bopen=findViewById(R.id.goToWhatsapp);
+        bopen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=getPackageManager().getLaunchIntentForPackage("com.whatsapp");
+                startActivity(i);
+            }
+        });
     }
 
     public void onClickNewContact(View view) {
