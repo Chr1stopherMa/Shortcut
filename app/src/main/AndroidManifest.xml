@@ -9,11 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Shortcut">
+        <activity android:name=".FacebookEditProfileActivity" />
         <activity android:name=".FacebookUploadActivity" />
         <activity android:name=".FacebookAddFriendActivity" />
         <activity android:name=".FacebookTutorialActivity" />
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

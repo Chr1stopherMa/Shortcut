@@ -24,6 +24,11 @@ public class FacebookTutorialActivity extends AppCompatActivity {
         startActivity(intentAddFriend);
     }
 
+    public void onClickGoToEditProfileTut(View view) {
+        Intent intentAddFriend = new Intent(this, FacebookEditProfileActivity.class);
+        startActivity(intentAddFriend);
+    }
+
     public void onClickGoToHome(View view) {
         Intent intentAddFriend = new Intent(this, HomeActivity.class);
         startActivity(intentAddFriend);
