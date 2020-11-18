@@ -7,7 +7,7 @@
     tools:context=".HomeActivity">
 
     <ImageView
-        android:id="@+id/facebookIcon"
+        android:id="@+id/GoogleIcon"
         android:layout_width="176dp"
         android:layout_height="176dp"
         android:layout_marginBottom="28dp"
@@ -54,7 +54,7 @@
         android:layout_marginBottom="28dp"
         android:contentDescription="@string/Facebook"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toTopOf="@+id/facebookIcon"
+        app:layout_constraintBottom_toTopOf="@+id/GoogleIcon"
         app:layout_constraintEnd_toStartOf="@+id/WhatsappIcon"
         app:layout_constraintHorizontal_bias="0.372"
         app:layout_constraintStart_toStartOf="parent"
