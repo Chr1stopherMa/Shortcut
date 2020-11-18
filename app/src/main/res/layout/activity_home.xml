@@ -7,6 +7,19 @@
     tools:context=".HomeActivity">
 
     <ImageView
+        android:id="@+id/facebookIcon"
+        android:layout_width="176dp"
+        android:layout_height="176dp"
+        android:layout_marginBottom="28dp"
+        android:contentDescription="@string/Google"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/WhatsappIcon"
+        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/google_icon" />
+
+    <ImageView
         android:id="@+id/YoutubeIcon"
         android:layout_width="176dp"
         android:layout_height="176dp"
@@ -17,7 +30,7 @@
         app:layout_constraintHorizontal_bias="0.372"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.378"
+        app:layout_constraintVertical_bias="0.826"
         app:srcCompat="@drawable/youtube_icon" />
 
     <ImageView
@@ -31,17 +44,17 @@
         app:layout_constraintBottom_toTopOf="@+id/WhatsappIcon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.378"
+        app:layout_constraintVertical_bias="0.884"
         app:srcCompat="@drawable/zoom_icon" />
 
     <ImageView
         android:id="@+id/FacebookIcon"
         android:layout_width="176dp"
         android:layout_height="176dp"
-        android:layout_marginBottom="212dp"
+        android:layout_marginBottom="28dp"
         android:contentDescription="@string/Facebook"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/facebookIcon"
         app:layout_constraintEnd_toStartOf="@+id/WhatsappIcon"
         app:layout_constraintHorizontal_bias="0.372"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,7 +66,7 @@
         android:layout_height="176dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginBottom="212dp"
+        android:layout_marginBottom="232dp"
         android:contentDescription="@string/Whatsapp"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
