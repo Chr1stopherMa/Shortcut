@@ -14,6 +14,10 @@
         <activity android:name=".FacebookUploadActivity" />
         <activity android:name=".FacebookAddFriendActivity" />
         <activity android:name=".FacebookTutorialActivity" />
+        <activity android:name=".GmailAddAccountActivity" />
+        <activity android:name=".GmailOpenEmailActivity" />
+        <activity android:name=".GmailComposeEmailActivity" />
+        <activity android:name=".GmailTutorialActivity" />
         <activity android:name=".WhatsappNewContactActivity" />
         <activity android:name=".WhatsappUploadActivity" />
         <activity android:name=".WhatsappProfileActivity" />
