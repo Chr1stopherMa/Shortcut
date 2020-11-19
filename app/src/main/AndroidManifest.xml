@@ -17,12 +17,11 @@
         <activity android:name=".GmailAddAccountActivity" />
         <activity android:name=".GmailOpenEmailActivity" />
         <activity android:name=".GmailComposeEmailActivity" />
-        
+        <activity android:name=".GmailTutorialActivity" />
         <activity android:name=".WhatsappNewContactActivity" />
         <activity android:name=".WhatsappUploadActivity" />
         <activity android:name=".WhatsappProfileActivity" />
-        <activity android:name=".HomeActivity"/>
-        <activity android:name=".GmailTutorialActivity">
+        <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
