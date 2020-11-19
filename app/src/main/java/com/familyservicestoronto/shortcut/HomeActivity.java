@@ -23,6 +23,9 @@ public class HomeActivity extends AppCompatActivity {
 
         ImageView goToZoom = findViewById(R.id.ZoomIcon);
         goToZoom.setOnClickListener(HomeActivity.this::loadZoomTutorialActivity);
+
+        ImageView goToFacebook = findViewById(R.id.FacebookIcon);
+        goToFacebook.setOnClickListener(HomeActivity.this::loadFacebookTutorialActivity);
     }
 
     public void loadWhatsappTutorialActivity(View view) {
@@ -37,6 +40,11 @@ public class HomeActivity extends AppCompatActivity {
 
     public void loadZoomTutorialActivity(View view) {
         Intent intent = new Intent(HomeActivity.this, ZoomTutorialActivity.class);
+        startActivity(intent);
+    }
+
+    public void loadFacebookTutorialActivity(View view) {
+        Intent intent = new Intent(HomeActivity.this, FacebookTutorialActivity.class);
         startActivity(intent);
     }
 }
