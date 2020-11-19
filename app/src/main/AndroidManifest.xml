@@ -17,6 +17,11 @@
         <activity android:name=".WhatsappNewContactActivity" />
         <activity android:name=".WhatsappUploadActivity" />
         <activity android:name=".WhatsappProfileActivity" />
+        <activity android:name=".ZoomTutorialActivity" />
+        <activity android:name=".ZoomSignUpActivity" />
+        <activity android:name=".ZoomSignInActivity" />
+        <activity android:name=".ZoomJoinMeetingActivity" />
+        <activity android:name=".ZoomRunMeetingActivity" />
         <activity android:name=".GoogleSearchActivity" />
         <activity android:name=".HomeActivity">
             <intent-filter>
