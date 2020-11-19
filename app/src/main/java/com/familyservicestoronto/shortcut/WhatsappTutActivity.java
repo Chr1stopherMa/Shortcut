@@ -1,5 +1,6 @@
 package com.familyservicestoronto.shortcut;
 
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,8 +23,18 @@ Button bopen;
                 try {
                     Intent i = getPackageManager().getLaunchIntentForPackage("com.whatsapp");
                     startActivity(i);
+//                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.android.vending")));
+//                    Intent intent = new Intent(Intent.ACTION_VIEW);
+//                    intent.setData(Uri.parse(
+//                            "https://play.google.com/store/apps/details?id=com.whatsapp"));
+//                    intent.setPackage("com.android.vending");
+//                    startActivity(intent);
                 } catch (Exception e) {
-                    showToast("Whatsapp App is Not installed.");
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(
+                            "https://play.google.com/store/apps/details?id=com.whatsapp"));
+                    intent.setPackage("com.android.vending");
+                    startActivity(intent);
                 }
             }
         });
