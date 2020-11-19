@@ -7,9 +7,12 @@
     <string name="Facebook">Facebook</string>
     <string name="Google">Google</string>
     <string name="facebook_tutorials">Facebook Tutorials</string>
+    <string name="google_tutorials">Google Tutorial</string>
     <string name="add_a_friend">Add a Friend</string>
+    <string name="search_in_google">Search in Google</string>
     <string name="upload_picture_video">Upload Picture/Video</string>
     <string name="edit_profile">Edit Profile</string>
     <string name="back">Back</string>
     <string name="go_to_facebook">Go To Facebook</string>
+    <string name="go_to_google">Go To Google</string>
 </resources>

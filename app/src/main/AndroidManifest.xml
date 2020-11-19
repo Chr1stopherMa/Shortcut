@@ -17,6 +17,7 @@
         <activity android:name=".WhatsappNewContactActivity" />
         <activity android:name=".WhatsappUploadActivity" />
         <activity android:name=".WhatsappProfileActivity" />
+        <activity android:name=".GoogleSearchActivity" />
         <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
