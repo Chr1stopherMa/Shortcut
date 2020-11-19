@@ -3,6 +3,7 @@ package com.familyservicestoronto.shortcut;
         import androidx.appcompat.app.AppCompatActivity;
 
         import android.content.Intent;
+        import android.net.Uri;
         import android.os.Bundle;
         import android.view.View;
         import android.widget.Button;
@@ -23,12 +24,12 @@ public class ZoomTutorialActivity extends AppCompatActivity {
             Intent i = getPackageManager().getLaunchIntentForPackage("us.zoom.videomeetings");
             startActivity(i);
         } catch (Exception e) {
-            showToast();
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse(
+                    "https://play.google.com/store/apps/details?id=us.zoom.videomeetings"));
+            intent.setPackage("com.android.vending");
+            startActivity(intent);
         }
-    }
-
-    private void showToast() {
-        Toast.makeText(ZoomTutorialActivity.this, "Zoom is not installed or is non responsive.", Toast.LENGTH_SHORT).show();
     }
 
     public void onClickGoToSignUpTut(View view) {
