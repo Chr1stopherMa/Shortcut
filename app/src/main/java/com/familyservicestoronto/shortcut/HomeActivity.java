@@ -20,6 +20,9 @@ public class HomeActivity extends AppCompatActivity {
 
         ImageView goToGoogle = findViewById(R.id.GoogleIcon);
         goToGoogle.setOnClickListener(HomeActivity.this::loadGoogleSearchActivity);
+
+        ImageView goToZoom = findViewById(R.id.ZoomIcon);
+        goToZoom.setOnClickListener(HomeActivity.this::loadZoomTutorialActivity);
     }
 
     public void loadWhatsappTutorialActivity(View view) {
@@ -29,6 +32,11 @@ public class HomeActivity extends AppCompatActivity {
 
     public void loadGoogleSearchActivity(View view) {
         Intent intent = new Intent(HomeActivity.this, GoogleSearchActivity.class);
+        startActivity(intent);
+    }
+
+    public void loadZoomTutorialActivity(View view) {
+        Intent intent = new Intent(HomeActivity.this, ZoomTutorialActivity.class);
         startActivity(intent);
     }
 }
