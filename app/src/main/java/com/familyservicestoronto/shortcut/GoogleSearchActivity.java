@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -21,9 +22,16 @@ public class GoogleSearchActivity extends AppCompatActivity {
     public void openGoogle(View view) {
         // Intent googleIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://google.com"));
         // startActivity(googleIntent);
+        try {
+            Intent i = getPackageManager().getLaunchIntentForPackage("com.android.chrome");
+            startActivity(i);
+        } catch (Exception e) {
+            showToast("Google Chrome is not installed.");
+        }
+    }
 
-        Intent i=getPackageManager().getLaunchIntentForPackage("com.android.chrome");
-        startActivity(i);
+    private void showToast(String text) {
+        Toast.makeText(GoogleSearchActivity.this, text, Toast.LENGTH_SHORT).show();
     }
 
     public void onClickBack(View view) {
