@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class WhatsappTutActivity extends AppCompatActivity {
 Button bopen;
@@ -18,10 +19,18 @@ Button bopen;
         bopen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=getPackageManager().getLaunchIntentForPackage("com.whatsapp");
-                startActivity(i);
+                try {
+                    Intent i = getPackageManager().getLaunchIntentForPackage("com.whatsapp");
+                    startActivity(i);
+                } catch (Exception e) {
+                    showToast("Whatsapp App is Not installed.");
+                }
             }
         });
+    }
+
+    private void showToast(String text) {
+        Toast.makeText(WhatsappTutActivity.this, text, Toast.LENGTH_SHORT).show();
     }
 
     public void onClickNewContact(View view) {
