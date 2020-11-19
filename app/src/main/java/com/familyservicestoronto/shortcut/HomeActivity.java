@@ -26,6 +26,9 @@ public class HomeActivity extends AppCompatActivity {
 
         ImageView goToFacebook = findViewById(R.id.FacebookIcon);
         goToFacebook.setOnClickListener(HomeActivity.this::loadFacebookTutorialActivity);
+
+        ImageView goToGmail = findViewById(R.id.GmailIcon);
+        goToGmail.setOnClickListener(HomeActivity.this::loadGmailTutorialActivity);
     }
 
     public void loadWhatsappTutorialActivity(View view) {
@@ -45,6 +48,11 @@ public class HomeActivity extends AppCompatActivity {
 
     public void loadFacebookTutorialActivity(View view) {
         Intent intent = new Intent(HomeActivity.this, FacebookTutorialActivity.class);
+        startActivity(intent);
+    }
+
+    public void loadGmailTutorialActivity(View view) {
+        Intent intent = new Intent(HomeActivity.this, GmailTutorialActivity.class);
         startActivity(intent);
     }
 }
