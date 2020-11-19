@@ -12,4 +12,12 @@
     <string name="edit_profile">Edit Profile</string>
     <string name="back">Back</string>
     <string name="go_to_facebook">Go To Facebook</string>
+    <string name="Gmail">Gmail</string>
+    <string name="None" />
+    <string name="gmail_tutorials">Gmail Tutorials</string>
+    <string name="add_account">Add an Account</string>
+    <string name="open_email">Open Email</string>
+    <string name="compose_email">Compose Email</string>
+    <string name="go_to_gmail">Go To Gmail</string>
+    <string name="switch_inbox">Switch Inbox</string>
 </resources>
