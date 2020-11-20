@@ -28,19 +28,19 @@ import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.Matchers.allOf;
 
 /*
- * Test for opening the Youtube tutorial page.
+ * Test for the Youtube Sign In tutorial.
  * */
 
 @LargeTest
 @RunWith(AndroidJUnit4ClassRunner.class)
-public class YoutubeTutorialTest {
+public class YoutubeSignInTest {
 
     @Rule
     public ActivityScenarioRule<HomeActivity> mActivityTestRule = new ActivityScenarioRule<>(
             HomeActivity.class);
 
     @Test
-    public void youtubeTutorialTest() {
+    public void youtubeSignInTest() {
         ViewInteraction appCompatImageView = onView(
                 allOf(withId(R.id.YoutubeIcon), withContentDescription("Youtube"),
                         childAtPosition(
@@ -51,29 +51,33 @@ public class YoutubeTutorialTest {
                         isDisplayed()));
         appCompatImageView.perform(click());
 
+        ViewInteraction materialButton = onView(
+                allOf(withId(R.id.loginYoutube), withText("Login to your account"),
+                        childAtPosition(
+                                childAtPosition(
+                                        withId(android.R.id.content),
+                                        0),
+                                2),
+                        isDisplayed()));
+        materialButton.perform(click());
+
         ViewInteraction textView = onView(
-                allOf(withId(R.id.youtubeTutorialText), withText("Youtube Tutorials"),
+                allOf(withId(R.id.youtubeSignInTitle), withText("Sign Into Youtube"),
                         withParent(withParent(withId(android.R.id.content))),
                         isDisplayed()));
-        textView.check(matches(withText("Youtube Tutorials")));
+        textView.check(matches(withText("Sign Into Youtube")));
+
+        ViewInteraction textView2 = onView(
+                allOf(withId(R.id.textView), withText("1. Click on the Profile button near the top"),
+                        withParent(withParent(withId(R.id.youtubeSignInScroll))),
+                        isDisplayed()));
+        textView2.check(matches(withText("1. Click on the Profile button near the top")));
 
         ViewInteraction button = onView(
-                allOf(withId(R.id.goBackFromYoutube), withText("BACK"),
+                allOf(withId(R.id.youtubeSignInBackBtn), withText("BACK"),
                         withParent(withParent(withId(android.R.id.content))),
                         isDisplayed()));
         button.check(matches(isDisplayed()));
-
-        ViewInteraction button2 = onView(
-                allOf(withId(R.id.goToYoutube), withText("GO TO YOUTUBE"),
-                        withParent(withParent(withId(android.R.id.content))),
-                        isDisplayed()));
-        button2.check(matches(isDisplayed()));
-
-        ViewInteraction button3 = onView(
-                allOf(withId(R.id.button), withText("SEARCH FOR A VIDEO"),
-                        withParent(withParent(withId(android.R.id.content))),
-                        isDisplayed()));
-        button3.check(matches(isDisplayed()));
     }
 
     private static Matcher<View> childAtPosition(
