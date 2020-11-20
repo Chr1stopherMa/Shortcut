@@ -4,49 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FacebookTutorialActivity">
+    tools:context=".ZoomTutorialActivity">
 
     <Button
-        android:id="@+id/EditProfileButton"
+        android:id="@+id/SignUpButton"
         android:layout_width="241dp"
         android:layout_height="68dp"
-        android:text="@string/edit_profile"
-        android:onClick="onClickGoToEditProfileTut"
+        android:text="@string/signing_up"
+        android:onClick="onClickGoToSignUpTut"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.733" />
+        app:layout_constraintVertical_bias="0.340" />
 
     <Button
-        android:id="@+id/UploadPicVidButton"
+        android:id="@+id/SignInButton"
         android:layout_width="241dp"
         android:layout_height="68dp"
-        android:text="@string/upload_picture_video"
-        android:onClick="onClickGoToUploadTut"
+        android:text="@string/signing_in"
+        android:onClick="onClickGoToSignInTut"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.524" />
+        app:layout_constraintVertical_bias="0.480" />
 
     <Button
-        android:id="@+id/AddFriendButton"
+        android:id="@+id/JoinMeetingButton"
         android:layout_width="241dp"
         android:layout_height="68dp"
-        android:text="@string/add_a_friend"
-        android:onClick="onClickGoToAddFriendTut"
+        android:text="@string/joining_a_meeting"
+        android:onClick="onClickGoToJoinMeetingTut"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.325" />
+        app:layout_constraintVertical_bias="0.620" />
+
+    <Button
+        android:id="@+id/RunMeetingsButton"
+        android:layout_width="241dp"
+        android:layout_height="68dp"
+        android:text="@string/run_a_meeting"
+        android:onClick="onClickGoToRunMeetingTut"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.760" />
 
     <TextView
-        android:id="@+id/FacebookTutorialText"
+        android:id="@+id/ZoomTutorialText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/facebook_tutorials"
+        android:text="@string/zoom_tutorials"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -56,7 +68,7 @@
         app:layout_constraintVertical_bias="0.137" />
 
     <Button
-        android:id="@+id/FacebookBackButton"
+        android:id="@+id/ZoomBackButton"
         android:layout_width="123dp"
         android:layout_height="52dp"
         android:text="@string/back"
@@ -69,15 +81,15 @@
         app:layout_constraintVertical_bias="0.976" />
 
     <Button
-        android:id="@+id/GoToFacebookButton"
+        android:id="@+id/GoToZoomButton"
         android:layout_width="169dp"
         android:layout_height="52dp"
-        android:text="@string/go_to_facebook"
-        android:onClick="onClickGoToFacebook"
+        android:text="@string/go_to_zoom"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.933"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

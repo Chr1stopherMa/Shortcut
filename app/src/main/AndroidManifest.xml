@@ -16,6 +16,19 @@
         <activity android:name=".FacebookUploadActivity" />
         <activity android:name=".FacebookAddFriendActivity" />
         <activity android:name=".FacebookTutorialActivity" />
+        <activity android:name=".GmailAddAccountActivity" />
+        <activity android:name=".GmailOpenEmailActivity" />
+        <activity android:name=".GmailComposeEmailActivity" />
+        <activity android:name=".GmailTutorialActivity" />
+        <activity android:name=".WhatsappNewContactActivity" />
+        <activity android:name=".WhatsappUploadActivity" />
+        <activity android:name=".WhatsappProfileActivity" />
+        <activity android:name=".ZoomTutorialActivity" />
+        <activity android:name=".ZoomSignUpActivity" />
+        <activity android:name=".ZoomSignInActivity" />
+        <activity android:name=".ZoomJoinMeetingActivity" />
+        <activity android:name=".ZoomRunMeetingActivity" />
+        <activity android:name=".GoogleSearchActivity" />
         <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,6 +36,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".WhatsappTutActivity" />
     </application>
 
 </manifest>

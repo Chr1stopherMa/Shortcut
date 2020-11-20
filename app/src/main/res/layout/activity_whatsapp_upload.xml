@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -9,35 +10,38 @@
         android:id="@+id/backToWhatsappTut"
         android:layout_width="173dp"
         android:layout_height="41dp"
-        android:onClick="onClickGoToFacebookTut"
+        android:onClick="onClickGoToWhatsappTut"
         android:text="@string/back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.978" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.585" />
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="342dp"
-        android:layout_height="620dp"
-        app:srcCompat="@drawable/whatsapp6"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="55dp" />
+        android:layout_width="337dp"
+        android:layout_height="510dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/whatsappUpload"
+        app:layout_constraintVertical_bias="0.16"
+        app:srcCompat="@drawable/whatsapp6" />
 
     <TextView
         android:id="@+id/whatsappUploadText6"
-        android:layout_width="238dp"
-        android:layout_height="70dp"
+        android:layout_width="214dp"
+        android:layout_height="76dp"
         android:text='3. If you want to send photo(s) in your album, click "Gallery"'
         android:textColor="#F61507"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.918"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.847" />
+        app:layout_constraintTop_toTopOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.972" />
 
     <TextView
         android:id="@+id/whatsappUpload"
@@ -51,7 +55,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.007" />
+        app:layout_constraintVertical_bias="0.04" />
 
     <TextView
         android:id="@+id/whatsappUploadText"
@@ -60,25 +64,25 @@
         android:text='1. First click this "clip" logo'
         android:textColor="#F61507"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.938"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.302" />
+        app:layout_constraintTop_toTopOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.259" />
 
     <TextView
         android:id="@+id/whatsappUploadText5"
-        android:layout_width="224dp"
+        android:layout_width="221dp"
         android:layout_height="64dp"
         android:text='2. If you want to take a photo and send it to others, click "Camera"'
         android:textColor="#F61507"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="@+id/imageView8"
+        app:layout_constraintHorizontal_bias="0.183"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.446" />
+        app:layout_constraintTop_toTopOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.434" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

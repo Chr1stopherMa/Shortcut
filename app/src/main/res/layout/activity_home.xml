@@ -7,6 +7,20 @@
     tools:context=".HomeActivity">
 
     <ImageView
+        android:id="@+id/GmailIcon"
+        android:layout_width="176dp"
+        android:layout_height="176dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="28dp"
+        android:adjustViewBounds="false"
+        android:contentDescription="@string/Gmail"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/gmail_icon" />
+
+    <ImageView
         android:id="@+id/GoogleIcon"
         android:layout_width="176dp"
         android:layout_height="176dp"
@@ -44,7 +58,7 @@
         app:layout_constraintBottom_toTopOf="@+id/WhatsappIcon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.884"
+        app:layout_constraintVertical_bias="0.829"
         app:srcCompat="@drawable/zoom_icon" />
 
     <ImageView

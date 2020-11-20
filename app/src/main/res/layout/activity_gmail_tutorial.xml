@@ -4,49 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FacebookTutorialActivity">
+    tools:context=".GmailTutorialActivity">
 
     <Button
-        android:id="@+id/EditProfileButton"
+        android:id="@+id/ComposeEmailButton"
         android:layout_width="241dp"
         android:layout_height="68dp"
-        android:text="@string/edit_profile"
-        android:onClick="onClickGoToEditProfileTut"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="8dp"
+        android:onClick="onClickGoToComposeEmailTut"
+        android:text="@string/compose_email"
+        app:layout_constraintBottom_toTopOf="@+id/GoToGmailButton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.733" />
+        app:layout_constraintTop_toBottomOf="@+id/OpenEmailButton" />
 
     <Button
-        android:id="@+id/UploadPicVidButton"
+        android:id="@+id/OpenEmailButton"
         android:layout_width="241dp"
         android:layout_height="68dp"
-        android:text="@string/upload_picture_video"
-        android:onClick="onClickGoToUploadTut"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="onClickGoToOpenEmailTut"
+        android:text="@string/open_email"
+        app:layout_constraintBottom_toTopOf="@+id/ComposeEmailButton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.524" />
+        app:layout_constraintTop_toBottomOf="@+id/AddAccountButton" />
 
     <Button
-        android:id="@+id/AddFriendButton"
+        android:id="@+id/AddAccountButton"
         android:layout_width="241dp"
         android:layout_height="68dp"
-        android:text="@string/add_a_friend"
-        android:onClick="onClickGoToAddFriendTut"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="onClickGoToAddAccountTut"
+        android:text="@string/add_account"
+        app:layout_constraintBottom_toTopOf="@+id/OpenEmailButton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.325" />
+        app:layout_constraintTop_toBottomOf="@+id/GmailTutorialText"
+        app:layout_constraintVertical_bias="0.865" />
 
     <TextView
-        android:id="@+id/FacebookTutorialText"
+        android:id="@+id/GmailTutorialText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/facebook_tutorials"
+        android:text="@string/gmail_tutorials"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -56,11 +62,11 @@
         app:layout_constraintVertical_bias="0.137" />
 
     <Button
-        android:id="@+id/FacebookBackButton"
+        android:id="@+id/BackButton"
         android:layout_width="123dp"
         android:layout_height="52dp"
-        android:text="@string/back"
         android:onClick="onClickGoToHome"
+        android:text="@string/back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.055"
@@ -69,11 +75,10 @@
         app:layout_constraintVertical_bias="0.976" />
 
     <Button
-        android:id="@+id/GoToFacebookButton"
+        android:id="@+id/GoToGmailButton"
         android:layout_width="169dp"
         android:layout_height="52dp"
-        android:text="@string/go_to_facebook"
-        android:onClick="onClickGoToFacebook"
+        android:text="@string/go_to_gmail"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.933"
