@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YoutubeTutorialActivity">
+
+    <Button
+        android:id="@+id/backHome2"
+        android:layout_width="138dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="onClickBack"
+        android:text="@string/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upload"
+        app:layout_constraintVertical_bias="0.783" />
+
+    <Button
+        android:id="@+id/goToWhatsapp2"
+        android:layout_width="138dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="16dp"
+        android:text="Go To Youtube"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upload"
+        app:layout_constraintVertical_bias="0.783" />
+
+    <Button
+        android:id="@+id/addProfile2"
+        android:layout_width="209dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="191dp"
+        android:onClick="onClickLogin"
+        android:text="Login to your account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/addContact2"
+        app:layout_constraintVertical_bias="0.468" />
+
+    <TextView
+        android:id="@+id/whatsappTutorialText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Youtube Tutorials"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.137" />
+
+    <Button
+        android:id="@+id/addContact2"
+        android:layout_width="209dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="101dp"
+        android:onClick="onClickSearch"
+        android:text="Search for a Video"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/whatsappTutorialText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
