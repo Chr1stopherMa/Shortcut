@@ -128,7 +128,6 @@ public class WhatsappActivityTest {
                                                 0)),
                                 0),
                         isDisplayed()));
-        materialButton8.perform(click());
     }
 
     private static Matcher<View> childAtPosition(
