@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FacebookEditProfileActivity">
+
+    <ImageView
+        android:id="@+id/fbEditProfile1"
+        android:layout_width="295dp"
+        android:layout_height="43dp"
+        android:contentDescription="@string/edit_profile"
+        app:layout_constraintBottom_toTopOf="@+id/fbEditProfileText1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/facebookEditProfileText"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/fb_edit_profile_1" />
+
+    <ImageView
+        android:id="@+id/fbEditProfile3"
+        android:layout_width="320dp"
+        android:layout_height="501dp"
+        android:contentDescription="@string/edit_profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/facebookEditProfileText"
+        app:layout_constraintVertical_bias="0.676"
+        app:srcCompat="@drawable/fb_edit_profile_3" />
+
+    <ImageView
+        android:id="@+id/fbEditProfile2"
+        android:layout_width="212dp"
+        android:layout_height="38dp"
+        android:contentDescription="@string/edit_profile"
+        app:layout_constraintBottom_toTopOf="@+id/fbEditProfile3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.711"
+        app:layout_constraintStart_toStartOf="@+id/fbEditProfileText1"
+        app:layout_constraintTop_toTopOf="@+id/fbEditProfile1"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/fb_edit_profile_2" />
+
+    <TextView
+        android:id="@+id/fbEditProfileText1"
+        android:layout_width="366dp"
+        android:layout_height="38dp"
+        android:text='1. Tap the "Profile" icon at the top or bottom of your screen, and tap:'
+        android:textColor="#050D37"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/fbEditProfile3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.858" />
+
+    <TextView
+        android:id="@+id/fbEditProfileText2"
+        android:layout_width="159dp"
+        android:layout_height="22dp"
+        android:text="2. Tap here and choose"
+        android:textColor="#050D37"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fbEditProfile3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.968"
+        app:layout_constraintStart_toStartOf="@+id/fbEditProfile3"
+        app:layout_constraintTop_toTopOf="@+id/fbEditProfile3"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <TextView
+        android:id="@+id/fbEditProfileText3"
+        android:layout_width="202dp"
+        android:layout_height="22dp"
+        android:text="3. Tap here and choose"
+        android:textColor="#050D37"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fbEditProfile3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.832"
+        app:layout_constraintStart_toStartOf="@+id/fbEditProfile3"
+        app:layout_constraintTop_toTopOf="@+id/fbEditProfile3"
+        app:layout_constraintVertical_bias="0.555" />
+
+    <TextView
+        android:id="@+id/fbEditProfileText4"
+        android:layout_width="205dp"
+        android:layout_height="35dp"
+        android:text="4. Type your bio here."
+        android:textColor="#050D37"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fbEditProfile3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintStart_toStartOf="@+id/fbEditProfile3"
+        app:layout_constraintTop_toBottomOf="@+id/fbEditProfileText6"
+        app:layout_constraintVertical_bias="0.58" />
+
+    <TextView
+        android:id="@+id/fbEditProfileText5"
+        android:layout_width="147dp"
+        android:layout_height="50dp"
+        android:text="to change your profile picture."
+        android:textColor="#050D37"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fbEditProfile3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="@+id/fbEditProfile3"
+        app:layout_constraintTop_toBottomOf="@+id/fbEditProfile4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/fbEditProfileText6"
+        android:layout_width="177dp"
+        android:layout_height="37dp"
+        android:text="to change your cover picture."
+        android:textColor="#050D37"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fbEditProfile3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.813"
+        app:layout_constraintStart_toStartOf="@+id/fbEditProfile3"
+        app:layout_constraintTop_toBottomOf="@+id/fbEditProfile5"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/backToFacebookButton3"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:onClick="onClickGoToFacebookTut"
+        android:text="@string/back"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.973"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.982" />
+
+    <ImageView
+        android:id="@+id/fbEditProfile4"
+        android:layout_width="161dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/edit_profile"
+        app:layout_constraintBottom_toBottomOf="@+id/fbEditProfile3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintStart_toStartOf="@+id/fbEditProfile3"
+        app:layout_constraintTop_toTopOf="@+id/fbEditProfileText2"
+        app:layout_constraintVertical_bias="0.005"
+        app:srcCompat="@drawable/fb_edit_profile_5" />
+
+    <ImageView
+        android:id="@+id/fbEditProfile5"
+        android:layout_width="114dp"
+        android:layout_height="31dp"
+        android:contentDescription="@string/edit_profile"
+        app:layout_constraintBottom_toBottomOf="@+id/backToFacebookButton3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.692"
+        app:layout_constraintStart_toStartOf="@+id/fbEditProfile3"
+        app:layout_constraintTop_toBottomOf="@+id/fbEditProfileText3"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/fb_edit_profile_6" />
+
+    <TextView
+        android:id="@+id/facebookEditProfileText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_profile"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000D53"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

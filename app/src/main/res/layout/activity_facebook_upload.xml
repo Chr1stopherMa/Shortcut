@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FacebookUploadActivity">
+
+    <Button
+        android:id="@+id/backToFacebookButton2"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:onClick="onClickGoToFacebookTut"
+        android:text="@string/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.843"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <ImageView
+        android:id="@+id/fbUploadPic"
+        android:layout_width="374dp"
+        android:layout_height="654dp"
+        android:contentDescription="@string/upload_picture_video"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/facebookUploadText"
+        app:layout_constraintVertical_bias="0.264"
+        app:srcCompat="@drawable/fb_upload" />
+
+    <TextView
+        android:id="@+id/facebookUploadText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/upload_picture_video"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000D53"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007" />
+
+    <TextView
+        android:id="@+id/fbUploadText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Type your message here"
+        android:textColor="#050D37"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fbUploadPic"
+        app:layout_constraintEnd_toEndOf="@+id/fbUploadPic"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/fbUploadPic"
+        app:layout_constraintTop_toTopOf="@+id/fbUploadPic"
+        app:layout_constraintVertical_bias="0.357" />
+
+    <TextView
+        android:id="@+id/fbUploadText2"
+        android:layout_width="135dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="425dp"
+        android:text="2. Select who can see your post here"
+        android:textColor="#050D37"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fbUploadPic"
+        app:layout_constraintEnd_toEndOf="@+id/fbUploadPic"
+        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintStart_toStartOf="@+id/fbUploadPic"
+        app:layout_constraintTop_toTopOf="@+id/fbUploadPic"
+        app:layout_constraintVertical_bias="0.834" />
+
+    <TextView
+        android:id="@+id/fbUploadText3"
+        android:layout_width="111dp"
+        android:layout_height="38dp"
+        android:text="4. Tap to post!"
+        android:textColor="#050D37"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fbUploadPic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/fbUploadPic"
+        app:layout_constraintTop_toTopOf="@+id/fbUploadPic"
+        app:layout_constraintVertical_bias="0.207" />
+
+    <TextView
+        android:id="@+id/fbUploadText4"
+        android:layout_width="134dp"
+        android:layout_height="79dp"
+        android:layout_marginBottom="146dp"
+        android:text="3. Select what you want to upload."
+        android:textColor="#050D37"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fbUploadPic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.977"
+        app:layout_constraintStart_toStartOf="@+id/fbUploadPic"
+        app:layout_constraintTop_toTopOf="@+id/fbUploadPic"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
