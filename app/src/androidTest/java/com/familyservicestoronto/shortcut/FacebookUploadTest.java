@@ -29,13 +29,13 @@ import static org.hamcrest.Matchers.allOf;
 
 @LargeTest
 @RunWith(AndroidJUnit4ClassRunner.class)
-public class FacebookTutorialTest {
+public class FacebookUploadTest {
 
     @Rule
     public ActivityScenarioRule<HomeActivity> mActivityTestRule = new ActivityScenarioRule<>(HomeActivity.class);
 
     @Test
-    public void facebookTutorialTest() {
+    public void facebookUploadTest() {
         ViewInteraction appCompatImageView = onView(
                 allOf(withId(R.id.FacebookIcon), withContentDescription("Facebook"),
                         childAtPosition(
@@ -46,41 +46,57 @@ public class FacebookTutorialTest {
                         isDisplayed()));
         appCompatImageView.perform(click());
 
-        ViewInteraction textView = onView(
-                allOf(withId(R.id.FacebookTutorialText), withText("Facebook Tutorials"),
+        ViewInteraction materialButton = onView(
+                allOf(withId(R.id.UploadPicVidButton), withText("Upload Picture/Video"),
+                        childAtPosition(
+                                childAtPosition(
+                                        withId(android.R.id.content),
+                                        0),
+                                1),
+                        isDisplayed()));
+        materialButton.perform(click());
+
+        ViewInteraction imageView = onView(
+                allOf(withId(R.id.fbUploadPic), withContentDescription("Upload Picture/Video"),
                         withParent(withParent(withId(android.R.id.content))),
                         isDisplayed()));
-        textView.check(matches(withText("Facebook Tutorials")));
+        imageView.check(matches(isDisplayed()));
+
+        ViewInteraction textView = onView(
+                allOf(withId(R.id.facebookUploadText), withText("Upload Picture/Video"),
+                        withParent(withParent(withId(android.R.id.content))),
+                        isDisplayed()));
+        textView.check(matches(withText("Upload Picture/Video")));
+
+        ViewInteraction textView2 = onView(
+                allOf(withId(R.id.fbUploadText2), withText("2. Select who can see your post here"),
+                        withParent(withParent(withId(android.R.id.content))),
+                        isDisplayed()));
+        textView2.check(matches(withText("2. Select who can see your post here")));
+
+        ViewInteraction textView3 = onView(
+                allOf(withId(R.id.fbUploadText3), withText("4. Tap to post!"),
+                        withParent(withParent(withId(android.R.id.content))),
+                        isDisplayed()));
+        textView3.check(matches(withText("4. Tap to post!")));
+
+        ViewInteraction textView4 = onView(
+                allOf(withId(R.id.fbUploadText1), withText("1. Type your message here"),
+                        withParent(withParent(withId(android.R.id.content))),
+                        isDisplayed()));
+        textView4.check(matches(withText("1. Type your message here")));
+
+        ViewInteraction textView5 = onView(
+                allOf(withId(R.id.fbUploadText4), withText("3. Select what you want to upload."),
+                        withParent(withParent(withId(android.R.id.content))),
+                        isDisplayed()));
+        textView5.check(matches(withText("3. Select what you want to upload.")));
 
         ViewInteraction button = onView(
-                allOf(withId(R.id.AddFriendButton), withText("ADD A FRIEND"),
+                allOf(withId(R.id.backToFacebookButton2), withText("BACK"),
                         withParent(withParent(withId(android.R.id.content))),
                         isDisplayed()));
         button.check(matches(isDisplayed()));
-
-        ViewInteraction button2 = onView(
-                allOf(withId(R.id.UploadPicVidButton), withText("UPLOAD PICTURE/VIDEO"),
-                        withParent(withParent(withId(android.R.id.content))),
-                        isDisplayed()));
-        button2.check(matches(isDisplayed()));
-
-        ViewInteraction button3 = onView(
-                allOf(withId(R.id.EditProfileButton), withText("EDIT PROFILE"),
-                        withParent(withParent(withId(android.R.id.content))),
-                        isDisplayed()));
-        button3.check(matches(isDisplayed()));
-
-        ViewInteraction button4 = onView(
-                allOf(withId(R.id.FacebookBackButton), withText("BACK"),
-                        withParent(withParent(withId(android.R.id.content))),
-                        isDisplayed()));
-        button4.check(matches(isDisplayed()));
-
-        ViewInteraction button5 = onView(
-                allOf(withId(R.id.GoToFacebookButton), withText("GO TO FACEBOOK"),
-                        withParent(withParent(withId(android.R.id.content))),
-                        isDisplayed()));
-        button5.check(matches(isDisplayed()));
     }
 
     private static Matcher<View> childAtPosition(
