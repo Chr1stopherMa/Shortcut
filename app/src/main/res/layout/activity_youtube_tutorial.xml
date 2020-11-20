@@ -7,7 +7,7 @@
     tools:context=".YoutubeTutorialActivity">
 
     <Button
-        android:id="@+id/backHome2"
+        android:id="@+id/goBackFromYoutube"
         android:layout_width="138dp"
         android:layout_height="55dp"
         android:layout_marginTop="11dp"
@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.783" />
 
     <Button
-        android:id="@+id/goToWhatsapp2"
+        android:id="@+id/goToYoutube"
         android:layout_width="138dp"
         android:layout_height="55dp"
         android:layout_marginTop="11dp"
@@ -37,7 +37,7 @@
         app:layout_constraintVertical_bias="0.783" />
 
     <Button
-        android:id="@+id/addProfile2"
+        android:id="@+id/loginYoutube"
         android:layout_width="209dp"
         android:layout_height="61dp"
         android:layout_marginStart="101dp"
@@ -49,11 +49,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/addContact2"
-        app:layout_constraintVertical_bias="0.468" />
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.266" />
 
     <TextView
-        android:id="@+id/whatsappTutorialText"
+        android:id="@+id/youtubeTutorialText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Youtube Tutorials"
@@ -66,7 +66,7 @@
         app:layout_constraintVertical_bias="0.137" />
 
     <Button
-        android:id="@+id/addContact2"
+        android:id="@+id/button"
         android:layout_width="209dp"
         android:layout_height="61dp"
         android:layout_marginStart="101dp"
@@ -77,5 +77,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/whatsappTutorialText" />
+        app:layout_constraintTop_toBottomOf="@+id/youtubeTutorialText" />
 </androidx.constraintlayout.widget.ConstraintLayout>

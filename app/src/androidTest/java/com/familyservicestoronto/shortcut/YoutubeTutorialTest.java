@@ -52,7 +52,7 @@ public class YoutubeTutorialTest {
         appCompatImageView.perform(click());
 
         ViewInteraction textView = onView(
-                allOf(withId(R.id.whatsappTutorialText), withText("Youtube Tutorials"),
+                allOf(withId(R.id.youtubeTutorialText), withText("Youtube Tutorials"),
                         withParent(withParent(withId(android.R.id.content))),
                         isDisplayed()));
         textView.check(matches(withText("Youtube Tutorials")));
@@ -64,7 +64,7 @@ public class YoutubeTutorialTest {
         button.check(matches(isDisplayed()));
 
         ViewInteraction button2 = onView(
-                allOf(withId(R.id.backHome2), withText("BACK"),
+                allOf(withId(R.id.goBackFromYoutube), withText("BACK"),
                         withParent(withParent(withId(android.R.id.content))),
                         isDisplayed()));
         button2.check(matches(isDisplayed()));
