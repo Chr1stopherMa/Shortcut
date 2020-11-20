@@ -1,4 +1,4 @@
-package com.familyservicestoronto.shortcut;
+package com.familyservicestoronto.shortcut.SwitchApp;
 
 /**
  * Exception thrown when app with given package name is not installed on user device.

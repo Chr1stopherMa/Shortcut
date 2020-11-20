@@ -1,4 +1,4 @@
-package com.familyservicestoronto.shortcut;
+package com.familyservicestoronto.shortcut.SwitchApp;
 
 /**
  * Apps that can be opened.

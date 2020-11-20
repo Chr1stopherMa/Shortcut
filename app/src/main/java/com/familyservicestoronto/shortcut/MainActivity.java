@@ -4,6 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.familyservicestoronto.shortcut.SwitchApp.ActivitySwitchUtil;
+import com.familyservicestoronto.shortcut.SwitchApp.AppNotFoundException;
+import com.familyservicestoronto.shortcut.SwitchApp.ExternalApp;
+
 
 public class MainActivity extends AppCompatActivity {
 

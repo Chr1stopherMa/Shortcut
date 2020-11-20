@@ -1,4 +1,4 @@
-package com.familyservicestoronto.shortcut;
+package com.familyservicestoronto.shortcut.SwitchApp;
 
 import android.content.Context;
 import android.content.Intent;
