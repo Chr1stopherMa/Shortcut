@@ -24,22 +24,16 @@ public class GmailTutorialActivity extends AppCompatActivity {
     }
 
     public void openGmail(View view) {
-        //DOESN'T WORK:
         try {
-            Intent mailClient = new Intent(Intent.ACTION_VIEW);
-            mailClient.setClassName("com.google.android.gm", "com.google.android.gm.ConversationListActivity");
-            startActivity(mailClient);
+            Intent i = getPackageManager().getLaunchIntentForPackage("com.google.android.gm");
+            startActivity(i);
         } catch (Exception e) {
-            showToast(e);
+            showToast("Gmail is not installed.");
         }
     }
 
-    private void showToast(Exception ex) {
-        StringWriter sw = new StringWriter();
-        PrintWriter pw = new PrintWriter(sw);
-        ex.printStackTrace(pw);
-        //String sStackTrace = sw.toString(); // stack trace as a string
-        Toast.makeText(GmailTutorialActivity.this, sw.toString(), Toast.LENGTH_LONG).show();
+    private void showToast(String text) {
+        Toast.makeText(GmailTutorialActivity.this, text, Toast.LENGTH_SHORT).show();
     }
 
     public void onClickGoToAddAccountTut(View view) {
