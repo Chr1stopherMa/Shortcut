@@ -15,6 +15,9 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        ImageView youtube = findViewById(R.id.YoutubeIcon);
+        youtube.setOnClickListener(HomeActivity.this::loadYoutubeTutorialActivity);
+
         ImageView whatsapp = findViewById(R.id.WhatsappIcon);
         whatsapp.setOnClickListener(HomeActivity.this::loadWhatsappTutorialActivity);
 
@@ -29,6 +32,11 @@ public class HomeActivity extends AppCompatActivity {
 
         ImageView goToGmail = findViewById(R.id.GmailIcon);
         goToGmail.setOnClickListener(HomeActivity.this::loadGmailTutorialActivity);
+    }
+
+    public void loadYoutubeTutorialActivity(View view) {
+        Intent intent = new Intent(HomeActivity.this, YoutubeTutorialActivity.class);
+        startActivity(intent);
     }
 
     public void loadWhatsappTutorialActivity(View view) {
