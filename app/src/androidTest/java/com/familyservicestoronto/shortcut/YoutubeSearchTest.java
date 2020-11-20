@@ -28,19 +28,19 @@ import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.Matchers.allOf;
 
 /*
- * Test for opening the Youtube tutorial page.
+ * Test for the Youtube Search tutorial.
  * */
 
 @LargeTest
 @RunWith(AndroidJUnit4ClassRunner.class)
-public class YoutubeTutorialTest {
+public class YoutubeSearchTest {
 
     @Rule
     public ActivityScenarioRule<HomeActivity> mActivityTestRule = new ActivityScenarioRule<>(
             HomeActivity.class);
 
     @Test
-    public void youtubeTutorialTest() {
+    public void youtubeSearchTest() {
         ViewInteraction appCompatImageView = onView(
                 allOf(withId(R.id.YoutubeIcon), withContentDescription("Youtube"),
                         childAtPosition(
@@ -51,29 +51,33 @@ public class YoutubeTutorialTest {
                         isDisplayed()));
         appCompatImageView.perform(click());
 
+        ViewInteraction materialButton = onView(
+                allOf(withId(R.id.button), withText("Search for a Video"),
+                        childAtPosition(
+                                childAtPosition(
+                                        withId(android.R.id.content),
+                                        0),
+                                4),
+                        isDisplayed()));
+        materialButton.perform(click());
+
         ViewInteraction textView = onView(
-                allOf(withId(R.id.youtubeTutorialText), withText("Youtube Tutorials"),
+                allOf(withId(R.id.youtubeSearchTitle), withText("Search for a Video"),
                         withParent(withParent(withId(android.R.id.content))),
                         isDisplayed()));
-        textView.check(matches(withText("Youtube Tutorials")));
+        textView.check(matches(withText("Search for a Video")));
+
+        ViewInteraction imageView = onView(
+                allOf(withId(R.id.imageView),
+                        withParent(withParent(withId(R.id.youtubeSignInScroll))),
+                        isDisplayed()));
+        imageView.check(matches(isDisplayed()));
 
         ViewInteraction button = onView(
-                allOf(withId(R.id.goBackFromYoutube), withText("BACK"),
+                allOf(withId(R.id.backBtn), withText("BACK"),
                         withParent(withParent(withId(android.R.id.content))),
                         isDisplayed()));
         button.check(matches(isDisplayed()));
-
-        ViewInteraction button2 = onView(
-                allOf(withId(R.id.goToYoutube), withText("GO TO YOUTUBE"),
-                        withParent(withParent(withId(android.R.id.content))),
-                        isDisplayed()));
-        button2.check(matches(isDisplayed()));
-
-        ViewInteraction button3 = onView(
-                allOf(withId(R.id.button), withText("SEARCH FOR A VIDEO"),
-                        withParent(withParent(withId(android.R.id.content))),
-                        isDisplayed()));
-        button3.check(matches(isDisplayed()));
     }
 
     private static Matcher<View> childAtPosition(
