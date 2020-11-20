@@ -6,6 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.familyservicestoronto.shortcut.SwitchApp.ActivitySwitchUtil;
+import com.familyservicestoronto.shortcut.SwitchApp.AppNotFoundException;
+import com.familyservicestoronto.shortcut.SwitchApp.ExternalApp;
+
 public class YoutubeTutorialActivity extends AppCompatActivity {
 
     @Override
@@ -28,5 +32,13 @@ public class YoutubeTutorialActivity extends AppCompatActivity {
     public void onClickLogin(View view) {
         Intent intentHome = new Intent(this, YoutubeSignInActivity.class);
         startActivity(intentHome);
+    }
+
+    public void goToYoutube(View view) {
+        try {
+            ActivitySwitchUtil.openApp(this, ExternalApp.YOUTUBE);
+        } catch (AppNotFoundException e) {
+
+        }
     }
 }
