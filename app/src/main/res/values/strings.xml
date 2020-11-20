@@ -1,3 +1,32 @@
 <resources>
     <string name="app_name">Shortcut</string>
+
+    <string name="Youtube">Youtube</string>
+    <string name="Zoom">Zoom</string>
+    <string name="Whatsapp">Whatsapp</string>
+    <string name="Facebook">Facebook</string>
+    <string name="Google">Google</string>
+    <string name="facebook_tutorials">Facebook Tutorials</string>
+    <string name="google_tutorials">Google Tutorial</string>
+    <string name="zoom_tutorials">Zoom Tutorials</string>
+    <string name="add_a_friend">Add a Friend</string>
+    <string name="search_in_google">Search in Google</string>
+    <string name="upload_picture_video">Upload Picture/Video</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="signing_up">Signing Up</string>
+    <string name="signing_in">Signing In</string>
+    <string name="joining_a_meeting">Joining a Meeting</string>
+    <string name="run_a_meeting">Running a Meeting</string>
+    <string name="back">Back</string>
+    <string name="go_to_facebook">Go To Facebook</string>
+    <string name="go_to_google">Go To Google</string>
+    <string name="go_to_zoom">Go To Zoom</string>
+    <string name="Gmail">Gmail</string>
+    <string name="None" />
+    <string name="gmail_tutorials">Gmail Tutorials</string>
+    <string name="add_account">Add an Account</string>
+    <string name="open_email">Open Email</string>
+    <string name="compose_email">Compose Email</string>
+    <string name="go_to_gmail">Go To Gmail</string>
+    <string name="switch_inbox">Switch Inbox</string>
 </resources>

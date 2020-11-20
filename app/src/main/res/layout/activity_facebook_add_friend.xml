@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FacebookAddFriendActivity">
+
+    <Button
+        android:id="@+id/backToFacebookButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="@string/back"
+        android:onClick="onClickGoToFacebookTut"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98" />
+
+    <TextView
+        android:id="@+id/facebookAddFriendText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_a_friend"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000D53"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <ImageView
+        android:id="@+id/fbAddFriend1"
+        android:layout_width="356dp"
+        android:layout_height="97dp"
+        android:contentDescription="@string/add_a_friend"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.381"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.223"
+        app:srcCompat="@drawable/fb_add_friend_1" />
+
+    <ImageView
+        android:id="@+id/fbAddFriend2"
+        android:layout_width="67dp"
+        android:layout_height="54dp"
+        android:contentDescription="@string/add_a_friend"
+        app:layout_constraintBottom_toBottomOf="@+id/fbAddFriendText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.691"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fbAddFriendText2"
+        app:layout_constraintVertical_bias="0.625"
+        app:srcCompat="@drawable/fb_add_friend_2" />
+
+    <ImageView
+        android:id="@+id/fbAddFriend3"
+        android:layout_width="320dp"
+        android:layout_height="92dp"
+        android:contentDescription="@string/add_a_friend"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fbAddFriendText3"
+        app:layout_constraintVertical_bias="0.04"
+        app:srcCompat="@drawable/fb_add_friend_3" />
+
+    <ImageView
+        android:id="@+id/fbAddFriend4"
+        android:layout_width="332dp"
+        android:layout_height="241dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/add_a_friend"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fbAddFriendText4"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/fb_add_friend_4" />
+
+    <TextView
+        android:id="@+id/fbAddFriendText1"
+        android:layout_width="360dp"
+        android:layout_height="54dp"
+        android:text='1. Tap the "People" icon at the top or bottom of your screen.'
+        android:textColor="#050D37"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.144" />
+
+    <TextView
+        android:id="@+id/fbAddFriendText2"
+        android:layout_width="398dp"
+        android:layout_height="30dp"
+        android:text='2. Tap the "Search" icon.'
+        android:textColor="#050D37"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/fbAddFriendText1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39" />
+
+    <TextView
+        android:id="@+id/fbAddFriendText3"
+        android:layout_width="355dp"
+        android:layout_height="61dp"
+        android:text="3. Type your friend's name in the search bar."
+        android:textColor="#050D37"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/fbAddFriendText2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.513" />
+
+    <TextView
+        android:id="@+id/fbAddFriendText4"
+        android:layout_width="373dp"
+        android:layout_height="55dp"
+        android:text="4. Scroll until you find your friend's profile, and tap &quot;Add Friend&quot;."
+        android:textColor="#050D37"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="@+id/fbAddFriendText3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.681" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

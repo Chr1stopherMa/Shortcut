@@ -2,19 +2,20 @@ package com.familyservicestoronto.shortcut;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
-import com.familyservicestoronto.shortcut.SwitchApp.ActivitySwitchUtil;
-import com.familyservicestoronto.shortcut.SwitchApp.AppNotFoundException;
-import com.familyservicestoronto.shortcut.SwitchApp.ExternalApp;
-
-
-public class MainActivity extends AppCompatActivity {
+public class YoutubeSearchVideoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_youtube_search_video);
+    }
+
+    public void loadYoutubeTutorialActivity(View view) {
+        Intent intent = new Intent(this, YoutubeTutorialActivity.class);
+        startActivity(intent);
     }
 }
