@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Shortcut">
+        <activity android:name=".YoutubeTutorialActivity"></activity>
+        <activity android:name=".YoutubeSignInActivity" />
         <activity android:name=".FacebookEditProfileActivity" />
         <activity android:name=".YoutubeSearchVideoActivity" />
         <activity android:name=".FacebookUploadActivity" />

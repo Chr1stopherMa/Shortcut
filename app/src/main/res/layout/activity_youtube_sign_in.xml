@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".YoutubeSearchVideoActivity">
+    tools:context=".YoutubeSignInActivity">
 
     <TextView
-        android:id="@+id/youtubeSearchTitle"
+        android:id="@+id/youtubeSignInTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:text="Search for a Video"
+        android:text="Sign Into Youtube"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="#000D53"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,76 +25,77 @@
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/youtubeSearchTitle">
+        app:layout_constraintTop_toBottomOf="@+id/youtubeSignInTitle">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text='1. Tap the "Search" icon near the top'
+                android:text="1. Click on the Profile button near the top"
                 android:textColor="#050D37"
                 android:textSize="20sp" />
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/imageView10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/youtube_search_bar_btn" />
+                app:srcCompat="@drawable/youtube_signed_out" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="2. Type the video you want to search for"
+                android:text='2. Click on "Add Account"'
                 android:textColor="#050D37"
                 android:textSize="20sp" />
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/imageView11"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/youtube_search_bar_field" />
-
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="3. Select one of the videos in the results"
-                android:textColor="#050D37"
-                android:textSize="20sp" />
-
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="match_parent"
-                android:layout_height="400dp"
+                android:layout_height="100dp"
                 android:layout_marginTop="10dp"
-                app:srcCompat="@drawable/youtube_search_result" />
+                app:srcCompat="@drawable/youtube_add_account" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text='3. Click on the "Sign In" button'
+                android:textColor="#050D37"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/youtube_sign_in_email" />
 
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="4. Enjoy your video!"
+                android:layout_marginTop="10dp"
+                android:text="4. Sign into your Youtube account"
                 android:textColor="#050D37"
                 android:textSize="20sp" />
 
-            <ImageView
-                android:id="@+id/imageView4"
+            <pl.droidsonroids.gif.GifImageView
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
+                android:layout_height="500dp"
                 android:layout_marginTop="10dp"
-                app:srcCompat="@drawable/youtube_video" />
+                android:src="@drawable/youtube_sign_in" />
 
         </LinearLayout>
     </ScrollView>
 
     <Button
-        android:id="@+id/backBtn"
+        android:id="@+id/youtubeSignInBackBtn"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_marginTop="30dp"
