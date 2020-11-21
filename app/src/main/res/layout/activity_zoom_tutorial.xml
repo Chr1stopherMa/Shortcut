@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ZoomTutorialActivity">
+
+    <Button
+        android:id="@+id/SignUpButton"
+        android:layout_width="241dp"
+        android:layout_height="68dp"
+        android:text="@string/signing_up"
+        android:onClick="onClickGoToSignUpTut"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.340" />
+
+    <Button
+        android:id="@+id/SignInButton"
+        android:layout_width="241dp"
+        android:layout_height="68dp"
+        android:text="@string/signing_in"
+        android:onClick="onClickGoToSignInTut"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.480" />
+
+    <Button
+        android:id="@+id/JoinMeetingButton"
+        android:layout_width="241dp"
+        android:layout_height="68dp"
+        android:text="@string/joining_a_meeting"
+        android:onClick="onClickGoToJoinMeetingTut"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.620" />
+
+    <Button
+        android:id="@+id/RunMeetingsButton"
+        android:layout_width="241dp"
+        android:layout_height="68dp"
+        android:text="@string/run_a_meeting"
+        android:onClick="onClickGoToRunMeetingTut"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.760" />
+
+    <TextView
+        android:id="@+id/ZoomTutorialText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zoom_tutorials"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.137" />
+
+    <Button
+        android:id="@+id/ZoomBackButton"
+        android:layout_width="123dp"
+        android:layout_height="52dp"
+        android:text="@string/back"
+        android:onClick="onClickGoToHome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <Button
+        android:id="@+id/GoToZoomButton"
+        android:layout_width="169dp"
+        android:layout_height="52dp"
+        android:text="@string/go_to_zoom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

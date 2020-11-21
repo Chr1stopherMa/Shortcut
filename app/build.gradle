@@ -2,13 +2,59 @@ plugins {
     id 'com.android.application'
 }
 
+ext.versionMajor = 1
+ext.versionMinor = 0
+ext.versionPatch = 1
+ext.versionClassifier = null
+ext.isSnapShot = false
+ext.minSdkVersion = 21
+
+private Integer generateVersionCode() {
+    return ext.minSdkVersion * 10000000 + ext.versionMajor * 10000 +
+            ext.versionMinor * 100 + ext.versionPatch
+}
+
+private String generateVersionName() {
+    String versionName = "${ext.versionMajor}.${ext.versionMinor}.${ext.versionPatch}"
+
+    if (ext.versionClassifier == null) {
+        if (ext.isSnapShot) {
+            ext.versionClassifier = "SNAPSHOT"
+        }
+    }
+
+    if (ext.versionClassifier != null) {
+        versionName += "-" + ext.versionClassifer
+    }
+
+    return versionName
+}
+
 android {
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    signingConfigs {
+        release {
+            keyAlias 'CSC301'
+            keyPassword 'CSC301'
+            storeFile file('./key_store')
+            storePassword 'CSC301'
+        }
+    }
     compileSdkVersion 30
-    buildToolsVersion "30.0.0"
+    buildToolsVersion '29.0.2'
 
     defaultConfig {
+        versionName generateVersionName()
+        versionCode generateVersionCode()
         applicationId "com.familyservicestoronto.shortcut"
-        minSdkVersion 16
+        minSdkVersion 17
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -18,6 +64,7 @@ android {
 
     buildTypes {
         release {
+            signingConfig signingConfigs.release
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
@@ -32,8 +79,12 @@ dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.2.1'
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
-    testImplementation 'junit:junit:4.+'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.13.1'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+    androidTestImplementation 'androidx.test:rules:1.3.1-alpha02'
+
 }
