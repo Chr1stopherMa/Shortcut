@@ -24,7 +24,7 @@ For example, tapping on the Facebook icon takes you to a page titled “Facebook
  
 ## Development requirements
 
-Our app is readily available for download through the Google Play Store. You may search up “Shortcut” on Google Play Store and click “Install” to run it on your mobile device. Once the device is installed, tapping the Shortcut icon on your device will run the application.
+Our app is readily available for download through the [Google Play Store](https://play.google.com/store/apps/details?id=com.familyservicestoronto.shortcut). You may search up “Shortcut” on the Google Play Store and click “Install” to run it on your mobile device. Once the device is installed, tapping the Shortcut icon on your device will run the application.
  
 If a developer were to review our source code or make changes/edit they could do so through Android Studio which is the application that we used for development. They could see the source code (available in our private Github repository) and edit the Java class and xml files through Android Studio. They can go to the AVD manager to pick the virtual device that you would like to work with; different devices may have different resolution and OS. Android Studio also allows them to run the current version of the application on an emulator or on their personal device so they can easily monitor the effects of their changes.
  
