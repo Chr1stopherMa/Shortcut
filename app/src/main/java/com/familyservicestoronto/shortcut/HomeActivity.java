@@ -1,37 +1,137 @@
 package com.familyservicestoronto.shortcut;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import com.familyservicestoronto.shortcut.SwitchApp.ExternalApp;
+
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+/**
+ * Defines the activity of the Home Page.
+ *
+ * The page follows a grid-like structure with 2 columns and 3 rows.
+ * Each cell consists of an image and the name of the corresponding app.
+ **/
 
 public class HomeActivity extends AppCompatActivity {
+
+    private final ArrayList<ExternalApp> appNames = new ArrayList<>(
+            Arrays.asList(ExternalApp.FACEBOOK, ExternalApp.ZOOM,
+                    ExternalApp.YOUTUBE, ExternalApp.WHATSAPP,
+                    ExternalApp.FACEBOOK, ExternalApp.ZOOM)
+    );
+
+    private LinearLayout mainLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        ImageView youtube = findViewById(R.id.YoutubeIcon);
-        youtube.setOnClickListener(HomeActivity.this::loadYoutubeTutorialActivity);
+        ConstraintLayout constraintLayout = findViewById(R.id.homeConstraint);
+        mainLayout = new LinearLayout(getApplicationContext());
+        mainLayout.setOrientation(LinearLayout.VERTICAL);
+        mainLayout.setWeightSum(9.0f);
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT
+        );
+        mainLayout.setLayoutParams(params);
+        addAppsToLayout();
+        constraintLayout.addView(mainLayout);
+    }
 
-        ImageView whatsapp = findViewById(R.id.WhatsappIcon);
-        whatsapp.setOnClickListener(HomeActivity.this::loadWhatsappTutorialActivity);
+    private void addAppsToLayout() {
+        for (int i=0; i < appNames.size(); i += 2) {
+            addAppRow(i);
+        }
+    }
 
-        ImageView goToGoogle = findViewById(R.id.GoogleIcon);
-        goToGoogle.setOnClickListener(HomeActivity.this::loadGoogleSearchActivity);
+    private void addAppRow(int index) {
+        LinearLayout rowLayout = new LinearLayout(this);
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT, 0, 1.0f
+        );
+        rowLayout.setWeightSum(2.0f);
+        LinearLayout imageRow = new LinearLayout(this);
+        imageRow.setWeightSum(2.0f);
+        imageRow.setOrientation(LinearLayout.HORIZONTAL);
+        rowLayout.setOrientation(LinearLayout.HORIZONTAL);
+        for (int i=index; i < index+2; i++) {
+            TextView appLabel = createAppLabel(appNames.get(i));
+            rowLayout.addView(appLabel);
 
-        ImageView goToZoom = findViewById(R.id.ZoomIcon);
-        goToZoom.setOnClickListener(HomeActivity.this::loadZoomTutorialActivity);
+            ImageView appIcon = createAppIcon(appNames.get(i));
+            imageRow.addView(appIcon);
 
-        ImageView goToFacebook = findViewById(R.id.FacebookIcon);
-        goToFacebook.setOnClickListener(HomeActivity.this::loadFacebookTutorialActivity);
+        }
+        LinearLayout.LayoutParams imageParam = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT, 0, 2.0f
+        );
+        rowLayout.setLayoutParams(params);
+        imageRow.setLayoutParams(imageParam);
+        mainLayout.addView(imageRow);
+        mainLayout.addView(rowLayout);
 
-        ImageView goToGmail = findViewById(R.id.GmailIcon);
-        goToGmail.setOnClickListener(HomeActivity.this::loadGmailTutorialActivity);
+    }
+
+    /**
+     * Creates a TextView widget corresponding to the app label displayed
+     * under the icon.
+     * @param app The app's name
+     * @return A TextView containing the app's name
+     */
+    private TextView createAppLabel(ExternalApp app) {
+        TextView textView = new TextView(this);
+
+        LinearLayout.LayoutParams textParam = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT, // fill available width
+                LinearLayout.LayoutParams.MATCH_PARENT, // fill available height
+                1.0f                            // fill only one column
+        );
+        textView.setLayoutParams(textParam);
+
+        // center text horizontally
+        textView.setGravity(Gravity.CENTER_HORIZONTAL);
+
+        // set text
+        textView.setText(app.toString());
+        return textView;
+    }
+
+
+    /**
+     * Creates a ImageView widget displaying the App's icon
+     * under the icon.
+     * @param app The app's name
+     * @return An ImageView containing the App's icon
+     */
+    private ImageView createAppIcon(ExternalApp app) {
+        ImageView imageView = new ImageView(this);
+
+        LinearLayout.LayoutParams imageParam = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT, // fill available width
+                LinearLayout.LayoutParams.MATCH_PARENT, // fill available height
+                1.0f                            // fill only one column
+        );
+        imageView.setLayoutParams(imageParam);
+
+        // set app icon
+        imageView.setImageResource(R.drawable.facebook_icon);
+        // add listener to redirect to tutorial page
+        imageView.setOnClickListener(HomeActivity.this::loadFacebookTutorialActivity);
+
+        return imageView;
     }
 
     public void loadYoutubeTutorialActivity(View view) {
