@@ -22,5 +22,17 @@
                     "package": "us.zoom.videomeetings",
                     "icon":  "zoom_icon",
                     "tutorialActivity": "com.familyservicestoronto.shortcut.ZoomTutorialActivity"
+                },
+  "GMAIL"    :  {
+                    "name": "Gmail",
+                    "package": "com.google.android.gm",
+                    "icon":  "gmail_icon",
+                    "tutorialActivity": "com.familyservicestoronto.shortcut.GmailTutorialActivity"
+                },
+  "GOOGLE"   :  {
+                    "name": "Google",
+                    "package": "com.google.android.gm",
+                    "icon":  "google_icon",
+                    "tutorialActivity": "com.familyservicestoronto.shortcut.GoogleSearchActivity"
                 }
 }

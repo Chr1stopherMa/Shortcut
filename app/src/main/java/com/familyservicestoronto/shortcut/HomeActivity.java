@@ -6,7 +6,6 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -30,7 +29,7 @@ public class HomeActivity extends AppCompatActivity {
     private final ArrayList<ExternalApp> appNames = new ArrayList<>(
             Arrays.asList(ExternalApp.FACEBOOK, ExternalApp.ZOOM,
                     ExternalApp.YOUTUBE, ExternalApp.WHATSAPP,
-                    ExternalApp.FACEBOOK, ExternalApp.ZOOM)
+                    ExternalApp.GMAIL, ExternalApp.GOOGLE)
     );
 
     private LinearLayout mainLayout;

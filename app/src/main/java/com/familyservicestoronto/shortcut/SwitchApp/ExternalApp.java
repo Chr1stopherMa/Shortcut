@@ -8,5 +8,7 @@ public enum ExternalApp {
     FACEBOOK,
     WHATSAPP,
     YOUTUBE,
-    ZOOM
+    ZOOM,
+    GMAIL,
+    GOOGLE
 }
