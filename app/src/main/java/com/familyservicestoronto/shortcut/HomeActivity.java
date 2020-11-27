@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.familyservicestoronto.shortcut.AppInfo.AppInfo;
 import com.familyservicestoronto.shortcut.SwitchApp.ExternalApp;
 
 
@@ -68,10 +69,11 @@ public class HomeActivity extends AppCompatActivity {
         imageRow.setOrientation(LinearLayout.HORIZONTAL);
         rowLayout.setOrientation(LinearLayout.HORIZONTAL);
         for (int i=index; i < index+2; i++) {
-            TextView appLabel = createAppLabel(appNames.get(i));
+            AppInfo appInfo = new AppInfo(this, appNames.get(i));
+            TextView appLabel = createAppLabel(appInfo.appName);
             rowLayout.addView(appLabel);
 
-            ImageView appIcon = createAppIcon(appNames.get(i));
+            ImageView appIcon = createAppIcon(appInfo.getDrawableID());
             imageRow.addView(appIcon);
 
         }
@@ -88,10 +90,10 @@ public class HomeActivity extends AppCompatActivity {
     /**
      * Creates a TextView widget corresponding to the app label displayed
      * under the icon.
-     * @param app The app's name
+     * @param appName The app's name
      * @return A TextView containing the app's name
      */
-    private TextView createAppLabel(ExternalApp app) {
+    private TextView createAppLabel(String appName) {
         TextView textView = new TextView(this);
 
         LinearLayout.LayoutParams textParam = new LinearLayout.LayoutParams(
@@ -105,18 +107,18 @@ public class HomeActivity extends AppCompatActivity {
         textView.setGravity(Gravity.CENTER_HORIZONTAL);
 
         // set text
-        textView.setText(app.toString());
+        textView.setText(appName);
         return textView;
     }
 
 
     /**
      * Creates a ImageView widget displaying the App's icon
-     * under the icon.
-     * @param app The app's name
+     * under the icon
+     * @param drawableID The app's drawable resource identifier
      * @return An ImageView containing the App's icon
      */
-    private ImageView createAppIcon(ExternalApp app) {
+    private ImageView createAppIcon(int drawableID) {
         ImageView imageView = new ImageView(this);
 
         LinearLayout.LayoutParams imageParam = new LinearLayout.LayoutParams(
@@ -127,7 +129,7 @@ public class HomeActivity extends AppCompatActivity {
         imageView.setLayoutParams(imageParam);
 
         // set app icon
-        imageView.setImageResource(R.drawable.facebook_icon);
+        imageView.setImageResource(drawableID);
         // add listener to redirect to tutorial page
         imageView.setOnClickListener(HomeActivity.this::loadFacebookTutorialActivity);
 
