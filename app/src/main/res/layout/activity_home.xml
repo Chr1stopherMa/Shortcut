@@ -2,95 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homeConstraint"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
     tools:context=".HomeActivity">
 
-    <TableLayout
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:stretchColumns="1"
-        android:weightSum="3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="0dip"
-            android:layout_weight="1"
-            android:weightSum="2">
-
-            <ImageView
-                android:id="@+id/imageView25"
-                android:layout_width="0dip"
-                android:layout_height="match_parent"
-                android:layout_column="0"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/facebook_icon" />
-
-            <ImageView
-                android:id="@+id/imageView26"
-                android:layout_width="0dip"
-                android:layout_height="100dp"
-                android:layout_column="1"
-                android:layout_weight="1"
-                android:padding="10dp"
-                app:srcCompat="@drawable/youtube_icon" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:weightSum="2">
-
-            <ImageView
-                android:id="@+id/imageView29"
-                android:layout_width="0dip"
-                android:layout_height="match_parent"
-                android:layout_column="0"
-                android:layout_weight="1"
-                android:padding="10dp"
-                app:srcCompat="@drawable/google_icon" />
-
-            <ImageView
-                android:id="@+id/imageView30"
-                android:layout_width="0dip"
-                android:layout_height="100dp"
-                android:layout_column="1"
-                android:layout_weight="1"
-                android:padding="10dp"
-                app:srcCompat="@drawable/zoom_icon" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="0dip"
-            android:layout_weight="1"
-            android:weightSum="2">
-
-            <ImageView
-                android:id="@+id/imageView31"
-                android:layout_width="0dip"
-                android:layout_height="match_parent"
-                android:layout_column="0"
-                android:layout_weight="1"
-                android:padding="10dp"
-                app:srcCompat="@drawable/gmail_icon" />
-
-            <ImageView
-                android:id="@+id/imageView32"
-                android:layout_width="0dip"
-                android:layout_height="100dp"
-                android:layout_column="1"
-                android:layout_weight="1"
-                android:padding="10dp"
-                app:srcCompat="@drawable/whatsapp_icon" />
-        </TableRow>
-
-    </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

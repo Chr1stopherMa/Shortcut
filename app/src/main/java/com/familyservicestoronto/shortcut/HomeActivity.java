@@ -73,7 +73,7 @@ public class HomeActivity extends AppCompatActivity {
             TextView appLabel = createAppLabel(appInfo.appName);
             rowLayout.addView(appLabel);
 
-            ImageView appIcon = createAppIcon(appInfo.getDrawableID());
+            ImageView appIcon = createAppIcon(appInfo.getDrawableID(), appInfo.tutorialActivity);
             imageRow.addView(appIcon);
 
         }
@@ -116,9 +116,11 @@ public class HomeActivity extends AppCompatActivity {
      * Creates a ImageView widget displaying the App's icon
      * under the icon
      * @param drawableID The app's drawable resource identifier
+     * @param tutorialActivity The activity to load when the icon
+     *                         is pressed
      * @return An ImageView containing the App's icon
      */
-    private ImageView createAppIcon(int drawableID) {
+    private ImageView createAppIcon(int drawableID, Class<?> tutorialActivity) {
         ImageView imageView = new ImageView(this);
 
         LinearLayout.LayoutParams imageParam = new LinearLayout.LayoutParams(
@@ -131,38 +133,11 @@ public class HomeActivity extends AppCompatActivity {
         // set app icon
         imageView.setImageResource(drawableID);
         // add listener to redirect to tutorial page
-        imageView.setOnClickListener(HomeActivity.this::loadFacebookTutorialActivity);
+        imageView.setOnClickListener(v -> {
+            Intent intent = new Intent(HomeActivity.this, tutorialActivity);
+            startActivity(intent);
+        });
 
         return imageView;
-    }
-
-    public void loadYoutubeTutorialActivity(View view) {
-        Intent intent = new Intent(HomeActivity.this, YoutubeTutorialActivity.class);
-        startActivity(intent);
-    }
-
-    public void loadWhatsappTutorialActivity(View view) {
-        Intent intent = new Intent(HomeActivity.this, WhatsappTutActivity.class);
-        startActivity(intent);
-    }
-
-    public void loadGoogleSearchActivity(View view) {
-        Intent intent = new Intent(HomeActivity.this, GoogleSearchActivity.class);
-        startActivity(intent);
-    }
-
-    public void loadZoomTutorialActivity(View view) {
-        Intent intent = new Intent(HomeActivity.this, ZoomTutorialActivity.class);
-        startActivity(intent);
-    }
-
-    public void loadFacebookTutorialActivity(View view) {
-        Intent intent = new Intent(HomeActivity.this, FacebookTutorialActivity.class);
-        startActivity(intent);
-    }
-
-    public void loadGmailTutorialActivity(View view) {
-        Intent intent = new Intent(HomeActivity.this, GmailTutorialActivity.class);
-        startActivity(intent);
     }
 }

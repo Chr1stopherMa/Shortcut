@@ -21,6 +21,7 @@ public class AppInfo {
     public String appName;
     public String appPackage;
     public String appIconPath;
+    public Class<?> tutorialActivity;
 
     // name of the JSON file containing app information
     private final static String appJSON = "apps.json";
@@ -36,8 +37,9 @@ public class AppInfo {
             appName = appData.getString("name");
             appPackage = appData.getString("package");
             appIconPath = appData.getString("icon");
+            tutorialActivity = Class.forName(appData.getString("tutorialActivity"));
 
-        } catch (AppNotFoundException | JSONException e) {
+        } catch (AppNotFoundException | JSONException | ClassNotFoundException e) {
             e.printStackTrace();
         }
     }

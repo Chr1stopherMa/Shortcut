@@ -2,21 +2,25 @@
   "FACEBOOK" :  {
                     "name": "Facebook",
                     "package": "com.facebook.katana",
-                    "icon":  "facebook_icon"
+                    "icon":  "facebook_icon",
+                    "tutorialActivity": "com.familyservicestoronto.shortcut.FacebookTutorialActivity"
                 },
   "WHATSAPP" :  {
                     "name": "WhatsApp",
                     "package": "com.whatsapp",
-                    "icon":  "whatsapp_icon"
+                    "icon":  "whatsapp_icon",
+                    "tutorialActivity": "com.familyservicestoronto.shortcut.WhatsappTutActivity"
                 },
   "YOUTUBE"  :  {
                     "name": "Youtube",
                     "package": "com.google.android.youtube",
-                    "icon":  "youtube_icon"
+                    "icon":  "youtube_icon",
+                    "tutorialActivity": "com.familyservicestoronto.shortcut.YoutubeTutorialActivity"
                 },
   "ZOOM"     :  {
                     "name": "Zoom",
                     "package": "us.zoom.videomeetings",
-                    "icon":  "zoom_icon"
+                    "icon":  "zoom_icon",
+                    "tutorialActivity": "com.familyservicestoronto.shortcut.ZoomTutorialActivity"
                 }
 }
