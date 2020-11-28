@@ -10,43 +10,37 @@
         android:id="@+id/ComposeEmailButton"
         android:layout_width="241dp"
         android:layout_height="68dp"
-        android:layout_marginTop="8dp"
         android:onClick="onClickGoToComposeEmailTut"
         android:text="@string/compose_email"
-        app:layout_constraintBottom_toTopOf="@+id/GoToGmailButton"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/OpenEmailButton" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.620" />
 
     <Button
         android:id="@+id/OpenEmailButton"
         android:layout_width="241dp"
         android:layout_height="68dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
         android:onClick="onClickGoToOpenEmailTut"
         android:text="@string/open_email"
-        app:layout_constraintBottom_toTopOf="@+id/ComposeEmailButton"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/AddAccountButton" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.480" />
 
     <Button
         android:id="@+id/AddAccountButton"
         android:layout_width="241dp"
         android:layout_height="68dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
         android:onClick="onClickGoToAddAccountTut"
         android:text="@string/add_account"
-        app:layout_constraintBottom_toTopOf="@+id/OpenEmailButton"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/GmailTutorialText"
-        app:layout_constraintVertical_bias="0.865" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.340" />
 
     <TextView
         android:id="@+id/GmailTutorialText"
