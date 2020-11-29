@@ -5,6 +5,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.ContextThemeWrapper;
 import android.view.Gravity;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -39,7 +40,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        ConstraintLayout constraintLayout = findViewById(R.id.homeConstraint);
+        ConstraintLayout constraintLayout = findViewById(R.id.innerConstraint);
         mainLayout = new LinearLayout(getApplicationContext());
         mainLayout.setOrientation(LinearLayout.VERTICAL);
         mainLayout.setWeightSum(9.0f);
@@ -93,7 +94,7 @@ public class HomeActivity extends AppCompatActivity {
      * @return A TextView containing the app's name
      */
     private TextView createAppLabel(String appName) {
-        TextView textView = new TextView(this);
+        TextView textView = new TextView(new ContextThemeWrapper(this, R.style.appLabel));
 
         LinearLayout.LayoutParams textParam = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT, // fill available width
@@ -102,8 +103,8 @@ public class HomeActivity extends AppCompatActivity {
         );
         textView.setLayoutParams(textParam);
 
-        // center text horizontally
-        textView.setGravity(Gravity.CENTER_HORIZONTAL);
+        // center text horizontally and vertically
+        textView.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.CENTER_VERTICAL);
 
         // set text
         textView.setText(appName);
