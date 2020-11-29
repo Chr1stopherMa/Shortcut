@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.ContextThemeWrapper;
 import android.view.Gravity;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -132,10 +133,14 @@ public class HomeActivity extends AppCompatActivity {
 
         // set app icon
         imageView.setImageResource(drawableID);
+
         // add listener to redirect to tutorial page
         imageView.setOnClickListener(v -> {
             Intent intent = new Intent(HomeActivity.this, tutorialActivity);
             startActivity(intent);
+
+            // "pressed" animation
+            imageView.startAnimation(AnimationUtils.loadAnimation(this, R.anim.app_press));
         });
 
         return imageView;

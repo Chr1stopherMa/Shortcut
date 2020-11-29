@@ -16,6 +16,6 @@
 
     <style name="appLabel">
         <item name="android:typeface">sans</item>
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">26sp</item>
     </style>
 </resources>
