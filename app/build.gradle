@@ -39,6 +39,8 @@ android {
         abortOnError false
     }
 
+    compileOptions.encoding "ISO-8859-1" // For Spanish
+
     signingConfigs {
         release {
             keyAlias 'CSC301'

@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:text="Sign Into Youtube"
+        android:text="@string/youtube_tutorial_2"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="#000D53"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,7 +36,7 @@
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="1. Click on the Profile button near the top"
+                android:text="@string/youtube_tut2_a"
                 android:textColor="#050D37"
                 android:textSize="20sp" />
 
@@ -50,7 +50,7 @@
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text='2. Click on "Add Account"'
+                android:text="@string/youtube_tut2_b"
                 android:textColor="#050D37"
                 android:textSize="20sp" />
 
@@ -65,7 +65,7 @@
                 android:id="@+id/textView7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text='3. Click on the "Sign In" button'
+                android:text="@string/youtube_tut2_c"
                 android:textColor="#050D37"
                 android:textSize="20sp" />
 
@@ -81,7 +81,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="4. Sign into your Youtube account"
+                android:text="@string/youtube_tut2_d"
                 android:textColor="#050D37"
                 android:textSize="20sp" />
 

@@ -36,7 +36,7 @@
         android:id="@+id/googleSearchBarText"
         android:layout_width="360dp"
         android:layout_height="54dp"
-        android:text='1. Tap on the search bar and type in your search.'
+        android:text="@string/google_tut1_a"
         android:textColor="#050D37"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -51,6 +51,7 @@
         android:layout_width="123dp"
         android:layout_height="52dp"
         android:text="@string/back"
+        android:textSize="@dimen/botButtons"
         android:onClick="onClickBack"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -62,8 +63,9 @@
     <Button
         android:id="@+id/goToGoogle"
         android:layout_width="169dp"
-        android:layout_height="52dp"
-        android:text="@string/go_to_google"
+        android:layout_height="65dp"
+        android:text="@string/google_go_to"
+        android:textSize="@dimen/botButtons"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.933"
