@@ -60,10 +60,6 @@ public class YoutubeTutorialActivity extends AppCompatActivity {
     }
 
     public void goToYoutube(View view) {
-        try {
-            ActivitySwitchUtil.openApp(this, ExternalApp.YOUTUBE);
-        } catch (AppNotFoundException e) {
-
-        }
+        ActivitySwitchUtil.openApp(this, ExternalApp.YOUTUBE);
     }
 }

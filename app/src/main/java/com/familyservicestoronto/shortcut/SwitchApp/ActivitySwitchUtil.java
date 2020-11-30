@@ -2,6 +2,7 @@ package com.familyservicestoronto.shortcut.SwitchApp;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 
 import com.familyservicestoronto.shortcut.AppInfo.AppInfo;
 
@@ -18,16 +19,25 @@ import java.io.UnsupportedEncodingException;
 
 public final class ActivitySwitchUtil {
 
+    private static final String vending = "com.android.vending";
+
     /**
      * Opens an external app.
      * @param context The current application context.
      * @param app The name of the app to open.
-     * @throws AppNotFoundException The package name cannot be found
-     *                              or the app is not installed.
      */
-    public static void openApp(Context context, ExternalApp app) throws AppNotFoundException {
+    public static void openApp(Context context, ExternalApp app) {
         String packageName = getPackageName(context, app);
-        switchActivity(context, packageName);
+        try {
+            switchActivity(context, packageName);
+        } catch (AppNotFoundException e) {
+            // app is not installed on the user's phone
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse(
+                    new AppInfo(context, app).uri));
+            intent.setPackage(vending);
+            context.startActivity(intent);
+        }
     }
 
     /**

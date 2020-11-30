@@ -135,11 +135,7 @@ public class TutorialPageActivity extends AppCompatActivity {
         redirect.setText(text + title);
 
         redirect.setOnClickListener(v -> {
-            try {
-                ActivitySwitchUtil.openApp(this, ExternalApp.valueOf(title.toUpperCase()));
-            } catch (AppNotFoundException e) {
-                e.printStackTrace();
-            }
+            ActivitySwitchUtil.openApp(this, ExternalApp.valueOf(title.toUpperCase()));
         });
 
         buttonLayout.addView(redirect);

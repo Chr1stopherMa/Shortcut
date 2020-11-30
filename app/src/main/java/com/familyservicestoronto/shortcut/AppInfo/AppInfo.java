@@ -23,6 +23,7 @@ public class AppInfo {
     public String appName;
     public String appPackage;
     public String appIconPath;
+    public String uri;
     public Class<?> tutorialActivity;
     public JSONArray tutorials;
 
@@ -40,6 +41,7 @@ public class AppInfo {
             appName = appData.getString("name");
             appPackage = appData.getString("package");
             appIconPath = appData.getString("icon");
+            uri = appData.getString("uri");
             tutorialActivity = Class.forName(appData.getString("tutorialActivity"));
 
             tutorials = appData.getJSONArray("tutorials");

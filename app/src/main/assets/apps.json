@@ -4,6 +4,7 @@
                     "package": "com.facebook.katana",
                     "icon":  "facebook_icon",
                     "tutorialActivity": "com.familyservicestoronto.shortcut.FacebookTutorialActivity",
+                    "uri": "https://play.google.com/store/apps/details?id=com.facebook.katana",
                     "tutorials": [{
                       "title": "youtube_sign_in_title",
                       "instructions": ["youtube_sign_in_1", "youtube_sign_in_2", "youtube_sign_in_3"],
@@ -15,6 +16,7 @@
                     "package": "com.whatsapp",
                     "icon":  "whatsapp_icon",
                     "tutorialActivity": "com.familyservicestoronto.shortcut.WhatsappTutActivity",
+                    "uri": "https://play.google.com/store/apps/details?id=com.whatsapp",
                     "tutorials": [{
                       "title": "youtube_sign_in_title",
                       "instructions": ["youtube_sign_in_1", "youtube_sign_in_2", "youtube_sign_in_3"],
@@ -26,6 +28,7 @@
                     "package": "com.google.android.youtube",
                     "icon":  "youtube_icon",
                     "tutorialActivity": "com.familyservicestoronto.shortcut.YoutubeTutorialActivity",
+                    "uri": "https://play.google.com/store/apps/details?id=com.google.android.youtube",
                     "tutorials": [{
                       "title": "youtube_sign_in_title",
                       "instructions": ["youtube_sign_in_1", "youtube_sign_in_2", "youtube_sign_in_3"],
@@ -37,6 +40,7 @@
                     "package": "us.zoom.videomeetings",
                     "icon":  "zoom_icon",
                     "tutorialActivity": "com.familyservicestoronto.shortcut.ZoomTutorialActivity",
+                    "uri": "https://play.google.com/store/apps/details?id=us.zoom.videomeetings",
                     "tutorials": [{
                       "title": "youtube_sign_in_title",
                       "instructions": ["youtube_sign_in_1", "youtube_sign_in_2", "youtube_sign_in_3"],
@@ -48,6 +52,7 @@
                     "package": "com.google.android.gm",
                     "icon":  "gmail_icon",
                     "tutorialActivity": "com.familyservicestoronto.shortcut.GmailTutorialActivity",
+                    "uri": "https://play.google.com/store/apps/details?id=com.google.android.gm",
                     "tutorials": [{
                       "title": "youtube_sign_in_title",
                       "instructions": ["youtube_sign_in_1", "youtube_sign_in_2", "youtube_sign_in_3"],
@@ -56,9 +61,10 @@
                 },
   "GOOGLE"   :  {
                     "name": "Google",
-                    "package": "com.google.android.gm",
+                    "package": "com.android.chrome",
                     "icon":  "google_icon",
                     "tutorialActivity": "com.familyservicestoronto.shortcut.GoogleSearchActivity",
+                    "uri": "https://play.google.com/store/apps/details?id=com.android.chrome",
                     "tutorials": [{
                       "title": "youtube_sign_in_title",
                       "instructions": ["youtube_sign_in_1", "youtube_sign_in_2", "youtube_sign_in_3"],
