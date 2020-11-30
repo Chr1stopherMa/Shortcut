@@ -96,6 +96,28 @@ Switch Inbox
 
 Go To Gmail
 
+Go to 
+
+Youtube Tutorials
+
+Search for a Video
+
+1. Tap the "Search" icon near the top
+
+2. Type the video you want to search for
+
+3. Select one of the videos in the results
+
+4. Enjoy your video!
+
+Sign into Youtube
+
+1. Click on the Profile button near the top
+
+2. Click on "Add Account"
+
+3. Click on the "Sign In" button
+
 Whatsapp Tutorials
 
 Add New Contact/Group
@@ -127,30 +149,6 @@ Edit Profile
 4. Click the \"pen\" icon to modify your name or personal status
 
 Go To Whatsapp
-
-Youtube Tutorials
-
-Search for a Video
-
-1. Tap the "Search" icon near the top
-
-2. Type the video you want to search for
-
-3. Select one of the videos in the results
-
-4. Enjoy your video!
-
-Login to your account
-
-1. Click on the Profile button near the top
-
-2. Click on Add Account
-
-3. Click on the \"Sign In\" button
-
-4. Sign into your Youtube account
-
-Go To Youtube
 
 Zoom Tutorials
 

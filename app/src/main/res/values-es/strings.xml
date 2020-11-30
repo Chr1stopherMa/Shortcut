@@ -46,6 +46,21 @@
     <string name="switch_inbox">Cambiar bandeja de entrada</string>
     <string name="gmail_go_to">Ir a Gmail</string>
 
+    <string name="go_to">Ir a</string>
+    <string name="youtube_tutorials">Tutoriales de Youtube</string>
+
+    <string name="youtube_search_video_title">Buscar un video</string>
+    <string name="youtube_search_video_1">1. Toca el &#195;&#173;cono "Buscar" cerca de la parte superior.</string>
+    <string name="youtube_search_video_2">2. Escribe el video que deseas buscar.</string>
+    <string name="youtube_search_video_3">3. Seleccione uno de los videos en los resultados.</string>
+    <string name="youtube_search_video_4">4. &#194;&#161;Disfruta tu video!</string>
+
+    <string name="youtube_sign_in_title">Ingrese a su cuenta</string>
+    <string name="youtube_sign_in_1">1. Haga clic en el bot&#195;&#179;n Perfil cerca de la parte superior.</string>
+    <string name="youtube_sign_in_2">2. Haga clic en Agregar cuenta.</string>
+    <string name="youtube_sign_in_3">3. Haga clic en el bot&#195;&#179;n \"Iniciar sesi&#195;&#179;n\".</string>
+    
+
     <string name="whatsapp_tutorials">Tutoriales de Whatsapp</string>
     <string name="whatsapp_tutorial_1">Agregar nuevo contacto / grupo</string>
     <string name="whatsapp_tut1_a">1. Primero haga clic en este logotipo, puede ubicarse en la esquina inferior derecha de su aplicaci&#195;&#179;n</string>
@@ -62,19 +77,6 @@
     <string name="whatsapp_tut3_c">3. Haga clic aqu&#195;&#173; para cargar su foto de perfil o haga clic en el icono de la c&#195;&#161;mara para tomar una foto de perfil.</string>
     <string name="whatsapp_tut3_d">4. Haga clic en el icono \"bol&#195;&#173;grafo\" para modificar su nombre o estado personal</string>
     <string name="whatsapp_go_to">Ir a Whatsapp</string>
-
-    <string name="youtube_tutorials">Tutoriales de Youtube</string>
-    <string name="youtube_tutorial_1">Buscar un video</string>
-    <string name="youtube_tut1_a">1. Toca el &#195;&#173;cono "Buscar" cerca de la parte superior.</string>
-    <string name="youtube_tut1_b">2. Escribe el video que deseas buscar.</string>
-    <string name="youtube_tut1_c">3. Seleccione uno de los videos en los resultados.</string>
-    <string name="youtube_tut1_d">4. &#194;&#161;Disfruta tu video!</string>
-    <string name="youtube_tutorial_2">Ingrese a su cuenta</string>
-    <string name="youtube_tut2_a">1. Haga clic en el bot&#195;&#179;n Perfil cerca de la parte superior.</string>
-    <string name="youtube_tut2_b">2. Haga clic en Agregar cuenta.</string>
-    <string name="youtube_tut2_c">3. Haga clic en el bot&#195;&#179;n \"Iniciar sesi&#195;&#179;n\".</string>
-    <string name="youtube_tut2_d">4. Inicie sesi&#195;&#179;n en su cuenta de Youtube.</string>
-    <string name="youtube_go_to">Ir a Youtube</string>
 
     <string name="zoom_tutorials">Tutoriales de Zoom</string>
     <string name="zoom_tutorial_1">Registrarse</string>
