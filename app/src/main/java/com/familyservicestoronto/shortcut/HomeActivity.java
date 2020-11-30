@@ -74,7 +74,7 @@ public class HomeActivity extends AppCompatActivity {
             TextView appLabel = createAppLabel(appInfo.appName);
             rowLayout.addView(appLabel);
 
-            ImageView appIcon = createAppIcon(appInfo.getDrawableID(), appInfo.tutorialActivity);
+            ImageView appIcon = createAppIcon(appInfo);
             imageRow.addView(appIcon);
 
         }
@@ -116,12 +116,10 @@ public class HomeActivity extends AppCompatActivity {
     /**
      * Creates a ImageView widget displaying the App's icon
      * under the icon
-     * @param drawableID The app's drawable resource identifier
-     * @param tutorialActivity The activity to load when the icon
-     *                         is pressed
+     * @param appInfo An object containing information about the app
      * @return An ImageView containing the App's icon
      */
-    private ImageView createAppIcon(int drawableID, Class<?> tutorialActivity) {
+    private ImageView createAppIcon(AppInfo appInfo) {
         ImageView imageView = new ImageView(this);
 
         LinearLayout.LayoutParams imageParam = new LinearLayout.LayoutParams(
@@ -132,15 +130,24 @@ public class HomeActivity extends AppCompatActivity {
         imageView.setLayoutParams(imageParam);
 
         // set app icon
-        imageView.setImageResource(drawableID);
+        imageView.setImageResource(appInfo.getDrawableID());
 
         // add listener to redirect to tutorial page
         imageView.setOnClickListener(v -> {
-            Intent intent = new Intent(HomeActivity.this, tutorialActivity);
-            startActivity(intent);
-
             // "pressed" animation
             imageView.startAnimation(AnimationUtils.loadAnimation(this, R.anim.app_press));
+
+            Intent intent = new Intent(HomeActivity.this, TutorialPageActivity.class);
+            Bundle bundle = new Bundle();
+            bundle.putCharSequence("name", appInfo.appName);
+            bundle.putCharSequenceArrayList("tutorials", appInfo.getTutorialNames());
+
+            for (int i=0; i < appInfo.getTutorialNames().size(); i++) {
+                bundle.putCharSequenceArrayList("instructions" + i, appInfo.getTutorialInstructions(i));
+                bundle.putCharSequenceArrayList("images" + i, appInfo.getTutorialImages(i));
+            }
+            intent.putExtras(bundle);
+            startActivity(intent);
         });
 
         return imageView;

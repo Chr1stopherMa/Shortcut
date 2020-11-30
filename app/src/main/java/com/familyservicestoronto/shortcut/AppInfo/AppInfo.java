@@ -6,11 +6,13 @@ import android.content.Context;
 import com.familyservicestoronto.shortcut.SwitchApp.AppNotFoundException;
 import com.familyservicestoronto.shortcut.SwitchApp.ExternalApp;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 
 
 /**
@@ -22,6 +24,7 @@ public class AppInfo {
     public String appPackage;
     public String appIconPath;
     public Class<?> tutorialActivity;
+    public JSONArray tutorials;
 
     // name of the JSON file containing app information
     private final static String appJSON = "apps.json";
@@ -39,6 +42,8 @@ public class AppInfo {
             appIconPath = appData.getString("icon");
             tutorialActivity = Class.forName(appData.getString("tutorialActivity"));
 
+            tutorials = appData.getJSONArray("tutorials");
+
         } catch (AppNotFoundException | JSONException | ClassNotFoundException e) {
             e.printStackTrace();
         }
@@ -52,7 +57,7 @@ public class AppInfo {
      * @throws AppNotFoundException The app cannot be found in the JSON file.
      */
     private JSONObject getAppJSON(ExternalApp app) throws AppNotFoundException {
-        String jsonString = null;
+        String jsonString;
 
         try {
             InputStream stream = context.getAssets().open(appJSON);
@@ -81,5 +86,49 @@ public class AppInfo {
         return context.getResources().getIdentifier(appIconPath,
                 "drawable",
                 context.getPackageName());
+    }
+
+    public ArrayList<CharSequence> getTutorialNames() {
+        ArrayList<CharSequence> tutorialNames = new ArrayList<>();
+
+        for (int i=0; i < tutorials.length(); i++) {
+            try {
+                tutorialNames.add(i, tutorials.getJSONObject(i).getString("title"));
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+
+        return tutorialNames;
+    }
+
+    public ArrayList<CharSequence> getTutorialInstructions(int index) {
+        ArrayList<CharSequence> instruct = new ArrayList<>();
+
+        try {
+            JSONArray instructions = tutorials.getJSONObject(index).getJSONArray("instructions");
+            for (int i=0; i < instructions.length(); i++) {
+                instruct.add(i, instructions.getString(i));
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        return instruct;
+    }
+
+    public ArrayList<CharSequence> getTutorialImages(int index) {
+        ArrayList<CharSequence> images = new ArrayList<>();
+
+        try {
+            JSONArray instructions = tutorials.getJSONObject(index).getJSONArray("images");
+            for (int i=0; i < instructions.length(); i++) {
+                images.add(i, instructions.getString(i));
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        return images;
     }
 }

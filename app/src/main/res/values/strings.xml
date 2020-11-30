@@ -29,4 +29,11 @@
     <string name="compose_email">Compose Email</string>
     <string name="go_to_gmail">Go To Gmail</string>
     <string name="switch_inbox">Switch Inbox</string>
+
+    <string name="go_to">Go to </string>
+
+    <string name="youtube_sign_in_title">Sign into Youtube</string>
+    <string name="youtube_sign_in_1">1. Click on the Profile button near the top</string>
+    <string name="youtube_sign_in_2">2. Click on "Add Account"</string>
+    <string name="youtube_sign_in_3">3. Click on the "Sign In" button</string>
 </resources>
