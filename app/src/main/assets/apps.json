@@ -5,11 +5,19 @@
                     "icon":  "facebook_icon",
                     "tutorialActivity": "com.familyservicestoronto.shortcut.FacebookTutorialActivity",
                     "uri": "https://play.google.com/store/apps/details?id=com.facebook.katana",
-                    "tutorials": [{
-                      "title": "youtube_sign_in_title",
-                      "instructions": ["youtube_sign_in_1", "youtube_sign_in_2", "youtube_sign_in_3"],
-                      "images": ["youtube_signed_out", "youtube_add_account", "youtube_sign_in_email"]
-                    }]
+                    "tutorials": [
+                      {
+                        "title": "youtube_search_video_title",
+                        "instructions": ["youtube_search_video_1", "youtube_search_video_2", "youtube_search_video_3",
+                          "youtube_search_video_4"],
+                        "images": ["youtube_search_bar_btn", "youtube_search_bar_field", "youtube_search_result",
+                          "youtube_video"]
+                      },
+                      {
+                        "title": "youtube_sign_in_title",
+                        "instructions": ["youtube_sign_in_1", "youtube_sign_in_2", "youtube_sign_in_3"],
+                        "images": ["youtube_signed_out", "youtube_add_account", "youtube_sign_in_email"]
+                      }]
                 },
   "WHATSAPP" :  {
                     "name": "WhatsApp",
@@ -17,11 +25,19 @@
                     "icon":  "whatsapp_icon",
                     "tutorialActivity": "com.familyservicestoronto.shortcut.WhatsappTutActivity",
                     "uri": "https://play.google.com/store/apps/details?id=com.whatsapp",
-                    "tutorials": [{
-                      "title": "youtube_sign_in_title",
-                      "instructions": ["youtube_sign_in_1", "youtube_sign_in_2", "youtube_sign_in_3"],
-                      "images": ["youtube_signed_out", "youtube_add_account", "youtube_sign_in_email"]
-                    }]
+                    "tutorials": [
+                      {
+                        "title": "youtube_search_video_title",
+                        "instructions": ["youtube_search_video_1", "youtube_search_video_2", "youtube_search_video_3",
+                          "youtube_search_video_4"],
+                        "images": ["youtube_search_bar_btn", "youtube_search_bar_field", "youtube_search_result",
+                          "youtube_video"]
+                      },
+                      {
+                        "title": "youtube_sign_in_title",
+                        "instructions": ["youtube_sign_in_1", "youtube_sign_in_2", "youtube_sign_in_3"],
+                        "images": ["youtube_signed_out", "youtube_add_account", "youtube_sign_in_email"]
+                      }]
                 },
   "YOUTUBE"  :  {
                     "name": "Youtube",
@@ -29,11 +45,19 @@
                     "icon":  "youtube_icon",
                     "tutorialActivity": "com.familyservicestoronto.shortcut.YoutubeTutorialActivity",
                     "uri": "https://play.google.com/store/apps/details?id=com.google.android.youtube",
-                    "tutorials": [{
-                      "title": "youtube_sign_in_title",
-                      "instructions": ["youtube_sign_in_1", "youtube_sign_in_2", "youtube_sign_in_3"],
-                      "images": ["youtube_signed_out", "youtube_add_account", "youtube_sign_in_email"]
-                    }]
+                    "tutorials": [
+                      {
+                        "title": "youtube_search_video_title",
+                        "instructions": ["youtube_search_video_1", "youtube_search_video_2", "youtube_search_video_3",
+                                         "youtube_search_video_4"],
+                        "images": ["youtube_search_bar_btn", "youtube_search_bar_field", "youtube_search_result",
+                                   "youtube_video"]
+                      },
+                      {
+                        "title": "youtube_sign_in_title",
+                        "instructions": ["youtube_sign_in_1", "youtube_sign_in_2", "youtube_sign_in_3"],
+                        "images": ["youtube_signed_out", "youtube_add_account", "youtube_sign_in_email"]
+                      }]
                 },
   "ZOOM"     :  {
                     "name": "Zoom",
@@ -41,11 +65,19 @@
                     "icon":  "zoom_icon",
                     "tutorialActivity": "com.familyservicestoronto.shortcut.ZoomTutorialActivity",
                     "uri": "https://play.google.com/store/apps/details?id=us.zoom.videomeetings",
-                    "tutorials": [{
-                      "title": "youtube_sign_in_title",
-                      "instructions": ["youtube_sign_in_1", "youtube_sign_in_2", "youtube_sign_in_3"],
-                      "images": ["youtube_signed_out", "youtube_add_account", "youtube_sign_in_email"]
-                    }]
+                    "tutorials": [
+                      {
+                        "title": "youtube_search_video_title",
+                        "instructions": ["youtube_search_video_1", "youtube_search_video_2", "youtube_search_video_3",
+                          "youtube_search_video_4"],
+                        "images": ["youtube_search_bar_btn", "youtube_search_bar_field", "youtube_search_result",
+                          "youtube_video"]
+                      },
+                      {
+                        "title": "youtube_sign_in_title",
+                        "instructions": ["youtube_sign_in_1", "youtube_sign_in_2", "youtube_sign_in_3"],
+                        "images": ["youtube_signed_out", "youtube_add_account", "youtube_sign_in_email"]
+                      }]
                 },
   "GMAIL"    :  {
                     "name": "Gmail",
@@ -53,11 +85,19 @@
                     "icon":  "gmail_icon",
                     "tutorialActivity": "com.familyservicestoronto.shortcut.GmailTutorialActivity",
                     "uri": "https://play.google.com/store/apps/details?id=com.google.android.gm",
-                    "tutorials": [{
-                      "title": "youtube_sign_in_title",
-                      "instructions": ["youtube_sign_in_1", "youtube_sign_in_2", "youtube_sign_in_3"],
-                      "images": ["youtube_signed_out", "youtube_add_account", "youtube_sign_in_email"]
-                    }]
+                    "tutorials": [
+                      {
+                        "title": "youtube_search_video_title",
+                        "instructions": ["youtube_search_video_1", "youtube_search_video_2", "youtube_search_video_3",
+                          "youtube_search_video_4"],
+                        "images": ["youtube_search_bar_btn", "youtube_search_bar_field", "youtube_search_result",
+                          "youtube_video"]
+                      },
+                      {
+                        "title": "youtube_sign_in_title",
+                        "instructions": ["youtube_sign_in_1", "youtube_sign_in_2", "youtube_sign_in_3"],
+                        "images": ["youtube_signed_out", "youtube_add_account", "youtube_sign_in_email"]
+                      }]
                 },
   "GOOGLE"   :  {
                     "name": "Google",
@@ -65,10 +105,18 @@
                     "icon":  "google_icon",
                     "tutorialActivity": "com.familyservicestoronto.shortcut.GoogleSearchActivity",
                     "uri": "https://play.google.com/store/apps/details?id=com.android.chrome",
-                    "tutorials": [{
-                      "title": "youtube_sign_in_title",
-                      "instructions": ["youtube_sign_in_1", "youtube_sign_in_2", "youtube_sign_in_3"],
-                      "images": ["youtube_signed_out", "youtube_add_account", "youtube_sign_in_email"]
-                    }]
+                    "tutorials": [
+                      {
+                        "title": "youtube_search_video_title",
+                        "instructions": ["youtube_search_video_1", "youtube_search_video_2", "youtube_search_video_3",
+                          "youtube_search_video_4"],
+                        "images": ["youtube_search_bar_btn", "youtube_search_bar_field", "youtube_search_result",
+                          "youtube_video"]
+                      },
+                      {
+                        "title": "youtube_sign_in_title",
+                        "instructions": ["youtube_sign_in_1", "youtube_sign_in_2", "youtube_sign_in_3"],
+                        "images": ["youtube_signed_out", "youtube_add_account", "youtube_sign_in_email"]
+                      }]
                 }
 }

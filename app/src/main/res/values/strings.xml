@@ -32,6 +32,12 @@
 
     <string name="go_to">Go to </string>
 
+    <string name="youtube_search_video_title">Search for a Video</string>
+    <string name="youtube_search_video_1">1. Tap the "Search" icon near the top</string>
+    <string name="youtube_search_video_2">2. Type the video you want to search for</string>
+    <string name="youtube_search_video_3">3. Select one of the videos in the results</string>
+    <string name="youtube_search_video_4">4. Enjoy your video!</string>
+
     <string name="youtube_sign_in_title">Sign into Youtube</string>
     <string name="youtube_sign_in_1">1. Click on the Profile button near the top</string>
     <string name="youtube_sign_in_2">2. Click on "Add Account"</string>

@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.ContextThemeWrapper;
 import android.view.Gravity;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -131,16 +132,20 @@ public class TutorialActivity extends AppCompatActivity {
 
     private void addBackButton() {
         Button backButton = new Button(this);
+        backButton.setTextAppearance(this, R.style.AppBtn);
+        backButton.setBackgroundResource(R.drawable.button);
 
         // set layout parameters
         LinearLayout.LayoutParams buttonParams = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT, 0, 1.0f
         );
+        buttonParams.setMargins(10, 10, 10, 10);
         backButton.setLayoutParams(buttonParams);
 
         backButton.setText(R.string.back);
 
         backButton.setOnClickListener(v -> {
+            backButton.startAnimation(AnimationUtils.loadAnimation(this, R.anim.button_press));
             finish();
         });
 

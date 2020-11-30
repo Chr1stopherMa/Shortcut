@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.ContextThemeWrapper;
 import android.view.Gravity;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -14,7 +15,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.familyservicestoronto.shortcut.SwitchApp.ActivitySwitchUtil;
-import com.familyservicestoronto.shortcut.SwitchApp.AppNotFoundException;
 import com.familyservicestoronto.shortcut.SwitchApp.ExternalApp;
 
 import java.util.ArrayList;
@@ -29,6 +29,9 @@ public class TutorialPageActivity extends AppCompatActivity {
 
     private LinearLayout mainLayout;
     private Bundle bundle;
+
+    private int btnStyle;
+    private int btnBackground;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +48,9 @@ public class TutorialPageActivity extends AppCompatActivity {
         );
         mainLayout.setLayoutParams(params);
 
+        btnStyle = R.style.AppBtn;
+        btnBackground = R.drawable.button;
+
         bundle = getIntent().getExtras();
         String title = addTitle();
         addButtons(title);
@@ -56,7 +62,6 @@ public class TutorialPageActivity extends AppCompatActivity {
         TextView title = new TextView(new ContextThemeWrapper(this, R.style.appLabel));
 
         String titleText = bundle.getCharSequence("name").toString();
-        // int titleID = getResources().getIdentifier(titleText, "string", this.getPackageName());
         title.setText(titleText);
 
         // center text horizontally and vertically
@@ -77,15 +82,22 @@ public class TutorialPageActivity extends AppCompatActivity {
 
         for (int i=0; i < buttonTexts.size(); i++) {
             Button button = new Button(this);
-            button.setText(buttonTexts.get(i));
+            button.setTextAppearance(this, btnStyle);
+            button.setBackgroundResource(btnBackground);
+
+            int textID = getResources().getIdentifier(buttonTexts.get(i).toString(),
+                    "string", this.getPackageName());
+            button.setText(textID);
 
             // set layout parameters
             LinearLayout.LayoutParams buttonParam = new LinearLayout.LayoutParams(
                     LinearLayout.LayoutParams.MATCH_PARENT, 0, 1.0f
             );
+            buttonParam.setMargins(5, 5, 5, 5);
 
             int finalI = i;
             button.setOnClickListener(v -> {
+                button.startAnimation(AnimationUtils.loadAnimation(this, R.anim.button_press));
                 ArrayList<CharSequence> instructions = bundle.getCharSequenceArrayList("instructions" + finalI);
                 ArrayList<CharSequence> images = bundle.getCharSequenceArrayList("images" + finalI);
 
@@ -117,24 +129,31 @@ public class TutorialPageActivity extends AppCompatActivity {
         LinearLayout.LayoutParams buttonParams = new LinearLayout.LayoutParams(
                 0, ViewGroup.LayoutParams.MATCH_PARENT, 1.0f
         );
+        buttonParams.setMargins(10, 40, 10, 3);
 
         // add back button
         Button backButton = new Button(this);
+        backButton.setTextAppearance(this, btnStyle);
+        backButton.setBackgroundResource(btnBackground);
         backButton.setLayoutParams(buttonParams);
         backButton.setText(R.string.back);
 
         backButton.setOnClickListener(v -> {
+            backButton.startAnimation(AnimationUtils.loadAnimation(this, R.anim.button_press));
             finish();
         });
         buttonLayout.addView(backButton);
 
         // add redirect button
         Button redirect = new Button(this);
+        redirect.setTextAppearance(this, btnStyle);
+        redirect.setBackgroundResource(btnBackground);
         redirect.setLayoutParams(buttonParams);
         String text = getResources().getString(R.string.go_to);
-        redirect.setText(text + title);
+        redirect.setText(text + " " + title);
 
         redirect.setOnClickListener(v -> {
+            redirect.startAnimation(AnimationUtils.loadAnimation(this, R.anim.button_press));
             ActivitySwitchUtil.openApp(this, ExternalApp.valueOf(title.toUpperCase()));
         });
 
