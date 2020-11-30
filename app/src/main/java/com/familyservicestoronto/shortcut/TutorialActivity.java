@@ -106,26 +106,27 @@ public class TutorialActivity extends AppCompatActivity {
 
     private void addInstruction(String instruct, String imagePath) {
         TextView instruction = new TextView(this);
-        ImageView image = new ImageView(this);
 
         // set layout parameters
         LinearLayout.LayoutParams instructParams = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT
         );
         instruction.setLayoutParams(instructParams);
-        image.setLayoutParams(instructParams);
 
         int textID = getResources().getIdentifier(instruct, "string", this.getPackageName());
         instruction.setText(textID);
 
         scrollLayout.addView(instruction);
 
-        int drawable = this.getResources().getIdentifier(imagePath,
-                "drawable", this.getPackageName());
+        if (!imagePath.equals("null")) {
+            ImageView image = new ImageView(this);
+            int drawable = this.getResources().getIdentifier(imagePath,
+                    "drawable", this.getPackageName());
+            image.setLayoutParams(instructParams);
+            image.setImageResource(drawable);
+            scrollLayout.addView(image);
+        }
 
-        image.setImageResource(drawable);
-
-        scrollLayout.addView(image);
     }
 
     private void addBackButton() {
