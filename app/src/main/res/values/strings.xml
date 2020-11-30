@@ -50,6 +50,20 @@
     <string name="gmail_tut3_b">If you don\'t see it press and drag down on your screen.</string>
     <string name="gmail_tut3_c">Tap the icons labelled by the red numbers to do the following:\n 1 Go back to the inbox.\n 2 Attach a file to the email.\n 3 Send the email.\n Tap the spaces labelled by red numbers to type in the following:\n 4 The receiver\'s email address.\n 5 The title of the email.\n 6 The body of the email.\n</string>
     <string name="switch_inbox">Switch Inbox</string>
+
+    <string name="go_to">Go to </string>
+
+    <string name="youtube_search_video_title">Search for a Video</string>
+    <string name="youtube_search_video_1">1. Tap the "Search" icon near the top</string>
+    <string name="youtube_search_video_2">2. Type the video you want to search for</string>
+    <string name="youtube_search_video_3">3. Select one of the videos in the results</string>
+    <string name="youtube_search_video_4">4. Enjoy your video!</string>
+
+    <string name="youtube_sign_in_title">Sign into Youtube</string>
+    <string name="youtube_sign_in_1">1. Click on the Profile button near the top</string>
+    <string name="youtube_sign_in_2">2. Click on "Add Account"</string>
+    <string name="youtube_sign_in_3">3. Click on the "Sign In" button</string>
+
     <string name="gmail_go_to">Go To Gmail</string>
 
     <string name="whatsapp_tutorials">Whatsapp Tutorials</string>
@@ -68,19 +82,6 @@
     <string name="whatsapp_tut3_c">3. Click this to upload your profile photo or click the camera icon to take a profile photo</string>
     <string name="whatsapp_tut3_d">4. Click the \"pen\" icon to modify your name or personal status</string>
     <string name="whatsapp_go_to">Go To Whatsapp</string>
-
-    <string name="youtube_tutorials">Youtube Tutorials</string>
-    <string name="youtube_tutorial_1">Search for a Video</string>
-    <string name="youtube_tut1_a">1. Tap the "Search" icon near the top</string>
-    <string name="youtube_tut1_b">2. Type the video you want to search for</string>
-    <string name="youtube_tut1_c">3. Select one of the videos in the results</string>
-    <string name="youtube_tut1_d">4. Enjoy your video!</string>
-    <string name="youtube_tutorial_2">Login to your account</string>
-    <string name="youtube_tut2_a">1. Click on the Profile button near the top</string>
-    <string name="youtube_tut2_b">2. Click on Add Account</string>
-    <string name="youtube_tut2_c">3. Click on the \"Sign In\" button</string>
-    <string name="youtube_tut2_d">4. Sign into your Youtube account</string>
-    <string name="youtube_go_to">Go To Youtube</string>
 
     <string name="zoom_tutorials">Zoom Tutorials</string>
     <string name="zoom_tutorial_1">Signing Up</string>

@@ -8,19 +8,17 @@
 
     <Button
         android:id="@+id/backHome"
-        android:layout_width="138dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="11dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="123dp"
+        android:layout_height="52dp"
         android:onClick="onClickBack"
         android:text="@string/back"
         android:textSize="@dimen/botButtons"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintHorizontal_bias="0.055"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/upload"
-        app:layout_constraintVertical_bias="0.783" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
 
     <Button
         android:id="@+id/goToWhatsapp"
@@ -32,10 +30,10 @@
         android:textSize="@dimen/botButtons"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintHorizontal_bias="0.933"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/upload"
-        app:layout_constraintVertical_bias="0.783" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
 
     <Button
         android:id="@+id/addProfile"
@@ -49,10 +47,9 @@
         android:textSize="@dimen/tutorialButtons"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addContact"
-        app:layout_constraintVertical_bias="0.892" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.620" />
 
     <Button
         android:id="@+id/upload"
@@ -68,7 +65,8 @@
         app:layout_constraintBottom_toTopOf="@+id/addProfile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/addContact" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.480" />
 
     <TextView
         android:id="@+id/WhatsappTutorialText"
@@ -94,8 +92,8 @@
         android:text="@string/whatsapp_tutorial_1"
         android:textSize="@dimen/tutorialButtons"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/WhatsappTutorialText" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.340" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
