@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:text="@string/youtube_tutorial_2"
+        android:text="@string/youtube_sign_in_title"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="#000D53"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,7 +38,7 @@
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/youtube_tut2_a"
+                android:text="@string/youtube_sign_in_1"
                 android:textColor="#050D37"
                 android:textSize="20sp" />
 
@@ -52,7 +52,7 @@
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/youtube_tut2_b"
+                android:text="@string/youtube_sign_in_2"
                 android:textColor="#050D37"
                 android:textSize="20sp" />
 
@@ -67,7 +67,7 @@
                 android:id="@+id/textView7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/youtube_tut2_c"
+                android:text="@string/youtube_sign_in_3"
                 android:textColor="#050D37"
                 android:textSize="20sp" />
 
@@ -77,21 +77,6 @@
                 android:layout_height="250dp"
                 android:layout_marginTop="10dp"
                 app:srcCompat="@drawable/youtube_sign_in_email" />
-
-            <TextView
-                android:id="@+id/textView6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="@string/youtube_tut2_d"
-                android:textColor="#050D37"
-                android:textSize="20sp" />
-
-            <pl.droidsonroids.gif.GifImageView
-                android:layout_width="match_parent"
-                android:layout_height="500dp"
-                android:layout_marginTop="10dp"
-                android:src="@drawable/youtube_sign_in" />
 
         </LinearLayout>
     </ScrollView>
