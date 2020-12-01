@@ -36,16 +36,21 @@
                     "uri": "https://play.google.com/store/apps/details?id=com.whatsapp",
                     "tutorials": [
                       {
-                        "title": "youtube_search_video_title",
-                        "instructions": ["youtube_search_video_1", "youtube_search_video_2", "youtube_search_video_3",
-                          "youtube_search_video_4"],
-                        "images": ["youtube_search_bar_btn", "youtube_search_bar_field", "youtube_search_result",
-                          "youtube_video"]
+                        "title": "whatsapp_tutorial_1",
+                        "instructions": ["whatsapp_tut1_a", "whatsapp_tut1_b", "whatsapp_tut1_c",
+                        "whatsapp_tut1_d"],
+                        "images": ["whatsapp1", "whatsapp2", "whatsapp3", "whatsapp4"]
                       },
                       {
-                        "title": "youtube_sign_in_title",
-                        "instructions": ["youtube_sign_in_1", "youtube_sign_in_2", "youtube_sign_in_3"],
-                        "images": ["youtube_signed_out", "youtube_add_account", "youtube_sign_in_email"]
+                        "title": "whatsapp_tutorial_2",
+                        "instructions": ["whatsapp_tut2_a", "whatsapp_tut2_b", "whatsapp_tut2_c"],
+                        "images": ["whatsapp6", "null", "null"]
+                      },
+                      {
+                        "title": "whatsapp_tutorial_3",
+                        "instructions": ["whatsapp_tut3_a", "whatsapp_tut3_b", "whatsapp_tut3_c",
+                          "whatsapp_tut3_d"],
+                        "images": ["whatsapp7", "whatsapp9", "null", "null"]
                       }]
                 },
   "YOUTUBE"  :  {
