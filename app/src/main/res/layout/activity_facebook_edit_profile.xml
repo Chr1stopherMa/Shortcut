@@ -97,37 +97,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/fbEditProfile3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.451"
-        app:layout_constraintStart_toStartOf="@+id/fbEditProfile3"
-        app:layout_constraintTop_toBottomOf="@+id/fbEditProfileText6"
-        app:layout_constraintVertical_bias="0.58" />
-
-    <TextView
-        android:id="@+id/fbEditProfileText5"
-        android:layout_width="147dp"
-        android:layout_height="50dp"
-        android:text="@string/facebook_tut3_e"
-        android:textColor="#050D37"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="@+id/fbEditProfile3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.928"
-        app:layout_constraintStart_toStartOf="@+id/fbEditProfile3"
-        app:layout_constraintTop_toBottomOf="@+id/fbEditProfile4"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/fbEditProfileText6"
-        android:layout_width="177dp"
-        android:layout_height="37dp"
-        android:text="@string/facebook_tut3_f"
-        android:textColor="#050D37"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="@+id/fbEditProfile3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.813"
-        app:layout_constraintStart_toStartOf="@+id/fbEditProfile3"
-        app:layout_constraintTop_toBottomOf="@+id/fbEditProfile5"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toStartOf="@+id/fbEditProfile3" />
 
     <Button
         android:id="@+id/backToFacebookButton3"

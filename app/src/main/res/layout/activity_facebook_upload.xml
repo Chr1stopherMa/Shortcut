@@ -39,7 +39,7 @@
         android:text="@string/facebook_tutorial_2"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="#000D53"
-        android:textSize="23dp"
+        android:textSize="23sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
