@@ -13,6 +13,7 @@ import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner;
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;
 import org.hamcrest.TypeSafeMatcher;
+import org.hamcrest.core.IsInstanceOf;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -21,11 +22,12 @@ import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
-import static androidx.test.espresso.matcher.ViewMatchers.withContentDescription;
+import static androidx.test.espresso.matcher.ViewMatchers.withClassName;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withParent;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.Matchers.allOf;
+import static org.hamcrest.Matchers.is;
 
 @LargeTest
 @RunWith(AndroidJUnit4ClassRunner.class)
@@ -36,85 +38,80 @@ public class FacebookAddFriendTest {
 
     @Test
     public void facebookAddFriendTest() {
-        ViewInteraction appCompatImageView = onView(
-                allOf(withId(R.id.FacebookIcon), withContentDescription("Facebook"),
+        ViewInteraction imageView = onView(
+                allOf(childAtPosition(
                         childAtPosition(
-                                childAtPosition(
-                                        withId(android.R.id.content),
-                                        0),
-                                4),
+                                withClassName(is("android.widget.LinearLayout")),
+                                0),
+                        0),
                         isDisplayed()));
-        appCompatImageView.perform(click());
+        imageView.perform(click());
 
-        ViewInteraction materialButton = onView(
-                allOf(withId(R.id.AddFriendButton), withText("Add a Friend"),
+        ViewInteraction button = onView(
+                allOf(withText("Add a Friend"),
                         childAtPosition(
                                 childAtPosition(
-                                        withId(android.R.id.content),
+                                        withId(R.id.tutorialConstraint),
                                         0),
-                                2),
+                                1),
                         isDisplayed()));
-        materialButton.perform(click());
+        button.perform(click());
 
         ViewInteraction textView = onView(
-                allOf(withId(R.id.facebookAddFriendText), withText("Add a Friend"),
-                        withParent(withParent(withId(android.R.id.content))),
+                allOf(withText("Add a Friend"),
+                        withParent(withParent(withId(R.id.tutorialConstraintLayout))),
                         isDisplayed()));
         textView.check(matches(withText("Add a Friend")));
 
         ViewInteraction textView2 = onView(
-                allOf(withId(R.id.fbAddFriendText1), withText("1. Tap the \"People\" icon at the top or bottom of your screen."),
-                        withParent(withParent(withId(android.R.id.content))),
+                allOf(withText("1. Tap the \"People\" icon at the top or bottom of your screen."),
+                        withParent(withParent(IsInstanceOf.<View>instanceOf(android.widget.ScrollView.class))),
                         isDisplayed()));
         textView2.check(matches(withText("1. Tap the \"People\" icon at the top or bottom of your screen.")));
 
-        ViewInteraction imageView = onView(
-                allOf(withId(R.id.fbAddFriend1), withContentDescription("Add a Friend"),
-                        withParent(withParent(withId(android.R.id.content))),
-                        isDisplayed()));
-        imageView.check(matches(isDisplayed()));
-
-        ViewInteraction textView3 = onView(
-                allOf(withId(R.id.fbAddFriendText2), withText("2. Tap the \"Search\" icon."),
-                        withParent(withParent(withId(android.R.id.content))),
-                        isDisplayed()));
-        textView3.check(matches(withText("2. Tap the \"Search\" icon.")));
-
         ViewInteraction imageView2 = onView(
-                allOf(withId(R.id.fbAddFriend2), withContentDescription("Add a Friend"),
-                        withParent(withParent(withId(android.R.id.content))),
+                allOf(withParent(withParent(IsInstanceOf.<View>instanceOf(android.widget.ScrollView.class))),
                         isDisplayed()));
         imageView2.check(matches(isDisplayed()));
 
-        ViewInteraction textView4 = onView(
-                allOf(withId(R.id.fbAddFriendText3), withText("3. Type your friend's name in the search bar."),
-                        withParent(withParent(withId(android.R.id.content))),
+        ViewInteraction textView3 = onView(
+                allOf(withText("2. Tap the \"Search\" icon."),
+                        withParent(withParent(IsInstanceOf.<View>instanceOf(android.widget.ScrollView.class))),
                         isDisplayed()));
-        textView4.check(matches(withText("3. Type your friend's name in the search bar.")));
+        textView3.check(matches(withText("2. Tap the \"Search\" icon.")));
 
         ViewInteraction imageView3 = onView(
-                allOf(withId(R.id.fbAddFriend3), withContentDescription("Add a Friend"),
-                        withParent(withParent(withId(android.R.id.content))),
+                allOf(withParent(withParent(IsInstanceOf.<View>instanceOf(android.widget.ScrollView.class))),
                         isDisplayed()));
         imageView3.check(matches(isDisplayed()));
 
-        ViewInteraction textView5 = onView(
-                allOf(withId(R.id.fbAddFriendText4), withText("4. Scroll until you find your friend's profile, and tap \"Add Friend\"."),
-                        withParent(withParent(withId(android.R.id.content))),
+        ViewInteraction textView4 = onView(
+                allOf(withText("3. Type your friend's name in the search bar."),
+                        withParent(withParent(IsInstanceOf.<View>instanceOf(android.widget.ScrollView.class))),
                         isDisplayed()));
-        textView5.check(matches(withText("4. Scroll until you find your friend's profile, and tap \"Add Friend\".")));
+        textView4.check(matches(withText("3. Type your friend's name in the search bar.")));
 
         ViewInteraction imageView4 = onView(
-                allOf(withId(R.id.fbAddFriend4), withContentDescription("Add a Friend"),
-                        withParent(withParent(withId(android.R.id.content))),
+                allOf(withParent(withParent(IsInstanceOf.<View>instanceOf(android.widget.ScrollView.class))),
                         isDisplayed()));
         imageView4.check(matches(isDisplayed()));
 
-        ViewInteraction button = onView(
-                allOf(withId(R.id.backToFacebookButton), withText("BACK"),
-                        withParent(withParent(withId(android.R.id.content))),
+        ViewInteraction textView5 = onView(
+                allOf(withText("4. Scroll until you find your friend's profile, and tap \"Add Friend\"."),
+                        withParent(withParent(IsInstanceOf.<View>instanceOf(android.widget.ScrollView.class))),
                         isDisplayed()));
-        button.check(matches(isDisplayed()));
+        textView5.check(matches(withText("4. Scroll until you find your friend's profile, and tap \"Add Friend\".")));
+
+        ViewInteraction imageView5 = onView(
+                allOf(withParent(withParent(IsInstanceOf.<View>instanceOf(android.widget.ScrollView.class))),
+                        isDisplayed()));
+        imageView5.check(matches(isDisplayed()));
+
+        ViewInteraction button2 = onView(
+                allOf(withText("BACK"),
+                        withParent(withParent(withId(R.id.tutorialConstraintLayout))),
+                        isDisplayed()));
+        button2.check(matches(isDisplayed()));
     }
 
     private static Matcher<View> childAtPosition(
