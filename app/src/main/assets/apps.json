@@ -96,17 +96,23 @@
                     "uri": "https://play.google.com/store/apps/details?id=com.google.android.gm",
                     "tutorials": [
                       {
-                        "title": "youtube_search_video_title",
-                        "instructions": ["youtube_search_video_1", "youtube_search_video_2", "youtube_search_video_3",
-                          "youtube_search_video_4"],
-                        "images": ["youtube_search_bar_btn", "youtube_search_bar_field", "youtube_search_result",
-                          "youtube_video"]
+                        "title": "gmail_tutorial_1",
+                        "instructions": ["gmail_tut1_e", "gmail_tut1_a", "gmail_tut1_b", "gmail_tut1_c",
+                          "gmail_tut1_d"],
+                        "images": ["null", "gmail_account_selection", "gmail_account_list", "down_arrow", "null"]
                       },
                       {
-                        "title": "youtube_sign_in_title",
-                        "instructions": ["youtube_sign_in_1", "youtube_sign_in_2", "youtube_sign_in_3"],
-                        "images": ["youtube_signed_out", "youtube_add_account", "youtube_sign_in_email"]
-                      }]
+                        "title": "gmail_tutorial_2",
+                        "instructions": ["gmail_tut2_a", "gmail_tut2_b", "gmail_tut2_c",
+                          "gmail_tut2_d"],
+                        "images": ["gmail_open_contents_marked", "null", "gmail_open_attachment", "null"]
+                      },
+                      {
+                        "title": "gmail_tutorial_3",
+                        "instructions": ["gmail_tut3_a", "gmail_tut3_b", "gmail_tut3_c"],
+                        "images": ["gmail_compose_button", "down_arrow", "gmail_compose_email_marked"]
+                      }
+                    ]
                 },
   "GOOGLE"   :  {
                     "name": "Google",
