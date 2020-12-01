@@ -4,14 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 
-import com.familyservicestoronto.shortcut.AppInfo.AppInfo;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.UnsupportedEncodingException;
+import com.familyservicestoronto.shortcut.info.AppInfo;
 
 /**
  * A utility class that can be used to start external activities.

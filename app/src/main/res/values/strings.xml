@@ -9,6 +9,9 @@
     <string name="Gmail">Gmail</string>
     <string name="back">Back</string>
 
+    <string name="select_app">Select an App</string>
+    <string name="language">Language:</string>
+
     <string name="facebook_tutorials">Facebook Tutorials</string>
     <string name="facebook_tutorial_1">Add a Friend</string>
     <string name="facebook_tut1_a">1. Tap the \"People\" icon at the top or bottom of your screen.</string>

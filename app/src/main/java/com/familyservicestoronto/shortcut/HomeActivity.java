@@ -3,21 +3,24 @@ package com.familyservicestoronto.shortcut;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.ContextThemeWrapper;
 import android.view.Gravity;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.familyservicestoronto.shortcut.AppInfo.AppInfo;
+import com.familyservicestoronto.shortcut.info.AppInfo;
 import com.familyservicestoronto.shortcut.SwitchApp.ExternalApp;
+import com.familyservicestoronto.shortcut.info.UserInfo;
+import com.familyservicestoronto.shortcut.language.Language;
 
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 /**
  * Defines the activity of the Home Page.
@@ -28,11 +31,7 @@ import java.util.Arrays;
 
 public class HomeActivity extends AppCompatActivity {
 
-    private final ArrayList<ExternalApp> appNames = new ArrayList<>(
-            Arrays.asList(ExternalApp.FACEBOOK, ExternalApp.ZOOM,
-                    ExternalApp.YOUTUBE, ExternalApp.WHATSAPP,
-                    ExternalApp.GMAIL, ExternalApp.GOOGLE)
-    );
+    private ArrayList<ExternalApp> appNames;
 
     private LinearLayout mainLayout;
 
@@ -42,14 +41,18 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         ConstraintLayout constraintLayout = findViewById(R.id.innerConstraint);
-        mainLayout = new LinearLayout(getApplicationContext());
+        mainLayout = new LinearLayout(this);
         mainLayout.setOrientation(LinearLayout.VERTICAL);
-        mainLayout.setWeightSum(9.0f);
+        mainLayout.setWeightSum(10.0f);
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT
         );
+
+        appNames = UserInfo.getUserApps(this);
+
         mainLayout.setLayoutParams(params);
         addAppsToLayout();
+        switchLanguageButton();
         constraintLayout.addView(mainLayout);
     }
 
@@ -151,5 +154,45 @@ public class HomeActivity extends AppCompatActivity {
         });
 
         return imageView;
+    }
+
+
+    /**
+     * Creates a TextView object that displays the current language and can be clicked
+     * to toggle the language.
+     */
+    @SuppressLint("SetTextI18n")
+    private void switchLanguageButton() {
+        TextView textView = new TextView(this);
+
+        LinearLayout.LayoutParams textParams = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT, // fill available width
+                0,
+                1.0f                            // fill bottom row
+        );
+        textView.setLayoutParams(textParams);
+
+
+        String text = getResources().getString(R.string.language);
+        textView.setText(text + " " + UserInfo.getLanguage(this));
+
+        textView.setGravity(Gravity.END | Gravity.BOTTOM);
+
+        textView.setOnClickListener(v -> {
+            switchLanguage();
+        });
+
+        mainLayout.addView(textView);
+    }
+
+    /**
+     * Switches the language of the app and refreshes the home activity.
+     * Called when the switch language button is pressed.
+     */
+    private void switchLanguage() {
+        UserInfo.updateLanguage(this);
+        Intent intent = new Intent(this, HomeActivity.class);
+        finish();
+        startActivity(intent);
     }
 }
