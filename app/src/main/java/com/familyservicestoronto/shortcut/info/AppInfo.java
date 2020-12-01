@@ -20,6 +20,8 @@ import java.util.ArrayList;
  **/
 public class AppInfo {
 
+    public ExternalApp app;
+
     public String appName;
     public String appPackage;
     public String appIconPath;
@@ -35,6 +37,7 @@ public class AppInfo {
 
     public AppInfo(Context context, ExternalApp app) {
         this.context = context;
+        this.app = app;
         try {
             JSONObject appData = getAppJSON(app);
 
@@ -135,5 +138,11 @@ public class AppInfo {
         }
 
         return images;
+    }
+
+    public static int getAddAppImage(Context context) {
+        return context.getResources().getIdentifier("plus",
+                "drawable",
+                context.getPackageName());
     }
 }

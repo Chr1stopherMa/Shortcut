@@ -9,7 +9,6 @@ import android.os.Bundle;
 import android.view.ContextThemeWrapper;
 import android.view.Gravity;
 import android.view.animation.AnimationUtils;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -17,7 +16,7 @@ import android.widget.TextView;
 import com.familyservicestoronto.shortcut.info.AppInfo;
 import com.familyservicestoronto.shortcut.SwitchApp.ExternalApp;
 import com.familyservicestoronto.shortcut.info.UserInfo;
-import com.familyservicestoronto.shortcut.language.Language;
+
 
 
 import java.util.ArrayList;
@@ -60,6 +59,9 @@ public class HomeActivity extends AppCompatActivity {
         for (int i=0; i < appNames.size(); i += 2) {
             addAppRow(i);
         }
+        if (appNames.size() != 6 && appNames.size() % 2 == 0) {
+            addAppRow(appNames.size());
+        }
     }
 
     private void addAppRow(int index) {
@@ -72,14 +74,22 @@ public class HomeActivity extends AppCompatActivity {
         imageRow.setWeightSum(2.0f);
         imageRow.setOrientation(LinearLayout.HORIZONTAL);
         rowLayout.setOrientation(LinearLayout.HORIZONTAL);
-        for (int i=index; i < index+2; i++) {
+
+        for (int i=index; i < Math.min(index+2, appNames.size()); i++) {
             AppInfo appInfo = new AppInfo(this, appNames.get(i));
             TextView appLabel = createAppLabel(appInfo.appName);
             rowLayout.addView(appLabel);
 
             ImageView appIcon = createAppIcon(appInfo);
             imageRow.addView(appIcon);
+        }
 
+        if ((index + 1 == appNames.size() && appNames.size() < 6) || index == appNames.size()) {
+            TextView textView = addAppText();
+            ImageView imageView = addAppButton();
+
+            rowLayout.addView(textView);
+            imageRow.addView(imageView);
         }
         LinearLayout.LayoutParams imageParam = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT, 0, 2.0f
@@ -154,6 +164,42 @@ public class HomeActivity extends AppCompatActivity {
         });
 
         return imageView;
+    }
+
+
+    private ImageView addAppButton() {
+        ImageView addApp = new ImageView(this);
+        LinearLayout.LayoutParams imageParam = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT, // fill available width
+                LinearLayout.LayoutParams.MATCH_PARENT, // fill available height
+                1.0f                            // fill only one column
+        );
+        addApp.setLayoutParams(imageParam);
+
+        addApp.setImageResource(AppInfo.getAddAppImage(this));
+
+        addApp.setOnClickListener(v -> {
+            Intent intent = new Intent(this, AddAppMenu.class);
+            startActivity(intent);
+        });
+        return addApp;
+    }
+
+    private TextView addAppText() {
+        TextView textView = new TextView(new ContextThemeWrapper(this, R.style.appLabel));
+
+        LinearLayout.LayoutParams textParam = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT, // fill available width
+                LinearLayout.LayoutParams.MATCH_PARENT, // fill available height
+                1.0f                            // fill only one column
+        );
+        textView.setLayoutParams(textParam);
+
+        // center text horizontally and vertically
+        textView.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.CENTER_VERTICAL);
+
+        textView.setText(R.string.add_app);
+        return textView;
     }
 
 

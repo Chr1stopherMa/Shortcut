@@ -2,7 +2,7 @@ package com.familyservicestoronto.shortcut.info;
 
 import android.content.Context;
 
-import com.familyservicestoronto.shortcut.SwitchApp.AppNotFoundException;
+
 import com.familyservicestoronto.shortcut.SwitchApp.ExternalApp;
 import com.familyservicestoronto.shortcut.language.Language;
 import com.familyservicestoronto.shortcut.language.LanguageUtil;
@@ -14,7 +14,6 @@ import org.json.JSONObject;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -118,5 +117,46 @@ public class UserInfo {
         }
 
         return userApps;
+    }
+
+    /**
+     * Get every app that can be added by the user (i.e. not in their defaults)
+     * @param context The current application context.
+     * @return An ArrayList of the apps that can be added to the home screen.
+     */
+    public static ArrayList<ExternalApp> getAppsToAdd(Context context) {
+        ArrayList<ExternalApp> currentApps = getUserApps(context);
+        ArrayList<ExternalApp> appsToAdd = new ArrayList<>();
+
+        for (ExternalApp app : ExternalApp.values()) {
+            if (!currentApps.contains(app)) {
+                appsToAdd.add(app);
+            }
+        }
+
+        return appsToAdd;
+    }
+
+    /**
+     * Add app to the users list of current apps.
+     * @param context The current application context.
+     * @param app The app to add.
+     */
+    public static void updateApps(Context context, ExternalApp app) {
+        ArrayList<ExternalApp> currentApps = getUserApps(context);
+        currentApps.add(app);
+
+        JSONArray updatedApps = new JSONArray();
+        for (ExternalApp app_ : currentApps) {
+            updatedApps.put(app_.toString());
+        }
+
+        JSONObject json = getUserData(context);
+        try {
+            json.put("apps", updatedApps);
+            writeJSON(context, json);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
     }
 }
