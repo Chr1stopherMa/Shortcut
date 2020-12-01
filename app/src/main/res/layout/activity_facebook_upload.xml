@@ -19,19 +19,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976" />
 
-    <ImageView
-        android:id="@+id/fbUploadPic"
-        android:layout_width="374dp"
-        android:layout_height="654dp"
-        android:contentDescription="@string/facebook_tutorial_2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.432"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/facebookUploadText"
-        app:layout_constraintVertical_bias="0.264"
-        app:srcCompat="@drawable/fb_upload" />
-
     <TextView
         android:id="@+id/facebookUploadText"
         android:layout_width="wrap_content"
@@ -50,57 +37,42 @@
         android:id="@+id/fbUploadText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="80dp"
         android:text="@string/facebook_tut2_a"
         android:textColor="#050D37"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/fbUploadPic"
-        app:layout_constraintEnd_toEndOf="@+id/fbUploadPic"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/fbUploadPic"
-        app:layout_constraintTop_toTopOf="@+id/fbUploadPic"
-        app:layout_constraintVertical_bias="0.357" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/fbUploadText2"
         android:layout_width="135dp"
         android:layout_height="42dp"
-        android:layout_marginBottom="425dp"
         android:text="@string/facebook_tut2_b"
         android:textColor="#050D37"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/fbUploadPic"
-        app:layout_constraintEnd_toEndOf="@+id/fbUploadPic"
-        app:layout_constraintHorizontal_bias="0.644"
-        app:layout_constraintStart_toStartOf="@+id/fbUploadPic"
-        app:layout_constraintTop_toTopOf="@+id/fbUploadPic"
-        app:layout_constraintVertical_bias="0.834" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fbUploadText1" />
 
     <TextView
         android:id="@+id/fbUploadText3"
         android:layout_width="111dp"
         android:layout_height="38dp"
+        android:layout_marginEnd="300dp"
         android:text="@string/facebook_tut2_d"
         android:textColor="#050D37"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/fbUploadPic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/fbUploadPic"
-        app:layout_constraintTop_toTopOf="@+id/fbUploadPic"
-        app:layout_constraintVertical_bias="0.207" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/fbUploadText4"
         android:layout_width="134dp"
         android:layout_height="79dp"
-        android:layout_marginBottom="146dp"
         android:text="@string/facebook_tut2_c"
         android:textColor="#050D37"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/fbUploadPic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.977"
-        app:layout_constraintStart_toStartOf="@+id/fbUploadPic"
-        app:layout_constraintTop_toTopOf="@+id/fbUploadPic"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

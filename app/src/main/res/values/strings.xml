@@ -15,16 +15,19 @@
     <string name="facebook_tut1_b">2. Tap the \"Search\" icon.</string>
     <string name="facebook_tut1_c">3. Type your friend\'s name in the search bar.</string>
     <string name="facebook_tut1_d">4. Scroll until you find your friend\'s profile, and tap \"Add Friend\".</string>
+
     <string name="facebook_tutorial_2">Upload Picture/Video</string>
     <string name="facebook_tut2_a">1. Type your message here.</string>
     <string name="facebook_tut2_b">2. Select who can see your post here.</string>
     <string name="facebook_tut2_c">3. Select what you want to upload.</string>
     <string name="facebook_tut2_d">4. Tap to post!</string>
+
     <string name="facebook_tutorial_3">Edit Profile</string>
-    <string name="facebook_tut3_a">1. Tap the \"Profile\" icon at the top or bottom of your screen, and tap:</string>
-    <string name="facebook_tut3_b">2. Tap here and choose to change your profile picture.</string>
-    <string name="facebook_tut3_c">3. Tap here and choose to change your cover picture.</string>
-    <string name="facebook_tut3_d">4. Type your bio here.</string>
+    <string name="facebook_tut3_a">1. Tap the \"Profile\" icon at the top or bottom of your screen.</string>
+    <string name="facebook_tut3_b">2. Tap:</string>
+    <string name="facebook_tut3_c">3. Tap here to change your profile picture.</string>
+    <string name="facebook_tut3_d">4. Tap here to change your cover picture.</string>
+    <string name="facebook_tut3_e">5. Type your bio here.</string>
     <string name="facebook_go_to">Go To Facebook</string>
 
     <string name="google_tutorials">Google Tutorial</string>

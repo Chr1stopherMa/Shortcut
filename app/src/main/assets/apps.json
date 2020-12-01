@@ -22,8 +22,9 @@
                       {
                         "title": "facebook_tutorial_3",
                         "instructions": ["facebook_tut3_a", "facebook_tut3_b", "facebook_tut3_c",
-                          "facebook_tut3_d"],
-                        "images": ["fb_edit_profile_1", "fb_edit_profile_2", "fb_edit_profile_3", null]
+                          "facebook_tut3_d", "facebook_tut3_e"],
+                        "images": ["fb_edit_profile_1", "fb_edit_profile_2", "fb_edit_profile_3",
+                          "fb_edit_profile_4", "fb_edit_profile_5"]
                       }
                     ]
                 },
