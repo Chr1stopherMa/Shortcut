@@ -1,8 +1,10 @@
 package com.familyservicestoronto.shortcut;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.ContextThemeWrapper;
 import android.view.Gravity;
 import android.view.ViewGroup;
@@ -16,6 +18,8 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.familyservicestoronto.shortcut.SwitchApp.ActivitySwitchUtil;
 import com.familyservicestoronto.shortcut.SwitchApp.ExternalApp;
+import com.familyservicestoronto.shortcut.SwitchLanguage.LanguageSwitchUtil;
+import com.familyservicestoronto.shortcut.SwitchLanguage.Languages;
 
 import java.util.ArrayList;
 
@@ -35,6 +39,7 @@ public class TutorialPageActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        LanguageSwitchUtil.setLocale((Activity) this, Languages.currentLanguage);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutorial);
 
@@ -88,6 +93,7 @@ public class TutorialPageActivity extends AppCompatActivity {
             int textID = getResources().getIdentifier(buttonTexts.get(i).toString(),
                     "string", this.getPackageName());
             button.setText(textID);
+            Log.d("LangTutorialPageAddButtons", button.getText().toString());
 
             // set layout parameters
             LinearLayout.LayoutParams buttonParam = new LinearLayout.LayoutParams(

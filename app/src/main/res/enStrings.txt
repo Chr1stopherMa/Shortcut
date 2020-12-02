@@ -1,5 +1,7 @@
 Shortcut
 
+Select an App
+
 Youtube
 
 Zoom
@@ -13,6 +15,8 @@ Google
 Gmail
 
 Back
+
+Espagnol
 
 Facebook Tutorials
 
@@ -28,9 +32,9 @@ Add a Friend
 
 Upload Picture/Video
 
-1. Type your message here
+1. Type your message here.
 
-2. Select who can see your post here
+2. Select who can see your post here.
 
 3. Select what you want to upload.
 
@@ -38,17 +42,15 @@ Upload Picture/Video
 
 Edit Profile
 
-1. Tap the \"Profile\" icon at the top or bottom of your screen, and tap:
+1. Tap the \"Profile\" icon at the top or bottom of your screen.
 
-2. Tap here and choose
+2. Tap:
 
-3. Tap here and choose
+3. Tap here to change your profile picture.
 
-4. Type your bio here.
+4. Tap here to change your cover picture.
 
-to change your profile picture.
-
-to change your cover picture.
+5. Type your bio here.
 
 Go To Facebook
 

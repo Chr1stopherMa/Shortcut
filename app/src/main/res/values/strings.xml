@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Shortcut</string>
 
+    <string name="home_title">Select an App</string>
+
     <string name="Youtube">Youtube</string>
     <string name="Zoom">Zoom</string>
     <string name="Whatsapp">Whatsapp</string>
@@ -8,6 +10,8 @@
     <string name="Google">Google</string>
     <string name="Gmail">Gmail</string>
     <string name="back">Back</string>
+
+    <string name="lang">Cambiar al Espag&#241;ol</string>
 
     <string name="facebook_tutorials">Facebook Tutorials</string>
     <string name="facebook_tutorial_1">Add a Friend</string>

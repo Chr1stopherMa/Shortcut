@@ -1,5 +1,6 @@
 package com.familyservicestoronto.shortcut;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.ContextThemeWrapper;
 import android.view.Gravity;
@@ -14,6 +15,9 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+
+import com.familyservicestoronto.shortcut.SwitchLanguage.LanguageSwitchUtil;
+import com.familyservicestoronto.shortcut.SwitchLanguage.Languages;
 
 import java.util.ArrayList;
 
@@ -32,6 +36,7 @@ public class TutorialActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        LanguageSwitchUtil.setLocale((Activity) this, Languages.currentLanguage);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutorial_page);
         ConstraintLayout constraintLayout = findViewById(R.id.tutorialConstraintLayout);
