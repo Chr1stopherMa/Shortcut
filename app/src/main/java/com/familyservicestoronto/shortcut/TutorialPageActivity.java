@@ -93,7 +93,7 @@ public class TutorialPageActivity extends AppCompatActivity {
             int textID = getResources().getIdentifier(buttonTexts.get(i).toString(),
                     "string", this.getPackageName());
             button.setText(textID);
-            Log.d("LangTutorialPageAddButtons", button.getText().toString());
+            Log.d("LangTutorialPageAddBtn", button.getText().toString());
 
             // set layout parameters
             LinearLayout.LayoutParams buttonParam = new LinearLayout.LayoutParams(

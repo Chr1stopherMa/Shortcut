@@ -26,10 +26,6 @@
     <string name="facebook_tut1_c">3. Type your friend\'s name in the search bar.</string>
     <string name="facebook_tut1_d">4. Scroll until you find your friend\'s profile, and tap \"Add Friend\".</string>
 
-    <string name="facebook_tutorial_2">Upload Picture/Video</string>
-    <string name="facebook_tut2_a">1. Type your message here</string>
-    <string name="facebook_tut2_b">2. Select who can see your post here</string>
-
 
     <string name="facebook_tutorial_2">Upload Picture/Video</string>
     <string name="facebook_tut2_a">1. Type your message here.</string>

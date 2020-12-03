@@ -37,7 +37,6 @@ public final class LanguageSwitchUtil {
 
         Resources resources = activity.getResources();
         Configuration config = resources.getConfiguration();
-        Log.d("LangSetLocale", activity.toString() + languageCode + String.valueOf(config.getLocales().get(0)));
         config.setLocale(locale);
         resources.updateConfiguration(config, resources.getDisplayMetrics());
     }

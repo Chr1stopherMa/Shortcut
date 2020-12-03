@@ -51,7 +51,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         
-        Languages.setLanguage(Languages.getMainLanguage(this).get(0).toString());
+        // Languages.setLanguage(Languages.getMainLanguage(this).get(0).toString());
 
         ConstraintLayout constraintLayout = findViewById(R.id.innerConstraint);
         mainLayout = new LinearLayout(this);
@@ -68,7 +68,7 @@ public class HomeActivity extends AppCompatActivity {
       
         switchLanguageButton();
 
-        addLangButton();
+        // addLangButton();
 
         constraintLayout.addView(mainLayout);
     }
@@ -258,7 +258,7 @@ public class HomeActivity extends AppCompatActivity {
         Intent intent = new Intent(this, HomeActivity.class);
         finish();
         startActivity(intent);
-
+    }
     /**
      * Adds a toggleButton for language at the bottom of the screen
      */
