@@ -127,16 +127,15 @@
                     "uri": "https://play.google.com/store/apps/details?id=com.android.chrome",
                     "tutorials": [
                       {
-                        "title": "youtube_search_video_title",
-                        "instructions": ["youtube_search_video_1", "youtube_search_video_2", "youtube_search_video_3",
-                          "youtube_search_video_4"],
-                        "images": ["youtube_search_bar_btn", "youtube_search_bar_field", "youtube_search_result",
-                          "youtube_video"]
+                        "title": "google_tutorials",
+                        "instructions": ["google_tut1_a"],
+                        "images": ["google_search_bar"]
                       },
                       {
-                        "title": "youtube_sign_in_title",
-                        "instructions": ["youtube_sign_in_1", "youtube_sign_in_2", "youtube_sign_in_3"],
-                        "images": ["youtube_signed_out", "youtube_add_account", "youtube_sign_in_email"]
-                      }]
+                        "title": "google_tutorial_2",
+                        "instructions": ["google_tut2_a", "google_tut2_b"],
+                        "images": ["google_open_all_tabs", "google_add_new_tab"]
+                      }
+                    ]
                 }
 }
