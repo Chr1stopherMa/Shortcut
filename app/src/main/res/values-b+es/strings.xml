@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">Atajo</string>
 
-    <string name="home_title">Seleccione una Aplicaci&#243;n</string>
+    <string name="home_title">Seleccione una App</string>
 
     <string name="back">atr&#225;s</string>
 
-    <string name="add_app">Agregar aplicación</string>
+    <string name="add_app">Agregar App</string>
 
     <string name="lang">Switch to English</string>
 
