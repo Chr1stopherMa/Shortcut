@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="google_tutorial_2">Abrir nueva pestaña</string>
+    <string name="google_tut2_a">1. Toque el cuadrado para abrir todas las pestañas.</string>
+    <string name="google_tut2_b">2. Toque más para agregar una nueva pestaña.</string>
+</resources>

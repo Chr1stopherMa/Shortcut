@@ -50,7 +50,7 @@
                         "title": "whatsapp_tutorial_3",
                         "instructions": ["whatsapp_tut3_a", "whatsapp_tut3_b", "whatsapp_tut3_c",
                           "whatsapp_tut3_d"],
-                        "images": ["whatsapp7", "whatsapp9", "null", "null"]
+                        "images": ["null","whatsapp7", "whatsapp9", "null"]
                       }]
                 },
   "YOUTUBE"  :  {
@@ -139,6 +139,11 @@
                         "title": "google_tutorials",
                         "instructions": ["google_tut1_a"],
                         "images": ["google_search_bar"]
+                      },
+                      {
+                        "title": "google_tutorial_2",
+                        "instructions": ["google_tut2_a", "google_tut2_b"],
+                        "images": ["google_open_all_tabs", "google_add_new_tab"]
                       }
                     ]
                 }

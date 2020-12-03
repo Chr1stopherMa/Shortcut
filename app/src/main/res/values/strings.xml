@@ -3,15 +3,20 @@
 
     <string name="home_title">Select an App</string>
 
-    <string name="Youtube">Youtube</string>
-    <string name="Zoom">Zoom</string>
-    <string name="Whatsapp">Whatsapp</string>
-    <string name="Facebook">Facebook</string>
-    <string name="Google">Google</string>
-    <string name="Gmail">Gmail</string>
+    <string name="Youtube" translatable="false">Youtube</string>
+    <string name="Zoom" translatable="false">Zoom</string>
+    <string name="Whatsapp" translatable="false">Whatsapp</string>
+    <string name="Facebook" translatable="false">Facebook</string>
+    <string name="Google" translatable="false">Google</string>
+    <string name="Gmail" translatable="false">Gmail</string>
     <string name="back">Back</string>
 
+    <string name="language">Language:</string>
+    <string name="add_app">Add App</string>
+
+    <string name="add_app_title">Select an App to Add</string>
     <string name="lang">Cambiar al Espag&#241;ol</string>
+
 
     <string name="facebook_tutorials">Facebook Tutorials</string>
     <string name="facebook_tutorial_1">Add a Friend</string>
@@ -19,6 +24,7 @@
     <string name="facebook_tut1_b">2. Tap the \"Search\" icon.</string>
     <string name="facebook_tut1_c">3. Type your friend\'s name in the search bar.</string>
     <string name="facebook_tut1_d">4. Scroll until you find your friend\'s profile, and tap \"Add Friend\".</string>
+
 
     <string name="facebook_tutorial_2">Upload Picture/Video</string>
     <string name="facebook_tut2_a">1. Type your message here.</string>
@@ -35,7 +41,10 @@
     <string name="facebook_go_to">Go To Facebook</string>
 
     <string name="google_tutorials">Perform Search</string>
+    <string name="google_tutorial_2">Open new tab</string>
     <string name="google_tut1_a">1. Tap on the search bar and type in your search.</string>
+    <string name="google_tut2_a">1. Tap on square to open all tabs.</string>
+    <string name="google_tut2_b">2. Tap on plus to add a new tab.</string>
     <string name="search_in_google">Search in Google</string>
     <string name="google_go_to">Go To Google</string>
 
@@ -71,7 +80,7 @@
     <string name="youtube_sign_in_1">1. Click on the Profile button near the top</string>
     <string name="youtube_sign_in_2">2. Click on "Add Account"</string>
     <string name="youtube_sign_in_3">3. Click on the "Sign In" button</string>
-    
+
 
     <string name="whatsapp_tutorials">Whatsapp Tutorials</string>
     <string name="whatsapp_tutorial_1">Add New Contact/Group</string>

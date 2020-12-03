@@ -1,4 +1,4 @@
-package com.familyservicestoronto.shortcut.AppInfo;
+package com.familyservicestoronto.shortcut.info;
 
 
 import android.content.Context;
@@ -20,6 +20,8 @@ import java.util.ArrayList;
  **/
 public class AppInfo {
 
+    public ExternalApp app;
+
     public String appName;
     public String appPackage;
     public String appIconPath;
@@ -35,6 +37,7 @@ public class AppInfo {
 
     public AppInfo(Context context, ExternalApp app) {
         this.context = context;
+        this.app = app;
         try {
             JSONObject appData = getAppJSON(app);
 
@@ -59,24 +62,27 @@ public class AppInfo {
      * @throws AppNotFoundException The app cannot be found in the JSON file.
      */
     private JSONObject getAppJSON(ExternalApp app) throws AppNotFoundException {
-        String jsonString;
-
         try {
-            InputStream stream = context.getAssets().open(appJSON);
-            int size = stream.available();
-            byte[] buf = new byte[size];
-            stream.read(buf);
-            stream.close();
-            jsonString = new String(buf, "UTF-8");
-        } catch (IOException e) {
-            throw new AppNotFoundException(app.toString());
-        }
-
-        try {
-            JSONObject json = new JSONObject(jsonString);
+            JSONObject json = getJSON(appJSON, context);
             return json.getJSONObject(app.toString());
         } catch (JSONException e) {
             throw new AppNotFoundException(app.toString());
+        }
+    }
+
+    public static JSONObject getJSON(String path, Context context) {
+        try {
+            InputStream stream = context.getAssets().open(path);
+            int size = stream.available();
+            byte[] buf = new byte[size];
+
+            stream.read(buf);
+            stream.close();
+
+            String jsonString = new String(buf, "UTF-8");
+            return new JSONObject(jsonString);
+        } catch (IOException | JSONException e) {
+            return null;
         }
     }
 
@@ -132,5 +138,11 @@ public class AppInfo {
         }
 
         return images;
+    }
+
+    public static int getAddAppImage(Context context) {
+        return context.getResources().getIdentifier("plus",
+                "drawable",
+                context.getPackageName());
     }
 }
