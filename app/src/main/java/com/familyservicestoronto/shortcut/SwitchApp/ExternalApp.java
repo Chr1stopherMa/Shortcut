@@ -10,5 +10,6 @@ public enum ExternalApp {
     YOUTUBE,
     ZOOM,
     GMAIL,
-    GOOGLE
+    GOOGLE,
+    SPOTIFY
 }
