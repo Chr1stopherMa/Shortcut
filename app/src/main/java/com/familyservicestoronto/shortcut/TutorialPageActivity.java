@@ -59,7 +59,7 @@ public class TutorialPageActivity extends AppCompatActivity {
     }
 
     private String addTitle() {
-        TextView title = new TextView(new ContextThemeWrapper(this, R.style.appLabel));
+        TextView title = new TextView(new ContextThemeWrapper(this, R.style.AppTitle));
 
         String titleText = bundle.getCharSequence("name").toString();
         title.setText(titleText);
