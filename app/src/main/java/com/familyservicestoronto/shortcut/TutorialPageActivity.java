@@ -42,15 +42,9 @@ public class TutorialPageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutorial);
 
-        ConstraintLayout constraintLayout = findViewById(R.id.tutorialConstraint);
-
-        mainLayout = new LinearLayout(this);
+        mainLayout = findViewById(R.id.tutorialLinearLayout);
         mainLayout.setOrientation(LinearLayout.VERTICAL);
         mainLayout.setWeightSum(9.0f);
-        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT
-        );
-        mainLayout.setLayoutParams(params);
 
         btnStyle = R.style.AppBtn;
         btnBackground = R.drawable.button;
@@ -59,7 +53,6 @@ public class TutorialPageActivity extends AppCompatActivity {
         String title = addTitle();
         addButtons(title);
         addBackButton(title);
-        constraintLayout.addView(mainLayout);
     }
 
     private String addTitle() {
@@ -86,7 +79,7 @@ public class TutorialPageActivity extends AppCompatActivity {
 
         for (int i=0; i < buttonTexts.size(); i++) {
             Button button = new Button(this);
-            button.setTextAppearance(this, btnStyle);
+            button.setTextAppearance(btnStyle);
             button.setBackgroundResource(btnBackground);
 
             int textID = getResources().getIdentifier(buttonTexts.get(i).toString(),
@@ -98,7 +91,7 @@ public class TutorialPageActivity extends AppCompatActivity {
             LinearLayout.LayoutParams buttonParam = new LinearLayout.LayoutParams(
                     LinearLayout.LayoutParams.MATCH_PARENT, 0, 1.0f
             );
-            buttonParam.setMargins(5, 5, 5, 5);
+            buttonParam.setMargins(5, 15, 5, 15);
 
             int finalI = i;
             button.setOnClickListener(v -> {
@@ -134,11 +127,11 @@ public class TutorialPageActivity extends AppCompatActivity {
         LinearLayout.LayoutParams buttonParams = new LinearLayout.LayoutParams(
                 0, ViewGroup.LayoutParams.MATCH_PARENT, 1.0f
         );
-        buttonParams.setMargins(10, 40, 10, 3);
+        buttonParams.setMargins(10, 50, 10, 3);
 
         // add back button
         Button backButton = new Button(this);
-        backButton.setTextAppearance(this, btnStyle);
+        backButton.setTextAppearance(btnStyle);
         backButton.setBackgroundResource(btnBackground);
         backButton.setLayoutParams(buttonParams);
         backButton.setText(R.string.back);
