@@ -50,7 +50,7 @@
                         "title": "whatsapp_tutorial_3",
                         "instructions": ["whatsapp_tut3_a", "whatsapp_tut3_b", "whatsapp_tut3_c",
                           "whatsapp_tut3_d"],
-                        "images": ["whatsapp7", "whatsapp9", "null", "null"]
+                        "images": ["null","whatsapp7", "whatsapp9", "null"]
                       }]
                 },
   "YOUTUBE"  :  {
