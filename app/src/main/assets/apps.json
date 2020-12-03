@@ -130,6 +130,11 @@
                         "title": "google_tutorials",
                         "instructions": ["google_tut1_a"],
                         "images": ["google_search_bar"]
+                      },
+                      {
+                        "title": "google_tutorial_2",
+                        "instructions": ["google_tut2_a", "google_tut2_b"],
+                        "images": ["google_open_all_tabs", "google_add_new_tab"]
                       }
                     ]
                 }

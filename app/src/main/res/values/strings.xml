@@ -35,7 +35,10 @@
     <string name="facebook_go_to">Go To Facebook</string>
 
     <string name="google_tutorials">Perform Search</string>
+    <string name="google_tutorial_2">Open new tab</string>
     <string name="google_tut1_a">1. Tap on the search bar and type in your search.</string>
+    <string name="google_tut2_a">1. Tap on square to open all tabs.</string>
+    <string name="google_tut2_b">2. Tap on plus to add a new tab.</string>
     <string name="search_in_google">Search in Google</string>
     <string name="google_go_to">Go To Google</string>
 
