@@ -81,17 +81,26 @@
                     "uri": "https://play.google.com/store/apps/details?id=us.zoom.videomeetings",
                     "tutorials": [
                       {
-                        "title": "youtube_search_video_title",
-                        "instructions": ["youtube_search_video_1", "youtube_search_video_2", "youtube_search_video_3",
-                          "youtube_search_video_4"],
-                        "images": ["youtube_search_bar_btn", "youtube_search_bar_field", "youtube_search_result",
-                          "youtube_video"]
+                        "title": "zoom_tutorial_1",
+                        "instructions": ["zoom_tut1_a", "zoom_tut1_b", "zoom_tut1_c", "zoom_tut1_d"],
+                        "images": ["zoom_signup_1", "zoom_signup_2", "zoom_signup_3", "zoom_signup_4"]
                       },
                       {
-                        "title": "youtube_sign_in_title",
-                        "instructions": ["youtube_sign_in_1", "youtube_sign_in_2", "youtube_sign_in_3"],
-                        "images": ["youtube_signed_out", "youtube_add_account", "youtube_sign_in_email"]
-                      }]
+                        "title": "zoom_tutorial_2",
+                        "instructions": ["zoom_tut2_a", "zoom_tut2_b"],
+                        "images": ["zoom_signin_1", "zoom_signin_2"]
+                      },
+                      {
+                        "title": "zoom_tutorial_3",
+                        "instructions": ["zoom_tut3_a", "zoom_tut3_b", "zoom_tut3_c"],
+                        "images": ["zoom_join_meeting_1", "zoom_join_meeting_2", "zoom_join_meeting_3"]
+                      },
+                      {
+                        "title": "zoom_tutorial_4",
+                        "instructions": ["zoom_tut4_a", "zoom_tut4_b"],
+                        "images": ["zoom_run_meeting_1", "zoom_run_meeting_2"]
+                      }
+                    ]
                 },
   "GMAIL"    :  {
                     "name": "Gmail",
