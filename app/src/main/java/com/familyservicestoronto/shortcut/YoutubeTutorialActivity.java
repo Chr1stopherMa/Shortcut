@@ -6,16 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.familyservicestoronto.shortcut.AppInfo.AppInfo;
+import com.familyservicestoronto.shortcut.info.AppInfo;
 import com.familyservicestoronto.shortcut.SwitchApp.ActivitySwitchUtil;
-import com.familyservicestoronto.shortcut.SwitchApp.AppNotFoundException;
 import com.familyservicestoronto.shortcut.SwitchApp.ExternalApp;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class YoutubeTutorialActivity extends AppCompatActivity {
 
