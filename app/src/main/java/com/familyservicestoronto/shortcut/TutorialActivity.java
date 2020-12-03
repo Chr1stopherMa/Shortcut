@@ -41,7 +41,6 @@ public class TutorialActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        LanguageSwitchUtil.setLocale((Activity) this, Languages.currentLanguage);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutorial_page);
         ConstraintLayout constraintLayout = findViewById(R.id.tutorialConstraintLayout);

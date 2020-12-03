@@ -30,7 +30,7 @@ public final class LanguageSwitchUtil {
      * https://stackoverflow.com/questions/2900023/change-app-language-programmatically-in-android
      **/
     public static void setLocale(Activity activity, String languageCode) {
-        Languages.getMainLanguage(activity); //
+        //Languages.getMainLanguage(activity); //
 
         Locale locale = new Locale(languageCode);
         Locale.setDefault(locale);
