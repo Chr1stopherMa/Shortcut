@@ -66,7 +66,7 @@ public class TutorialActivity extends AppCompatActivity {
      * Creates a TextView widget which represents the title of the tutorial
      */
     private void addTitle() {
-        TextView title = new TextView(new ContextThemeWrapper(this, R.style.appLabel));
+        TextView title = new TextView(new ContextThemeWrapper(this, R.style.TutorialTitle));
         String titleResource = bundle.getCharSequence("title").toString();
 
         int titleID = getResources().getIdentifier(titleResource, "string", this.getPackageName());

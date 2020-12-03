@@ -3,15 +3,14 @@
 
     <string name="home_title">Select an App</string>
 
-    <string name="Youtube">Youtube</string>
-    <string name="Zoom">Zoom</string>
-    <string name="Whatsapp">Whatsapp</string>
-    <string name="Facebook">Facebook</string>
-    <string name="Google">Google</string>
-    <string name="Gmail">Gmail</string>
+    <string name="Youtube" translatable="false">Youtube</string>
+    <string name="Zoom" translatable="false">Zoom</string>
+    <string name="Whatsapp" translatable="false">Whatsapp</string>
+    <string name="Facebook" translatable="false">Facebook</string>
+    <string name="Google" translatable="false">Google</string>
+    <string name="Gmail" translatable="false">Gmail</string>
     <string name="back">Back</string>
 
-    <string name="select_app">Select an App</string>
     <string name="language">Language:</string>
     <string name="add_app">Add App</string>
 

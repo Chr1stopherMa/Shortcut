@@ -41,13 +41,15 @@ import java.util.ArrayList;
 public class HomeActivity extends AppCompatActivity {
 
     private ArrayList<ExternalApp> appNames;
-
     private LinearLayout mainLayout;
 
+    private int APPS_PER_ROW = 2;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        UserInfo.getLanguage(this);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
@@ -58,6 +60,9 @@ public class HomeActivity extends AppCompatActivity {
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT
         );
+
+        TextView title = findViewById(R.id.home_title);
+        title.setText(R.string.home_title);
 
         appNames = UserInfo.getUserApps(this);
 
@@ -72,49 +77,68 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     private void addAppsToLayout() {
-        for (int i=0; i < appNames.size(); i += 2) {
-            addAppRow(i);
-        }
-        if (appNames.size() != 6 && appNames.size() % 2 == 0) {
-            addAppRow(appNames.size());
-        }
-    }
-
-    private void addAppRow(int index) {
-        LinearLayout rowLayout = new LinearLayout(this);
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT, 0, 1.0f
         );
-        rowLayout.setWeightSum(2.0f);
-        LinearLayout imageRow = new LinearLayout(this);
-        imageRow.setWeightSum(2.0f);
-        imageRow.setOrientation(LinearLayout.HORIZONTAL);
-        rowLayout.setOrientation(LinearLayout.HORIZONTAL);
-
-        for (int i=index; i < Math.min(index+2, appNames.size()); i++) {
-            AppInfo appInfo = new AppInfo(this, appNames.get(i));
-            TextView appLabel = createAppLabel(appInfo.appName);
-            rowLayout.addView(appLabel);
-
-            ImageView appIcon = createAppIcon(appInfo);
-            imageRow.addView(appIcon);
-        }
-
-        if ((index + 1 == appNames.size() && appNames.size() < 6) || index == appNames.size()) {
-            TextView textView = addAppText();
-            ImageView imageView = addAppButton();
-
-            rowLayout.addView(textView);
-            imageRow.addView(imageView);
-        }
         LinearLayout.LayoutParams imageParam = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT, 0, 2.0f
         );
-        rowLayout.setLayoutParams(params);
-        imageRow.setLayoutParams(imageParam);
-        mainLayout.addView(imageRow);
-        mainLayout.addView(rowLayout);
 
+        for (int i=0; i < 3; i++) {
+            LinearLayout rowLayout = new LinearLayout(this);
+            LinearLayout imageRow = new LinearLayout(this);
+
+            rowLayout.setWeightSum(2.0f);
+            imageRow.setWeightSum(2.0f);
+
+            imageRow.setOrientation(LinearLayout.HORIZONTAL);
+            rowLayout.setOrientation(LinearLayout.HORIZONTAL);
+
+            rowLayout.setLayoutParams(params);
+            imageRow.setLayoutParams(imageParam);
+
+            int j;
+            boolean flag = true;
+            for (j=i*2; j < i*2+APPS_PER_ROW; j++) {
+                if (j == appNames.size()) break;
+                addAppRow(j, rowLayout, imageRow);
+                if (j == appNames.size() - 1 && j != i*2) flag = false;
+            }
+
+            if (appNames.size() < 6 && flag && j == appNames.size()) {
+                TextView textView = addAppText();
+                ImageView imageView = addAppButton();
+
+                rowLayout.addView(textView);
+                imageRow.addView(imageView);
+
+                if (appNames.size() % 2 == 0) {
+                    addAppRow(j+1, rowLayout, imageRow);
+                }
+            }
+
+            if (appNames.size() < 6 || i != appNames.size()) {
+                mainLayout.addView(imageRow);
+                mainLayout.addView(rowLayout);
+            }
+        }
+    }
+
+    private void addAppRow(int index, LinearLayout rowLayout, LinearLayout imageRow) {
+        TextView appLabel;
+        ImageView appIcon;
+
+        if (index < appNames.size()) {
+            AppInfo appInfo = new AppInfo(this, appNames.get(index));
+            appLabel = createAppLabel(appInfo.appName);
+            appIcon = createAppIcon(appInfo);
+        } else {
+            appLabel = createAppLabel("");
+            appIcon = createAppIcon(null);
+        }
+
+        rowLayout.addView(appLabel);
+        imageRow.addView(appIcon);
     }
 
     /**
@@ -158,26 +182,28 @@ public class HomeActivity extends AppCompatActivity {
         );
         imageView.setLayoutParams(imageParam);
 
-        // set app icon
-        imageView.setImageResource(appInfo.getDrawableID());
+        if (appInfo != null) {
+            // set app icon
+            imageView.setImageResource(appInfo.getDrawableID());
 
-        // add listener to redirect to tutorial page
-        imageView.setOnClickListener(v -> {
-            // "pressed" animation
-            imageView.startAnimation(AnimationUtils.loadAnimation(this, R.anim.app_press));
+            // add listener to redirect to tutorial page
+            imageView.setOnClickListener(v -> {
+                // "pressed" animation
+                imageView.startAnimation(AnimationUtils.loadAnimation(this, R.anim.app_press));
 
-            Intent intent = new Intent(HomeActivity.this, TutorialPageActivity.class);
-            Bundle bundle = new Bundle();
-            bundle.putCharSequence("name", appInfo.appName);
-            bundle.putCharSequenceArrayList("tutorials", appInfo.getTutorialNames());
+                Intent intent = new Intent(HomeActivity.this, TutorialPageActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putCharSequence("name", appInfo.appName);
+                bundle.putCharSequenceArrayList("tutorials", appInfo.getTutorialNames());
 
-            for (int i=0; i < appInfo.getTutorialNames().size(); i++) {
-                bundle.putCharSequenceArrayList("instructions" + i, appInfo.getTutorialInstructions(i));
-                bundle.putCharSequenceArrayList("images" + i, appInfo.getTutorialImages(i));
-            }
-            intent.putExtras(bundle);
-            startActivity(intent);
-        });
+                for (int i=0; i < appInfo.getTutorialNames().size(); i++) {
+                    bundle.putCharSequenceArrayList("instructions" + i, appInfo.getTutorialInstructions(i));
+                    bundle.putCharSequenceArrayList("images" + i, appInfo.getTutorialImages(i));
+                }
+                intent.putExtras(bundle);
+                startActivity(intent);
+            });
+        }
 
         return imageView;
     }
