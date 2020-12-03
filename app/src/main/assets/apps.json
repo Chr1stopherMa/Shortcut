@@ -146,5 +146,32 @@
                         "images": ["google_open_all_tabs", "google_add_new_tab"]
                       }
                     ]
-                }
+                },
+  "SPOTIFY"  :  {
+                    "name": "Spotify",
+                    "package": "com.spotify.music",
+                    "icon":  "spotify_icon",
+                    "tutorialActivity": "com.familyservicestoronto.shortcut.SpotifyTutorialActivity",
+                    "uri": "https://play.google.com/store/apps/details?id=com.spotify.music",
+                    "tutorials": [
+                      {
+                        "title": "spotify_search_song_title",
+                        "instructions": ["spotify_search_song_1", "spotify_search_song_2", "spotify_search_song_3"],
+                        "images": ["spotify_search_song_btn", "spotify_search_song_field", "spotify_search_song_result"]
+                      },
+                      {
+                        "title": "spotify_make_playlist_title",
+                        "instructions": ["spotify_make_playlist_1", "spotify_make_playlist_2", "spotify_make_playlist_3",
+                          "spotify_make_playlist_4, spotify_make_playlist_5"],
+                        "images": ["spotify_search_song_field", "spotify_search_song_result", "spotify_tap_dots", "spotify_tap_playlist",
+                          "spotify_choose_playlist"]
+                      },
+                      {
+                        "title": "spotify_play_library_title",
+                        "instructions": ["spotify_play_library_1", "spotify_play_library_2", "spotify_play_library_3",
+                          "spotify_make_playlist_4"],
+                        "images": ["spotify_tap_library", "spotify_choose_category", "spotify_tap_album", "spotify_play_songs"]
+                      }
+                    ]
+                  }
 }

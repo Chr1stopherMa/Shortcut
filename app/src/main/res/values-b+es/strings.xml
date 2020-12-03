@@ -103,4 +103,22 @@
     <string name="zoom_tut4_a">1. Una vez que haya iniciado la sesi&#243;n, haga clic en el bot&#243;n naranja Nueva reuni&#243;n en la esquina superior izquierda.</string>
     <string name="zoom_tut4_b">2. Si desea que su video est&#233; encendido, aseg&#250;rese de que se deslice hacia la derecha. Tener el ID de reuni&#243;n personal activado permite que otros se unan a su llamada utilizando el n&#250;mero proporcionado.</string>
     <string name="zoom_go_to">Ir a Zoom</string>
+
+    <string name="spotify_tutorials">Tutoriales de Spotify</string>
+    <string name="spotify_search_song_title">Buscar una canción o podcast</string>
+    <string name="spotify_search_song_1">1. Toca el botón \"Search\" situado en la parte inferior central de la pantalla.</string>
+    <string name="spotify_search_song_2">2. Toque el banner en la parte superior de la página y escriba lo que está buscando.</string>
+    <string name="spotify_search_song_3">3. Elige entre las opciones que aparecen y toca la canción o podcast que te gustaría escuchar.</string>
+    <string name="spotify_make_playlist_title">Crear una lista de reproducción</string>
+    <string name="spotify_make_playlist_1">1. Search for the song you would like to add to a playlist and click on it.</string>
+    <string name="spotify_make_playlist_2">2. Busque la canción que desea añadir a una lista de reproducción y haga clic en ella.</string>
+    <string name="spotify_make_playlist_3">3. Toque en los tres puntos en la parte superior derecha de la pantalla.</string>
+    <string name="spotify_make_playlist_4">4. Toque el botón \"Add to playlist\" cerca de la parte inferior de la pantalla..</string>
+    <string name="spotify_make_playlist_5">5. Elige la lista de reproducción existente a la que quieras añadirla o crea una nueva.</string>
+    <string name="spotify_play_library_title">Reproducir una biblioteca de música</string>
+    <string name="spotify_play_library_1">1. Toque el icono \"Your Library\" en la esquina inferior izquierda.</string>
+    <string name="spotify_play_library_2">2. Elige si quieres reproducir desde una lista de reproducción, un artista o un álbum en la parte superior de la pantalla.</string>
+    <string name="spotify_play_library_3">3. Ahora elige la colección desde la que quieres jugar.</string>
+    <string name="spotify_play_library_4">4. Ahora puedes reproducir todas las canciones tocando el botón verde de reproducción o reproducir una canción individual encontrándola en la lista.</string>
+    <string name="spotify_go_to">Go To Spotify</string>
 </resources>

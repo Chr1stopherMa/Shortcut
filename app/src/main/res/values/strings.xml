@@ -116,4 +116,22 @@
     <string name="zoom_tut4_a">1. Once you\'ve logged in, click on the orange New Meeting button in the top-left corner.</string>
     <string name="zoom_tut4_b">2. If you\'d like your video on make sure it is slid right. Having Personal Meeting ID turned on allows for others to join you on your call using the number provided.</string>
     <string name="zoom_go_to">Go To Zoom</string>
+
+    <string name="spotify_tutorials">Spotify Tutorials</string>
+    <string name="spotify_search_song_title">Search for a Song/Podcast</string>
+    <string name="spotify_search_song_1">1. Tap the \"Search\" icon at the bottom centre of your screen.</string>
+    <string name="spotify_search_song_2">2. Tap the banner at the top of the page and type in what you are looking for.</string>
+    <string name="spotify_search_song_3">3. Choose from the options that appear and tap the song/podcast you would like to hear.</string>
+    <string name="spotify_make_playlist_title">Make a Playlist</string>
+    <string name="spotify_make_playlist_1">1. Search for the song you would like to add to a playlist and click on it.</string>
+    <string name="spotify_make_playlist_2">2. Tap the song at the bottom to enlarge it.</string>
+    <string name="spotify_make_playlist_3">3. Tap on the three dots in the top right of the screen.</string>
+    <string name="spotify_make_playlist_4">4. Tap the \"Add to playlist\" icon near the bottom of the screen.</string>
+    <string name="spotify_make_playlist_5">5. Choose the existing playlist you want to add it to, or create a new one.</string>
+    <string name="spotify_play_library_title">Playing a Library</string>
+    <string name="spotify_play_library_1">1. Tap the \"Your Library\" icon at the bottom left corner.</string>
+    <string name="spotify_play_library_2">2. Choose whether you want to play from a Playlist, Artist, or Album on the top of the screen.</string>
+    <string name="spotify_play_library_3">3. Now choose the collection you want to play from.</string>
+    <string name="spotify_play_library_4">4. Now you can shuffle play all the songs by tapping the green play button or play an individual song by finding it in the list.</string>
+    <string name="spotify_go_to">Go To Spotify</string>
 </resources>
