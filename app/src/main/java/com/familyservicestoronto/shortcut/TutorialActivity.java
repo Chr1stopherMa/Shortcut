@@ -1,5 +1,8 @@
 package com.familyservicestoronto.shortcut;
 
+import android.graphics.drawable.BitmapDrawable;
+
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.ContextThemeWrapper;
 import android.view.Gravity;
@@ -8,12 +11,16 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+
+import com.familyservicestoronto.shortcut.SwitchLanguage.LanguageSwitchUtil;
+import com.familyservicestoronto.shortcut.SwitchLanguage.Languages;
 
 import java.util.ArrayList;
 
@@ -27,11 +34,14 @@ import java.util.ArrayList;
 public class TutorialActivity extends AppCompatActivity {
 
     private LinearLayout mainLayout;
-    private LinearLayout scrollLayout;
+    private RelativeLayout relativeLayout;
     private Bundle bundle;
+
+    private int prevID = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        LanguageSwitchUtil.setLocale((Activity) this, Languages.currentLanguage);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutorial_page);
         ConstraintLayout constraintLayout = findViewById(R.id.tutorialConstraintLayout);
@@ -79,18 +89,18 @@ public class TutorialActivity extends AppCompatActivity {
      */
     private void addSteps() {
         ScrollView scrollView = new ScrollView(this);
-        scrollLayout = new LinearLayout(this);
+        relativeLayout = new RelativeLayout(this);
 
-        scrollLayout.setOrientation(LinearLayout.VERTICAL);
+        // scrollLayout.setOrientation(LinearLayout.VERTICAL);
 
         // set layout parameters
         LinearLayout.LayoutParams scrollViewParams = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT, 0, 7.0f
         );
-        LinearLayout.LayoutParams scrollLayoutParams = new LinearLayout.LayoutParams(
+        LinearLayout.LayoutParams relLayoutParams = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT
         );
-        scrollLayout.setLayoutParams(scrollLayoutParams);
+        relativeLayout.setLayoutParams(relLayoutParams);
         scrollView.setLayoutParams(scrollViewParams);
 
         ArrayList<CharSequence> instructions = bundle.getCharSequenceArrayList("instructions");
@@ -101,31 +111,57 @@ public class TutorialActivity extends AppCompatActivity {
             addInstruction(instructions.get(i).toString(), imagePaths.get(i).toString());
         }
 
-        scrollView.addView(scrollLayout);
+        scrollView.addView(relativeLayout);
         mainLayout.addView(scrollView);
     }
 
+
+    private int generateID() {
+        prevID += 10;
+        return prevID;
+    }
+
     private void addInstruction(String instruct, String imagePath) {
-        TextView instruction = new TextView(this);
+        TextView instruction = new TextView(new ContextThemeWrapper(this, R.style.TutorialText));
 
         // set layout parameters
-        LinearLayout.LayoutParams instructParams = new LinearLayout.LayoutParams(
+        RelativeLayout.LayoutParams instructParams = new RelativeLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT
         );
+
+        if (prevID != 0) {
+            instructParams.addRule(RelativeLayout.BELOW, prevID);
+        }
+        instruction.setId(generateID());
         instruction.setLayoutParams(instructParams);
 
         int textID = getResources().getIdentifier(instruct, "string", this.getPackageName());
         instruction.setText(textID);
 
-        scrollLayout.addView(instruction);
+        relativeLayout.addView(instruction);
 
         if (!imagePath.equals("null")) {
             ImageView image = new ImageView(this);
+
+            // set image
             int drawable = this.getResources().getIdentifier(imagePath,
                     "drawable", this.getPackageName());
-            image.setLayoutParams(instructParams);
             image.setImageResource(drawable);
-            scrollLayout.addView(image);
+
+            BitmapDrawable bd;
+            bd = (BitmapDrawable) this.getResources().getDrawable(drawable);
+            int height = bd.getBitmap().getHeight();
+
+            // set layout parameters
+            RelativeLayout.LayoutParams imageParams = new RelativeLayout.LayoutParams(
+                    LinearLayout.LayoutParams.MATCH_PARENT,
+                    (int) (height * this.getResources().getDisplayMetrics().density * 7/10)
+            );
+            imageParams.addRule(RelativeLayout.BELOW, prevID);
+            image.setId(generateID());
+            image.setLayoutParams(imageParams);
+
+            relativeLayout.addView(image);
         }
 
     }

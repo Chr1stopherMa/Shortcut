@@ -7,17 +7,26 @@
                     "uri": "https://play.google.com/store/apps/details?id=com.facebook.katana",
                     "tutorials": [
                       {
-                        "title": "youtube_search_video_title",
-                        "instructions": ["youtube_search_video_1", "youtube_search_video_2", "youtube_search_video_3",
-                          "youtube_search_video_4"],
-                        "images": ["youtube_search_bar_btn", "youtube_search_bar_field", "youtube_search_result",
-                          "youtube_video"]
+                        "title": "facebook_tutorial_1",
+                        "instructions": ["facebook_tut1_a", "facebook_tut1_b", "facebook_tut1_c",
+                          "facebook_tut1_d"],
+                        "images": ["fb_add_friend_1", "fb_add_friend_2", "fb_add_friend_3",
+                          "fb_add_friend_4"]
                       },
                       {
-                        "title": "youtube_sign_in_title",
-                        "instructions": ["youtube_sign_in_1", "youtube_sign_in_2", "youtube_sign_in_3"],
-                        "images": ["youtube_signed_out", "youtube_add_account", "youtube_sign_in_email"]
-                      }]
+                        "title": "facebook_tutorial_2",
+                        "instructions": ["facebook_tut2_a", "facebook_tut2_b", "facebook_tut2_c",
+                          "facebook_tut2_d"],
+                        "images": ["fb_upload_1", "fb_upload_2", "fb_upload_3", "fb_upload_4"]
+                      },
+                      {
+                        "title": "facebook_tutorial_3",
+                        "instructions": ["facebook_tut3_a", "facebook_tut3_b", "facebook_tut3_c",
+                          "facebook_tut3_d", "facebook_tut3_e"],
+                        "images": ["fb_edit_profile_1", "fb_edit_profile_2", "fb_edit_profile_3",
+                          "fb_edit_profile_4", "fb_edit_profile_5"]
+                      }
+                    ]
                 },
   "WHATSAPP" :  {
                     "name": "WhatsApp",
@@ -27,16 +36,21 @@
                     "uri": "https://play.google.com/store/apps/details?id=com.whatsapp",
                     "tutorials": [
                       {
-                        "title": "youtube_search_video_title",
-                        "instructions": ["youtube_search_video_1", "youtube_search_video_2", "youtube_search_video_3",
-                          "youtube_search_video_4"],
-                        "images": ["youtube_search_bar_btn", "youtube_search_bar_field", "youtube_search_result",
-                          "youtube_video"]
+                        "title": "whatsapp_tutorial_1",
+                        "instructions": ["whatsapp_tut1_a", "whatsapp_tut1_b", "whatsapp_tut1_c",
+                        "whatsapp_tut1_d"],
+                        "images": ["whatsapp1", "whatsapp2", "whatsapp3", "whatsapp4"]
                       },
                       {
-                        "title": "youtube_sign_in_title",
-                        "instructions": ["youtube_sign_in_1", "youtube_sign_in_2", "youtube_sign_in_3"],
-                        "images": ["youtube_signed_out", "youtube_add_account", "youtube_sign_in_email"]
+                        "title": "whatsapp_tutorial_2",
+                        "instructions": ["whatsapp_tut2_a", "whatsapp_tut2_b", "whatsapp_tut2_c"],
+                        "images": ["whatsapp6", "null", "null"]
+                      },
+                      {
+                        "title": "whatsapp_tutorial_3",
+                        "instructions": ["whatsapp_tut3_a", "whatsapp_tut3_b", "whatsapp_tut3_c",
+                          "whatsapp_tut3_d"],
+                        "images": ["whatsapp7", "whatsapp9", "null", "null"]
                       }]
                 },
   "YOUTUBE"  :  {
@@ -87,17 +101,23 @@
                     "uri": "https://play.google.com/store/apps/details?id=com.google.android.gm",
                     "tutorials": [
                       {
-                        "title": "youtube_search_video_title",
-                        "instructions": ["youtube_search_video_1", "youtube_search_video_2", "youtube_search_video_3",
-                          "youtube_search_video_4"],
-                        "images": ["youtube_search_bar_btn", "youtube_search_bar_field", "youtube_search_result",
-                          "youtube_video"]
+                        "title": "gmail_tutorial_1",
+                        "instructions": ["gmail_tut1_e", "gmail_tut1_a", "gmail_tut1_b", "gmail_tut1_c",
+                          "gmail_tut1_d"],
+                        "images": ["null", "gmail_account_selection", "gmail_account_list", "down_arrow", "null"]
                       },
                       {
-                        "title": "youtube_sign_in_title",
-                        "instructions": ["youtube_sign_in_1", "youtube_sign_in_2", "youtube_sign_in_3"],
-                        "images": ["youtube_signed_out", "youtube_add_account", "youtube_sign_in_email"]
-                      }]
+                        "title": "gmail_tutorial_2",
+                        "instructions": ["gmail_tut2_a", "gmail_tut2_b", "gmail_tut2_c",
+                          "gmail_tut2_d"],
+                        "images": ["gmail_open_contents_marked", "null", "gmail_open_attachment", "null"]
+                      },
+                      {
+                        "title": "gmail_tutorial_3",
+                        "instructions": ["gmail_tut3_a", "gmail_tut3_b", "gmail_tut3_c"],
+                        "images": ["gmail_compose_button", "down_arrow", "gmail_compose_email_marked"]
+                      }
+                    ]
                 },
   "GOOGLE"   :  {
                     "name": "Google",
@@ -107,16 +127,15 @@
                     "uri": "https://play.google.com/store/apps/details?id=com.android.chrome",
                     "tutorials": [
                       {
-                        "title": "youtube_search_video_title",
-                        "instructions": ["youtube_search_video_1", "youtube_search_video_2", "youtube_search_video_3",
-                          "youtube_search_video_4"],
-                        "images": ["youtube_search_bar_btn", "youtube_search_bar_field", "youtube_search_result",
-                          "youtube_video"]
+                        "title": "google_tutorials",
+                        "instructions": ["google_tut1_a"],
+                        "images": ["google_search_bar"]
                       },
                       {
-                        "title": "youtube_sign_in_title",
-                        "instructions": ["youtube_sign_in_1", "youtube_sign_in_2", "youtube_sign_in_3"],
-                        "images": ["youtube_signed_out", "youtube_add_account", "youtube_sign_in_email"]
-                      }]
+                        "title": "google_tutorial_2",
+                        "instructions": ["google_tut2_a", "google_tut2_b"],
+                        "images": ["google_open_all_tabs", "google_add_new_tab"]
+                      }
+                    ]
                 }
 }

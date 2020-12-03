@@ -16,7 +16,7 @@ for string in root:
 enStrings.close()
 
 # Just use the root from the first part and edit it to write the finished xml
-trStrings = open("trStrings.txt", "r")
+trStrings = open("trStrings.txt", "r", encoding="UTF-8")
 lines = trStrings.readlines()
 lineNum = 0
 
@@ -37,7 +37,7 @@ for string in removeString:
     root.remove(string)
 
 tree = ET.ElementTree(root)
-tree.write("values-es/strings.xml")
+tree.write("values-b+es/strings.xml")
 trStrings.close()
 
 print('done')

@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Shortcut</string>
 
+    <string name="home_title">Select an App</string>
+
     <string name="Youtube">Youtube</string>
     <string name="Zoom">Zoom</string>
     <string name="Whatsapp">Whatsapp</string>
@@ -14,6 +16,8 @@
     <string name="add_app">Add App</string>
 
     <string name="add_app_title">Select an App to Add</string>
+    <string name="lang">Cambiar al Espag&#241;ol</string>
+
 
     <string name="facebook_tutorials">Facebook Tutorials</string>
     <string name="facebook_tutorial_1">Add a Friend</string>
@@ -21,22 +25,31 @@
     <string name="facebook_tut1_b">2. Tap the \"Search\" icon.</string>
     <string name="facebook_tut1_c">3. Type your friend\'s name in the search bar.</string>
     <string name="facebook_tut1_d">4. Scroll until you find your friend\'s profile, and tap \"Add Friend\".</string>
+
     <string name="facebook_tutorial_2">Upload Picture/Video</string>
     <string name="facebook_tut2_a">1. Type your message here</string>
     <string name="facebook_tut2_b">2. Select who can see your post here</string>
+
+
+    <string name="facebook_tutorial_2">Upload Picture/Video</string>
+    <string name="facebook_tut2_a">1. Type your message here.</string>
+    <string name="facebook_tut2_b">2. Select who can see your post here.</string>
     <string name="facebook_tut2_c">3. Select what you want to upload.</string>
     <string name="facebook_tut2_d">4. Tap to post!</string>
+
     <string name="facebook_tutorial_3">Edit Profile</string>
-    <string name="facebook_tut3_a">1. Tap the \"Profile\" icon at the top or bottom of your screen, and tap:</string>
-    <string name="facebook_tut3_b">2. Tap here and choose</string>
-    <string name="facebook_tut3_c">3. Tap here and choose</string>
-    <string name="facebook_tut3_d">4. Type your bio here.</string>
-    <string name="facebook_tut3_e">to change your profile picture.</string>
-    <string name="facebook_tut3_f">to change your cover picture.</string>
+    <string name="facebook_tut3_a">1. Tap the \"Profile\" icon at the top or bottom of your screen.</string>
+    <string name="facebook_tut3_b">2. Tap:</string>
+    <string name="facebook_tut3_c">3. Tap here to change your profile picture.</string>
+    <string name="facebook_tut3_d">4. Tap here to change your cover picture.</string>
+    <string name="facebook_tut3_e">5. Type your bio here.</string>
     <string name="facebook_go_to">Go To Facebook</string>
 
-    <string name="google_tutorials">Google Tutorial</string>
+    <string name="google_tutorials">Perform Search</string>
+    <string name="google_tutorial_2">Open new tab</string>
     <string name="google_tut1_a">1. Tap on the search bar and type in your search.</string>
+    <string name="google_tut2_a">1. Tap on square to open all tabs.</string>
+    <string name="google_tut2_b">2. Tap on plus to add a new tab.</string>
     <string name="search_in_google">Search in Google</string>
     <string name="google_go_to">Go To Google</string>
 

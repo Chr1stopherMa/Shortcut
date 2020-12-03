@@ -5,4 +5,12 @@
         <item name="android:colorBackground">@color/purple_700</item>
         <item name="android:textSize">18sp</item>
     </style>
+
+    <style name="AppTitle">
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="TutorialText">
+        <item name="android:textSize">18sp</item>
+    </style>
 </resources>

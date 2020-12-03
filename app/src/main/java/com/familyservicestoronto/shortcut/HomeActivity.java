@@ -4,19 +4,29 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.annotation.SuppressLint;
+
+import android.app.Activity;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.ContextThemeWrapper;
 import android.view.Gravity;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.ToggleButton;
+import android.view.ViewGroup;
 
 import com.familyservicestoronto.shortcut.info.AppInfo;
 import com.familyservicestoronto.shortcut.SwitchApp.ExternalApp;
 import com.familyservicestoronto.shortcut.info.UserInfo;
 
+import com.familyservicestoronto.shortcut.SwitchApp.ActivitySwitchUtil;
+
+import com.familyservicestoronto.shortcut.SwitchLanguage.LanguageSwitchUtil;
+import com.familyservicestoronto.shortcut.SwitchLanguage.Languages;
 
 
 import java.util.ArrayList;
@@ -34,10 +44,14 @@ public class HomeActivity extends AppCompatActivity {
 
     private LinearLayout mainLayout;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        
+        Languages.setLanguage(Languages.getMainLanguage(this).get(0).toString());
 
         ConstraintLayout constraintLayout = findViewById(R.id.innerConstraint);
         mainLayout = new LinearLayout(this);
@@ -51,7 +65,11 @@ public class HomeActivity extends AppCompatActivity {
 
         mainLayout.setLayoutParams(params);
         addAppsToLayout();
+      
         switchLanguageButton();
+
+        addLangButton();
+
         constraintLayout.addView(mainLayout);
     }
 
@@ -240,5 +258,45 @@ public class HomeActivity extends AppCompatActivity {
         Intent intent = new Intent(this, HomeActivity.class);
         finish();
         startActivity(intent);
+
+    /**
+     * Adds a toggleButton for language at the bottom of the screen
+     */
+    private void addLangButton() {
+        LinearLayout buttonLayout = new LinearLayout(this);
+        buttonLayout.setWeightSum(1.0f);
+
+        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT, 0, 1.0f
+        );
+        buttonLayout.setLayoutParams(layoutParams);
+
+        LinearLayout.LayoutParams buttonParams = new LinearLayout.LayoutParams(
+                0, ViewGroup.LayoutParams.MATCH_PARENT, 0.5f
+        );
+        buttonParams.setMargins(10, 0, 10, 0);
+
+        Button langButton = new Button(this);
+        langButton.setLayoutParams(buttonParams);
+
+        langButton.setText(R.string.lang);
+
+        // add listener to redirect to change language and refresh this page
+        langButton.setOnClickListener(v -> {
+            // "pressed" animation
+            langButton.startAnimation(AnimationUtils.loadAnimation(HomeActivity.this, R.anim.app_press));
+            Languages.swapLanguage();
+
+            LanguageSwitchUtil.setLocale((Activity) this, Languages.currentLanguage);
+            //The page must be recreated if we want the text on this page to update.
+            //HomeActivity.this.recreate();
+            //recreate() has a nasty black flash, this does the same with a transition:
+            finish();
+            startActivity(getIntent());
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+        });
+
+        buttonLayout.addView(langButton);
+        mainLayout.addView(buttonLayout);
     }
 }
