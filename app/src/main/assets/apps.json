@@ -162,7 +162,7 @@
                       {
                         "title": "spotify_make_playlist_title",
                         "instructions": ["spotify_make_playlist_1", "spotify_make_playlist_2", "spotify_make_playlist_3",
-                          "spotify_make_playlist_4, spotify_make_playlist_5"],
+                          "spotify_make_playlist_4", "spotify_make_playlist_5"],
                         "images": ["spotify_search_song_field", "spotify_search_song_result", "spotify_tap_dots", "spotify_tap_playlist",
                           "spotify_choose_playlist"]
                       },
