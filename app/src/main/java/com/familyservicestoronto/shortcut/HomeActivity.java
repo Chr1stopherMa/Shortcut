@@ -25,9 +25,6 @@ import com.familyservicestoronto.shortcut.info.UserInfo;
 
 import com.familyservicestoronto.shortcut.SwitchApp.ActivitySwitchUtil;
 
-import com.familyservicestoronto.shortcut.SwitchLanguage.LanguageSwitchUtil;
-import com.familyservicestoronto.shortcut.SwitchLanguage.Languages;
-
 
 import java.util.ArrayList;
 
@@ -260,6 +257,7 @@ public class HomeActivity extends AppCompatActivity {
         );
         textView.setLayoutParams(textParams);
 
+        textView.setTextSize(30);
 
         String text = getResources().getString(R.string.language);
         textView.setText(text + " " + UserInfo.getLanguage(this));
