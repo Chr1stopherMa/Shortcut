@@ -46,7 +46,7 @@
     <string name="gmail_tut2_a">Para abrir un correo electr&#243;nico presione el t&#237;tulo </string>
     <string name="gmail_tut2_b">Presione los iconos junto a los n&#250;meros rojos para hacer lo siguiente: \n 1 Regrese a la bandeja de entrada. \n 2 Coloque este correo electr&#243;nico en la papelera. \n 3 Clasif&#237;quelo como no le&#237;do. \n 4 Responda al remitente.</string>
     <string name="gmail_tut2_c">Si hay un archivo adjunto en el correo electr&#243;nico, ver&#225; esta barra:</string>
-    <string name="gmail_tut2_d">5 para descargar el archivo adjunto \n 6 para guardarlo en Google Drive.</string>
+    <string name="gmail_tut2_d">\ 5 para descargar el archivo adjunto \n 6 para guardarlo en Google Drive.</string>
     <string name="gmail_tutorial_3">Escribir correo</string>
     <string name="gmail_tut3_a">Presione el icono de l&#225;piz en la parte inferior derecha para comenzar a redactar un correo electr&#243;nico.</string>
     <string name="gmail_tut3_b">Si no lo ve, presione y arrastre hacia abajo en su pantalla.</string>

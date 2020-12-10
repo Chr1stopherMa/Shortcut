@@ -84,7 +84,7 @@ Tap the icons next to the red numbers to do the following:\n 1 Go back to the in
 
 If there is an attachment in the email you will see this bar:
 
-5 to download the attachment\n 6 to save it to Google Drive.
+\ 5 to download the attachment\n 6 to save it to Google Drive.
 
 Compose Email
 

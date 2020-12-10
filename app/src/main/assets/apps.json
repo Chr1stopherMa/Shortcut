@@ -113,7 +113,7 @@
                         "title": "gmail_tutorial_1",
                         "instructions": ["gmail_tut1_e", "gmail_tut1_a", "gmail_tut1_b", "gmail_tut1_c",
                           "gmail_tut1_d"],
-                        "images": ["null", "gmail_account_selection", "gmail_account_list", "down_arrow", "null"]
+                        "images": ["null", "gmail_account_selection", "gmail_account_list", "null", "null"]
                       },
                       {
                         "title": "gmail_tutorial_2",
@@ -124,7 +124,7 @@
                       {
                         "title": "gmail_tutorial_3",
                         "instructions": ["gmail_tut3_a", "gmail_tut3_b", "gmail_tut3_c"],
-                        "images": ["gmail_compose_button", "down_arrow", "gmail_compose_email_marked"]
+                        "images": ["gmail_compose_button", "gmail_compose_email_marked", "null"]
                       }
                     ]
                 },

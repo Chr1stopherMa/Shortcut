@@ -59,7 +59,7 @@
     <string name="gmail_tut2_a">Tap on the title of an email to open it.</string>
     <string name="gmail_tut2_b">Tap the icons next to the red numbers to do the following:\n 1 Go back to the inbox.\n 2 Place this email in the trash.\n 3 Categorize it as unread.\n 4 Reply to sender.</string>
     <string name="gmail_tut2_c">If there is an attachment in the email you will see this bar:</string>
-    <string name="gmail_tut2_d">5 to download the attachment\n 6 to save it to Google Drive.</string>
+    <string name="gmail_tut2_d">\ 5 to download the attachment\n 6 to save it to Google Drive.</string>
     <string name="gmail_tutorial_3">Compose Email</string>
     <string name="gmail_tut3_a">Tap the pen icon at the bottom right to start composing an email.</string>
     <string name="gmail_tut3_b">If you don\'t see it press and drag down on your screen.</string>

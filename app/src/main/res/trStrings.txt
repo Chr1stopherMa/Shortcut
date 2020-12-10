@@ -84,7 +84,7 @@ Presione los iconos junto a los números rojos para hacer lo siguiente: \n 1 Reg
 
 Si hay un archivo adjunto en el correo electrónico, verá esta barra:
 
-5 para descargar el archivo adjunto \n 6 para guardarlo en Google Drive.
+\ 5 para descargar el archivo adjunto \n 6 para guardarlo en Google Drive.
 
 Escribir correo
 
