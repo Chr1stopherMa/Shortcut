@@ -18,8 +18,8 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.familyservicestoronto.shortcut.SwitchApp.ActivitySwitchUtil;
 import com.familyservicestoronto.shortcut.SwitchApp.ExternalApp;
-import com.familyservicestoronto.shortcut.SwitchLanguage.LanguageSwitchUtil;
-import com.familyservicestoronto.shortcut.SwitchLanguage.Languages;
+//import com.familyservicestoronto.shortcut.SwitchLanguage.LanguageSwitchUtil;
+//import com.familyservicestoronto.shortcut.SwitchLanguage.Languages;
 
 import java.util.ArrayList;
 
