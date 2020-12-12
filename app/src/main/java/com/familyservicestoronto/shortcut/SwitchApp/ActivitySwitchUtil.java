@@ -2,13 +2,9 @@ package com.familyservicestoronto.shortcut.SwitchApp;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.UnsupportedEncodingException;
+import com.familyservicestoronto.shortcut.info.AppInfo;
 
 /**
  * A utility class that can be used to start external activities.
@@ -16,18 +12,25 @@ import java.io.UnsupportedEncodingException;
 
 public final class ActivitySwitchUtil {
 
-    private final static String appJSON = "apps.json";
+    private static final String vending = "com.android.vending";
 
     /**
      * Opens an external app.
      * @param context The current application context.
      * @param app The name of the app to open.
-     * @throws AppNotFoundException The package name cannot be found
-     *                              or the app is not installed.
      */
-    public static void openApp(Context context, ExternalApp app) throws AppNotFoundException {
+    public static void openApp(Context context, ExternalApp app) {
         String packageName = getPackageName(context, app);
-        switchActivity(context, packageName);
+        try {
+            switchActivity(context, packageName);
+        } catch (AppNotFoundException e) {
+            // app is not installed on the user's phone
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse(
+                    new AppInfo(context, app).uri));
+            intent.setPackage(vending);
+            context.startActivity(intent);
+        }
     }
 
     /**
@@ -35,32 +38,9 @@ public final class ActivitySwitchUtil {
      * @param context The current application context.
      * @param app The name of the app.
      * @return The package name corresponding to the app.
-     * @throws AppNotFoundException App is not listed in the appJSON file.
      */
-    private static String getPackageName(Context context, ExternalApp app) throws AppNotFoundException {
-        String jsonString = null;
-        try {
-            InputStream stream = context.getAssets().open(appJSON);
-            int size = stream.available();
-            byte[] buf = new byte[size];
-            stream.read(buf);
-            stream.close();
-            jsonString = new String(buf, "UTF-8");
-
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        assert jsonString != null;
-        try {
-            JSONObject json = new JSONObject(jsonString);
-            return (String) json.get(app.toString());
-        } catch (JSONException e) {
-            e.printStackTrace();
-            throw new AppNotFoundException(app.toString());
-        }
+    private static String getPackageName(Context context, ExternalApp app) {
+        return new AppInfo(context, app).appPackage;
     }
 
     /**

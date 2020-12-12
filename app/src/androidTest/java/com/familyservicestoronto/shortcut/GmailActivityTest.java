@@ -5,12 +5,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
 
-import androidx.test.espresso.ViewInteraction;
-import androidx.test.filters.LargeTest;
-import androidx.test.ext.junit.rules.ActivityScenarioRule;
-import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner;
-import androidx.test.runner.AndroidJUnit4;
-
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;
 import org.hamcrest.TypeSafeMatcher;
@@ -18,13 +12,19 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import androidx.test.espresso.ViewInteraction;
+import androidx.test.filters.LargeTest;
+import androidx.test.ext.junit.rules.ActivityScenarioRule;
+import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner;
+
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
-import static androidx.test.espresso.matcher.ViewMatchers.withContentDescription;
+import static androidx.test.espresso.matcher.ViewMatchers.withClassName;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.Matchers.allOf;
+import static org.hamcrest.Matchers.is;
 
 @LargeTest
 @RunWith(AndroidJUnit4ClassRunner.class)
@@ -35,105 +35,105 @@ public class GmailActivityTest {
 
     @Test
     public void gmailActivityTest() {
-        ViewInteraction appCompatImageView = onView(
-                allOf(withId(R.id.GmailIcon), withContentDescription("Gmail"),
+        ViewInteraction imageView = onView(
+                allOf(childAtPosition(
                         childAtPosition(
-                                childAtPosition(
-                                        withId(android.R.id.content),
-                                        0),
-                                0),
+                                withClassName(is("android.widget.LinearLayout")),
+                                2),
+                        0),
                         isDisplayed()));
-        appCompatImageView.perform(click());
+        imageView.perform(click());
 
-        ViewInteraction materialButton = onView(
-                allOf(withId(R.id.AddAccountButton), withText("Add an Account"),
+        ViewInteraction imageView2 = onView(
+                allOf(childAtPosition(
+                        childAtPosition(
+                                withClassName(is("android.widget.LinearLayout")),
+                                2),
+                        1),
+                        isDisplayed()));
+        imageView2.perform(click());
+
+        ViewInteraction imageView3 = onView(
+                allOf(childAtPosition(
+                        childAtPosition(
+                                withClassName(is("android.widget.LinearLayout")),
+                                2),
+                        0),
+                        isDisplayed()));
+        imageView3.perform(click());
+
+        ViewInteraction button = onView(
+                allOf(withText("Add an Account"),
+                        childAtPosition(
+                                allOf(withId(R.id.tutorialLinearLayout),
+                                        childAtPosition(
+                                                withId(R.id.tutorialConstraint),
+                                                0)),
+                                1),
+                        isDisplayed()));
+        button.perform(click());
+
+        ViewInteraction button2 = onView(
+                allOf(withText("Back"),
                         childAtPosition(
                                 childAtPosition(
-                                        withId(android.R.id.content),
+                                        withId(R.id.tutorialConstraintLayout),
                                         0),
                                 2),
                         isDisplayed()));
-        materialButton.perform(click());
+        button2.perform(click());
 
-        ViewInteraction materialButton2 = onView(
-                allOf(withId(R.id.backToGmailButton), withText("Back"),
+        ViewInteraction button3 = onView(
+                allOf(withText("Open Email"),
+                        childAtPosition(
+                                allOf(withId(R.id.tutorialLinearLayout),
+                                        childAtPosition(
+                                                withId(R.id.tutorialConstraint),
+                                                0)),
+                                2),
+                        isDisplayed()));
+        button3.perform(click());
+
+        ViewInteraction button4 = onView(
+                allOf(withText("Back"),
                         childAtPosition(
                                 childAtPosition(
-                                        withId(android.R.id.content),
+                                        withId(R.id.tutorialConstraintLayout),
                                         0),
+                                2),
+                        isDisplayed()));
+        button4.perform(click());
+
+        ViewInteraction button5 = onView(
+                allOf(withText("Compose Email"),
+                        childAtPosition(
+                                allOf(withId(R.id.tutorialLinearLayout),
+                                        childAtPosition(
+                                                withId(R.id.tutorialConstraint),
+                                                0)),
+                                3),
+                        isDisplayed()));
+        button5.perform(click());
+
+        ViewInteraction button6 = onView(
+                allOf(withText("Back"),
+                        childAtPosition(
+                                childAtPosition(
+                                        withId(R.id.tutorialConstraintLayout),
+                                        0),
+                                2),
+                        isDisplayed()));
+        button6.perform(click());
+
+        ViewInteraction button7 = onView(
+                allOf(withText("Back"),
+                        childAtPosition(
+                                childAtPosition(
+                                        withId(R.id.tutorialLinearLayout),
+                                        4),
                                 0),
                         isDisplayed()));
-        materialButton2.perform(click());
-
-        ViewInteraction materialButton3 = onView(
-                allOf(withId(R.id.OpenEmailButton), withText("Open Email"),
-                        childAtPosition(
-                                childAtPosition(
-                                        withId(android.R.id.content),
-                                        0),
-                                1),
-                        isDisplayed()));
-        materialButton3.perform(click());
-
-        ViewInteraction materialButton4 = onView(
-                allOf(withId(R.id.backToGmailButton), withText("Back"),
-                        childAtPosition(
-                                childAtPosition(
-                                        withId(android.R.id.content),
-                                        0),
-                                0),
-                        isDisplayed()));
-        materialButton4.perform(click());
-
-        ViewInteraction materialButton5 = onView(
-                allOf(withId(R.id.ComposeEmailButton), withText("Compose Email"),
-                        childAtPosition(
-                                childAtPosition(
-                                        withId(android.R.id.content),
-                                        0),
-                                0),
-                        isDisplayed()));
-        materialButton5.perform(click());
-
-        ViewInteraction materialButton6 = onView(
-                allOf(withId(R.id.backToGmailButton), withText("Back"),
-                        childAtPosition(
-                                childAtPosition(
-                                        withId(android.R.id.content),
-                                        0),
-                                0),
-                        isDisplayed()));
-        materialButton6.perform(click());
-
-        ViewInteraction materialButton7 = onView(
-                allOf(withId(R.id.BackButton), withText("Back"),
-                        childAtPosition(
-                                childAtPosition(
-                                        withId(android.R.id.content),
-                                        0),
-                                4),
-                        isDisplayed()));
-        materialButton7.perform(click());
-
-        ViewInteraction appCompatImageView2 = onView(
-                allOf(withId(R.id.GmailIcon), withContentDescription("Gmail"),
-                        childAtPosition(
-                                childAtPosition(
-                                        withId(android.R.id.content),
-                                        0),
-                                0),
-                        isDisplayed()));
-        appCompatImageView2.perform(click());
-
-        ViewInteraction materialButton8 = onView(
-                allOf(withId(R.id.GoToGmailButton), withText("Go To Gmail"),
-                        childAtPosition(
-                                childAtPosition(
-                                        withId(android.R.id.content),
-                                        0),
-                                5),
-                        isDisplayed()));
-        materialButton8.perform(click());
+        button7.perform(click());
     }
 
     private static Matcher<View> childAtPosition(

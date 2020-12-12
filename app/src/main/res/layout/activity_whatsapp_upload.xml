@@ -33,8 +33,8 @@
         android:id="@+id/whatsappUploadText6"
         android:layout_width="214dp"
         android:layout_height="76dp"
-        android:text='3. If you want to send photo(s) in your album, click "Gallery"'
-        android:textColor="#F61507"
+        android:text="@string/whatsapp_tut2_c"
+        android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView8"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,7 +47,7 @@
         android:id="@+id/whatsappUpload"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/upload_picture_video"
+        android:text="@string/whatsapp_tutorial_2"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="#000D53"
         android:textSize="23dp"
@@ -59,10 +59,10 @@
 
     <TextView
         android:id="@+id/whatsappUploadText"
-        android:layout_width="100dp"
-        android:layout_height="43dp"
-        android:text='1. First click this "clip" logo'
-        android:textColor="#F61507"
+        android:layout_width="114dp"
+        android:layout_height="42dp"
+        android:text="@string/whatsapp_tut2_a"
+        android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView8"
         app:layout_constraintEnd_toEndOf="parent"
@@ -75,8 +75,8 @@
         android:id="@+id/whatsappUploadText5"
         android:layout_width="221dp"
         android:layout_height="64dp"
-        android:text='2. If you want to take a photo and send it to others, click "Camera"'
-        android:textColor="#F61507"
+        android:text="@string/whatsapp_tut2_b"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView8"
         app:layout_constraintEnd_toEndOf="@+id/imageView8"

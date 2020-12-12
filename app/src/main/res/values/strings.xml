@@ -1,32 +1,137 @@
 <resources>
     <string name="app_name">Shortcut</string>
 
-    <string name="Youtube">Youtube</string>
-    <string name="Zoom">Zoom</string>
-    <string name="Whatsapp">Whatsapp</string>
-    <string name="Facebook">Facebook</string>
-    <string name="Google">Google</string>
-    <string name="facebook_tutorials">Facebook Tutorials</string>
-    <string name="google_tutorials">Google Tutorial</string>
-    <string name="zoom_tutorials">Zoom Tutorials</string>
-    <string name="add_a_friend">Add a Friend</string>
-    <string name="search_in_google">Search in Google</string>
-    <string name="upload_picture_video">Upload Picture/Video</string>
-    <string name="edit_profile">Edit Profile</string>
-    <string name="signing_up">Signing Up</string>
-    <string name="signing_in">Signing In</string>
-    <string name="joining_a_meeting">Joining a Meeting</string>
-    <string name="run_a_meeting">Running a Meeting</string>
+    <string name="home_title">Select an App</string>
+
+    <string name="Youtube" translatable="false">Youtube</string>
+    <string name="Zoom" translatable="false">Zoom</string>
+    <string name="Whatsapp" translatable="false">Whatsapp</string>
+    <string name="Facebook" translatable="false">Facebook</string>
+    <string name="Google" translatable="false">Google</string>
+    <string name="Gmail" translatable="false">Gmail</string>
     <string name="back">Back</string>
-    <string name="go_to_facebook">Go To Facebook</string>
-    <string name="go_to_google">Go To Google</string>
-    <string name="go_to_zoom">Go To Zoom</string>
-    <string name="Gmail">Gmail</string>
-    <string name="None" />
+
+    <string name="language">Language:</string>
+    <string name="add_app">Add App</string>
+
+    <string name="add_app_title">Select an App to Add</string>
+    <string name="lang">Cambiar al Espag&#241;ol</string>
+
+
+    <string name="facebook_tutorials">Facebook Tutorials</string>
+    <string name="facebook_tutorial_1">Add a Friend</string>
+    <string name="facebook_tut1_a">1. Tap the \"People\" icon at the top or bottom of your screen.</string>
+    <string name="facebook_tut1_b">2. Tap the \"Search\" icon.</string>
+    <string name="facebook_tut1_c">3. Type your friend\'s name in the search bar.</string>
+    <string name="facebook_tut1_d">4. Scroll until you find your friend\'s profile, and tap \"Add Friend\".</string>
+
+
+    <string name="facebook_tutorial_2">Upload Picture/Video</string>
+    <string name="facebook_tut2_a">1. Type your message here.</string>
+    <string name="facebook_tut2_b">2. Select who can see your post here.</string>
+    <string name="facebook_tut2_c">3. Select what you want to upload.</string>
+    <string name="facebook_tut2_d">4. Tap to post!</string>
+
+    <string name="facebook_tutorial_3">Edit Profile</string>
+    <string name="facebook_tut3_a">1. Tap the \"Profile\" icon at the top or bottom of your screen.</string>
+    <string name="facebook_tut3_b">2. Tap:</string>
+    <string name="facebook_tut3_c">3. Tap here to change your profile picture.</string>
+    <string name="facebook_tut3_d">4. Tap here to change your cover picture.</string>
+    <string name="facebook_tut3_e">5. Type your bio here.</string>
+    <string name="facebook_go_to">Go To Facebook</string>
+
+    <string name="google_tutorials">Perform Search</string>
+    <string name="google_tutorial_2">Open new tab</string>
+    <string name="google_tut1_a">1. Tap on the search bar and type in your search.</string>
+    <string name="google_tut2_a">1. Tap on square to open all tabs.</string>
+    <string name="google_tut2_b">2. Tap on plus to add a new tab.</string>
+    <string name="search_in_google">Search in Google</string>
+    <string name="google_go_to">Go To Google</string>
+
     <string name="gmail_tutorials">Gmail Tutorials</string>
-    <string name="add_account">Add an Account</string>
-    <string name="open_email">Open Email</string>
-    <string name="compose_email">Compose Email</string>
-    <string name="go_to_gmail">Go To Gmail</string>
+    <string name="gmail_tutorial_1">Add an Account</string>
+    <string name="gmail_tut1_a">1. Tap the circle at the top right of the screen.</string>
+    <string name="gmail_tut1_b">2. Tap Add another account, and follow the instructions.</string>
+    <string name="gmail_tut1_c">If you don\'t see it press and drag down on your screen.</string>
+    <string name="gmail_tut1_d">To switch your account, tap on the names of any of the accounts listed.</string>
+    <string name="gmail_tut1_e">If this is your first time using gmail, follow the instructions in the app.</string>
+    <string name="gmail_tutorial_2">Open Email</string>
+    <string name="gmail_tut2_a">Tap on the title of an email to open it.</string>
+    <string name="gmail_tut2_b">Tap the icons next to the red numbers to do the following:\n 1 Go back to the inbox.\n 2 Place this email in the trash.\n 3 Categorize it as unread.\n 4 Reply to sender.</string>
+    <string name="gmail_tut2_c">If there is an attachment in the email you will see this bar:</string>
+    <string name="gmail_tut2_d">\ 5 to download the attachment\n 6 to save it to Google Drive.</string>
+    <string name="gmail_tutorial_3">Compose Email</string>
+    <string name="gmail_tut3_a">Tap the pen icon at the bottom right to start composing an email.</string>
+    <string name="gmail_tut3_b">If you don\'t see it press and drag down on your screen.</string>
+    <string name="gmail_tut3_c">Tap the icons labelled by the red numbers to do the following:\n 1 Go back to the inbox.\n 2 Attach a file to the email.\n 3 Send the email.\n Tap the spaces labelled by red numbers to type in the following:\n 4 The receiver\'s email address.\n 5 The title of the email.\n 6 The body of the email.\n</string>
     <string name="switch_inbox">Switch Inbox</string>
+    <string name="gmail_go_to">Go To Gmail</string>
+
+    <string name="go_to">Go to </string>
+    <string name="youtube_tutorials">Youtube Tutorials</string>
+
+    <string name="youtube_search_video_title">Search for a Video</string>
+    <string name="youtube_search_video_1">1. Tap the "Search" icon near the top</string>
+    <string name="youtube_search_video_2">2. Type the video you want to search for</string>
+    <string name="youtube_search_video_3">3. Select one of the videos in the results</string>
+    <string name="youtube_search_video_4">4. Enjoy your video!</string>
+
+    <string name="youtube_sign_in_title">Sign into Youtube</string>
+    <string name="youtube_sign_in_1">1. Click on the Profile button near the top</string>
+    <string name="youtube_sign_in_2">2. Click on "Add Account"</string>
+    <string name="youtube_sign_in_3">3. Click on the "Sign In" button</string>
+
+
+    <string name="whatsapp_tutorials">Whatsapp Tutorials</string>
+    <string name="whatsapp_tutorial_1">Add New Contact/Group</string>
+    <string name="whatsapp_tut1_a">1. First click on this logo, it can located at the bottom right corner of your app</string>
+    <string name="whatsapp_tut1_b">2. Then you will see the icons on the left! Pick the one you want!</string>
+    <string name="whatsapp_tut1_c">3. Now you can pick the people that you would like to add to the group</string>
+    <string name="whatsapp_tut1_d">4. Finally, create a group name and you are good to go!!</string>
+    <string name="whatsapp_tutorial_2">Upload Photos</string>
+    <string name="whatsapp_tut2_a">1. First click this \"clip\" logo</string>
+    <string name="whatsapp_tut2_b">2. If you want to take a photo and send it to others, click Camera</string>
+    <string name="whatsapp_tut2_c">3. If you want to send photo(s) in your album, click Gallery</string>
+    <string name="whatsapp_tutorial_3">Edit Profile</string>
+    <string name="whatsapp_tut3_a">1. Go to setting</string>
+    <string name="whatsapp_tut3_b">2. Click the circled area if you want to edit your profile</string>
+    <string name="whatsapp_tut3_c">3. Click this to upload your profile photo or click the camera icon to take a profile photo</string>
+    <string name="whatsapp_tut3_d">4. Click the \"pen\" icon to modify your name or personal status</string>
+    <string name="whatsapp_go_to">Go To Whatsapp</string>
+
+    <string name="zoom_tutorials">Zoom Tutorials</string>
+    <string name="zoom_tutorial_1">Signing Up</string>
+    <string name="zoom_tut1_a">1. Tap the \"Sign Up\" icon at the bottom left of your screen.</string>
+    <string name="zoom_tut1_b">2. Click and enter in your date of birth.</string>
+    <string name="zoom_tut1_c">3. Enter your email address, first name, and last name. Then, click the blue sign up button.</string>
+    <string name="zoom_tut1_d">4. You\'re all signed up! Make sure to confirm in your email and you can begin enjoying zoom!</string>
+    <string name="zoom_tutorial_2">Signing In</string>
+    <string name="zoom_tut2_a">1. Tap the \"Sign In\" icon at the bottom right of your screen.</string>
+    <string name="zoom_tut2_b">2. Enter your Zoom username and password, and click Sign In. Or you could sign in using your Google, Facebook or SSO accounts.</string>
+    <string name="zoom_tutorial_3">Joining a Meeting</string>
+    <string name="zoom_tut3_a">1. Tap the blue \"Join Meeting\" icon at the centre of your screen.</string>
+    <string name="zoom_tut3_b">2. Enter the Meeting ID of the meeting you want to join and enter your name.</string>
+    <string name="zoom_tut3_c">3. If the meeting requires a password, enter the one your organizer gave you. Enjoy your call!</string>
+    <string name="zoom_tutorial_4">Running a Meeting</string>
+    <string name="zoom_tut4_a">1. Once you\'ve logged in, click on the orange New Meeting button in the top-left corner.</string>
+    <string name="zoom_tut4_b">2. If you\'d like your video on make sure it is slid right. Having Personal Meeting ID turned on allows for others to join you on your call using the number provided.</string>
+    <string name="zoom_go_to">Go To Zoom</string>
+
+    <string name="spotify_tutorials">Spotify Tutorials</string>
+    <string name="spotify_search_song_title">Search for a Song/Podcast</string>
+    <string name="spotify_search_song_1">1. Tap the \"Search\" icon at the bottom centre of your screen.</string>
+    <string name="spotify_search_song_2">2. Tap the banner at the top of the page and type in what you are looking for.</string>
+    <string name="spotify_search_song_3">3. Choose from the options that appear and tap the song/podcast you would like to hear.</string>
+    <string name="spotify_make_playlist_title">Make a Playlist</string>
+    <string name="spotify_make_playlist_1">1. Search for the song you would like to add to a playlist and click on it.</string>
+    <string name="spotify_make_playlist_2">2. Tap the song at the bottom to enlarge it.</string>
+    <string name="spotify_make_playlist_3">3. Tap on the three dots in the top right of the screen.</string>
+    <string name="spotify_make_playlist_4">4. Tap the \"Add to playlist\" icon near the bottom of the screen.</string>
+    <string name="spotify_make_playlist_5">5. Choose the existing playlist you want to add it to, or create a new one.</string>
+    <string name="spotify_play_library_title">Playing a Library</string>
+    <string name="spotify_play_library_1">1. Tap the \"Your Library\" icon at the bottom left corner.</string>
+    <string name="spotify_play_library_2">2. Choose whether you want to play from a Playlist, Artist, or Album on the top of the screen.</string>
+    <string name="spotify_play_library_3">3. Now choose the collection you want to play from.</string>
+    <string name="spotify_play_library_4">4. Now you can shuffle play all the songs by tapping the green play button or play an individual song by finding it in the list.</string>
+    <string name="spotify_go_to">Go To Spotify</string>
 </resources>

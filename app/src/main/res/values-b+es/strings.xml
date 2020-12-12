@@ -1,0 +1,124 @@
+<resources>
+    <string name="app_name">Atajo</string>
+
+    <string name="home_title">Seleccione una App</string>
+
+    <string name="back">atr&#225;s</string>
+
+    <string name="add_app">Agregar App</string>
+
+    <string name="lang">Switch to English</string>
+
+    <string name="facebook_tutorials">Tutoriales de Facebook</string>
+    <string name="facebook_tutorial_1">A&#241;ade un amigo</string>
+    <string name="facebook_tut1_a">1. Presione el icono \"Personas\" en la parte superior o inferior de la pantalla.</string>
+    <string name="facebook_tut1_b">2. Presione el icono \"Buscar\".</string>
+    <string name="facebook_tut1_c">3. Escribe el nombre de su amigo en la barra de b&#250;squeda.</string>
+    <string name="facebook_tut1_d">4. Despl&#225;cese hasta encontrar el perfil de su amigo y toque \"Agregar amigo\".</string>
+
+    <string name="facebook_tutorial_2">Subir foto / video</string>
+    <string name="facebook_tut2_a">1. Aqu&#237; escriba su mensaje </string>
+    <string name="facebook_tut2_b">2. Seleccione aqu&#237; quien puede ver su publicaci&#243;n </string>
+    <string name="facebook_tut2_c">3. Seleccione lo que desea publicar</string>
+    <string name="facebook_tut2_d">4. &#161;Presione para publicar!</string>
+
+    <string name="facebook_tutorial_3">Editar perfil</string>
+    <string name="facebook_tut3_a">1. Presione el icono \"Perfil\" en la parte superior o inferior de la pantalla y presione:</string>
+    <string name="facebook_tut3_b">2. Presione:</string>
+    <string name="facebook_tut3_c">3. Cambiar tu foto de perfil.</string>
+    <string name="facebook_tut3_d">4. Cambiar tu foto de portada.</string>
+    <string name="facebook_tut3_e">5. Aqu&#237; escriba su biograf&#237;a.</string>
+    <string name="facebook_go_to">Ir a Facebook</string>
+
+    <string name="google_tutorials">Tutorial de Google</string>
+    <string name="google_tut1_a">1. Presione en la barra de b&#250;squeda para escribir lo que desee buscar.</string>
+    <string name="search_in_google">Buscar en Google</string>
+    <string name="google_go_to">Ir a Google</string>
+
+    <string name="gmail_tutorials">Tutoriales de Gmail</string>
+    <string name="gmail_tutorial_1">Agregar una cuenta</string>
+    <string name="gmail_tut1_a">1. Presione el c&#237;rculo en la parte superior derecha de la pantalla.</string>
+    <string name="gmail_tut1_b">2. Presione para agregar otra cuenta y siga las instrucciones.</string>
+    <string name="gmail_tut1_c">Si no lo ve, presione y arrastre hacia abajo en su pantalla.</string>
+    <string name="gmail_tut1_d">Para cambiar de cuenta, presione en los nombres de cualquiera de las cuentas enumeradas.</string>
+    <string name="gmail_tut1_e">Si es la primera vez que usa Gmail, siga las instrucciones de la aplicaci&#243;n.</string>
+    <string name="gmail_tutorial_2">Abrir correo electr&#243;nico</string>
+    <string name="gmail_tut2_a">Para abrir un correo electr&#243;nico presione el t&#237;tulo </string>
+    <string name="gmail_tut2_b">Presione los iconos junto a los n&#250;meros rojos para hacer lo siguiente: \n 1 Regrese a la bandeja de entrada. \n 2 Coloque este correo electr&#243;nico en la papelera. \n 3 Clasif&#237;quelo como no le&#237;do. \n 4 Responda al remitente.</string>
+    <string name="gmail_tut2_c">Si hay un archivo adjunto en el correo electr&#243;nico, ver&#225; esta barra:</string>
+    <string name="gmail_tut2_d">\ 5 para descargar el archivo adjunto \n 6 para guardarlo en Google Drive.</string>
+    <string name="gmail_tutorial_3">Escribir correo</string>
+    <string name="gmail_tut3_a">Presione el icono de l&#225;piz en la parte inferior derecha para comenzar a redactar un correo electr&#243;nico.</string>
+    <string name="gmail_tut3_b">Si no lo ve, presione y arrastre hacia abajo en su pantalla.</string>
+    <string name="gmail_tut3_c">Presione los &#237;conos etiquetados con n&#250;meros rojos para hacer lo siguiente: \n 1 Regrese a la bandeja de entrada. \n 2 Adjunte un archivo al correo electr&#243;nico. \n 3 Env&#237;e el correo electr&#243;nico. \n Presione los espacios etiquetados con n&#250;meros rojos para seleccionar entre los siguientes: \n 4 La direcci&#243;n de correo electr&#243;nico del destinatario. \n 5 El t&#237;tulo del correo electr&#243;nico. \n 6 El cuerpo del correo electr&#243;nico. \n</string>
+    <string name="switch_inbox">Cambiar a otra bandeja de entrada</string>
+    <string name="gmail_go_to">Ir a Gmail</string>
+
+    <string name="go_to">Ir a</string>
+    <string name="youtube_tutorials">Tutoriales de Youtube</string>
+
+    <string name="youtube_search_video_title">Buscar un video</string>
+    <string name="youtube_search_video_1">1. Presionar el &#237;cono "Buscar" en la parte superior.</string>
+    <string name="youtube_search_video_2">2. Escribe el t&#237;tulo del video que deseas buscar.</string>
+    <string name="youtube_search_video_3">3. Seleccione uno de los videos en los resultados.</string>
+    <string name="youtube_search_video_4">4. &#161;Disfruta tu video!</string>
+
+    <string name="youtube_sign_in_title">Ingrese a su cuenta</string>
+    <string name="youtube_sign_in_1">1. Haga clic en el bot&#243;n Perfil en la parte superior.</string>
+    <string name="youtube_sign_in_2">2. Haga clic en Agregar cuenta.</string>
+    <string name="youtube_sign_in_3">3. Haga clic en el bot&#243;n \"Iniciar sesi&#243;n\".</string>
+    
+
+    <string name="whatsapp_tutorials">Tutoriales de Whatsapp</string>
+    <string name="whatsapp_tutorial_1">Agregar nuevo contacto / grupo</string>
+    <string name="whatsapp_tut1_a">1. Primero haga clic en este logotipo, ubicado en la esquina inferior derecha de su aplicaci&#243;n</string>
+    <string name="whatsapp_tut1_b">2. &#161;Entonces ver&#225; los iconos a la izquierda! &#161;Selecciona el que quieras!</string>
+    <string name="whatsapp_tut1_c">3. Ahora seleccione a las personas que le gustar&#237;a agregar al grupo.</string>
+    <string name="whatsapp_tut1_d">4. &#161;Finalmente, cree un nombre de grupo y estar&#225; listo!</string>
+    <string name="whatsapp_tutorial_2">Subir fotos</string>
+    <string name="whatsapp_tut2_a">1. Primero haga clic en este logo \"clip\"</string>
+    <string name="whatsapp_tut2_b">2. Si desea tomar una foto y enviarla a otras personas, haga clic en el icono de la c&#225;mara</string>
+    <string name="whatsapp_tut2_c">3. Si desea enviar fotos de su &#225;lbum, haga clic en galer&#237;a</string>
+    <string name="whatsapp_tutorial_3">Editar perfil</string>
+    <string name="whatsapp_tut3_a">1. Ir a configuraci&#243;n</string>
+    <string name="whatsapp_tut3_b">2. Haga clic en el &#225;rea encerrada en un c&#237;rculo si desea editar su perfil.</string>
+    <string name="whatsapp_tut3_c">3. Haga clic aqu&#237; para cargar su foto de perfil o haga clic en el icono de la c&#225;mara para tomar una foto de perfil.</string>
+    <string name="whatsapp_tut3_d">4. Haga clic en el icono \"bol&#237;grafo\" para modificar su nombre o estado personal</string>
+    <string name="whatsapp_go_to">Ir a Whatsapp</string>
+
+    <string name="zoom_tutorials">Tutoriales de Zoom</string>
+    <string name="zoom_tutorial_1">Registrarse</string>
+    <string name="zoom_tut1_a">1. Presione el icono \"Registrarse\" en la parte inferior izquierda de la pantalla.</string>
+    <string name="zoom_tut1_b">2. Haga clic e ingrese su fecha de nacimiento.</string>
+    <string name="zoom_tut1_c">3. Ingrese su direcci&#243;n de correo electr&#243;nico, nombre y apellido. Luego, haga clic en el bot&#243;n de registro azul.</string>
+    <string name="zoom_tut1_d">4. &#161;Est&#225;n todos registrados! &#161;Aseg&#250;rate de confirmar en tu correo electr&#243;nico y podr&#225;s empezar a disfrutar del Zoom!</string>
+    <string name="zoom_tutorial_2">Iniciando sesi&#243;n</string>
+    <string name="zoom_tut2_a">1. Presione el icono \"Iniciar sesi&#243;n\" en la parte inferior derecha de la pantalla.</string>
+    <string name="zoom_tut2_b">2. Introduzca su nombre de usuario y contrase&#241;a de Zoom y haga clic en iniciar sesi&#243;n. O puede iniciar sesi&#243;n con sus cuentas de Google, Facebook o SSO.</string>
+    <string name="zoom_tutorial_3">Unirse a una reuni&#243;n</string>
+    <string name="zoom_tut3_a">1. Presione el icono azul \"Unirse a la reuni&#243;n\" en el centro de la pantalla.</string>
+    <string name="zoom_tut3_b">2. Ingrese el ID de la reuni&#243;n a la que desea unirse e ingrese su nombre.</string>
+    <string name="zoom_tut3_c">3. Si la reuni&#243;n requiere una contrase&#241;a, ingrese la que le dio su organizador. &#161;Disfrute su llamada!</string>
+    <string name="zoom_tutorial_4">Organizando una reuni&#243;n</string>
+    <string name="zoom_tut4_a">1. Una vez que haya iniciado la sesi&#243;n, haga clic en el bot&#243;n naranja Nueva reuni&#243;n en la esquina superior izquierda.</string>
+    <string name="zoom_tut4_b">2. Si desea que su video est&#233; encendido, aseg&#250;rese de que se deslice hacia la derecha. Tener el ID de reuni&#243;n personal activado permite que otros se unan a su llamada utilizando el n&#250;mero proporcionado.</string>
+    <string name="zoom_go_to">Ir a Zoom</string>
+
+    <string name="spotify_tutorials">Tutoriales de Spotify</string>
+    <string name="spotify_search_song_title">Buscar una canción o podcast</string>
+    <string name="spotify_search_song_1">1. Toca el botón \"Search\" situado en la parte inferior central de la pantalla.</string>
+    <string name="spotify_search_song_2">2. Toque el banner en la parte superior de la página y escriba lo que está buscando.</string>
+    <string name="spotify_search_song_3">3. Elige entre las opciones que aparecen y toca la canción o podcast que te gustaría escuchar.</string>
+    <string name="spotify_make_playlist_title">Crear una lista de reproducción</string>
+    <string name="spotify_make_playlist_1">1. Search for the song you would like to add to a playlist and click on it.</string>
+    <string name="spotify_make_playlist_2">2. Busque la canción que desea añadir a una lista de reproducción y haga clic en ella.</string>
+    <string name="spotify_make_playlist_3">3. Toque en los tres puntos en la parte superior derecha de la pantalla.</string>
+    <string name="spotify_make_playlist_4">4. Toque el botón \"Add to playlist\" cerca de la parte inferior de la pantalla..</string>
+    <string name="spotify_make_playlist_5">5. Elige la lista de reproducción existente a la que quieras añadirla o crea una nueva.</string>
+    <string name="spotify_play_library_title">Reproducir una biblioteca de música</string>
+    <string name="spotify_play_library_1">1. Toque el icono \"Your Library\" en la esquina inferior izquierda.</string>
+    <string name="spotify_play_library_2">2. Elige si quieres reproducir desde una lista de reproducción, un artista o un álbum en la parte superior de la pantalla.</string>
+    <string name="spotify_play_library_3">3. Ahora elige la colección desde la que quieres jugar.</string>
+    <string name="spotify_play_library_4">4. Ahora puedes reproducir todas las canciones tocando el botón verde de reproducción o reproducir una canción individual encontrándola en la lista.</string>
+    <string name="spotify_go_to">Go To Spotify</string>
+</resources>

@@ -39,6 +39,8 @@ android {
         abortOnError false
     }
 
+    compileOptions.encoding "ISO-8859-1" // For Spanish
+
     signingConfigs {
         release {
             keyAlias 'CSC301'
@@ -54,10 +56,10 @@ android {
         versionName generateVersionName()
         versionCode generateVersionCode()
         applicationId "com.familyservicestoronto.shortcut"
-        minSdkVersion 17
+        minSdkVersion 24
         targetSdkVersion 30
-        versionCode 1
-        versionName "1.0"
+        versionCode 3
+        versionName "1.1.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -72,6 +74,14 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    bundle {
+        // prevent device from removing translations on install
+        // https://stackoverflow.com/questions/54840188/language-change-is-working-before-uploading-to-google-play-store-but-not-after-u
+        language {
+            enableSplit = false
+        }
     }
 }
 

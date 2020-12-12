@@ -1,6 +1,177 @@
 {
-  "FACEBOOK"  : "com.facebook.katana",
-  "WHATSAPP"  : "com.whatsapp",
-  "YOUTUBE"   : "com.google.android.youtube",
-  "ZOOM"      : "us.zoom.videomeetings"
+  "FACEBOOK" :  {
+                    "name": "Facebook",
+                    "package": "com.facebook.katana",
+                    "icon":  "facebook_icon",
+                    "tutorialActivity": "com.familyservicestoronto.shortcut.FacebookTutorialActivity",
+                    "uri": "https://play.google.com/store/apps/details?id=com.facebook.katana",
+                    "tutorials": [
+                      {
+                        "title": "facebook_tutorial_1",
+                        "instructions": ["facebook_tut1_a", "facebook_tut1_b", "facebook_tut1_c",
+                          "facebook_tut1_d"],
+                        "images": ["fb_add_friend_1", "fb_add_friend_2", "fb_add_friend_3",
+                          "fb_add_friend_4"]
+                      },
+                      {
+                        "title": "facebook_tutorial_2",
+                        "instructions": ["facebook_tut2_a", "facebook_tut2_b", "facebook_tut2_c",
+                          "facebook_tut2_d"],
+                        "images": ["fb_upload_1", "fb_upload_2", "fb_upload_3", "fb_upload_4"]
+                      },
+                      {
+                        "title": "facebook_tutorial_3",
+                        "instructions": ["facebook_tut3_a", "facebook_tut3_b", "facebook_tut3_c",
+                          "facebook_tut3_d", "facebook_tut3_e"],
+                        "images": ["fb_edit_profile_1", "fb_edit_profile_2", "fb_edit_profile_3",
+                          "fb_edit_profile_4", "fb_edit_profile_5"]
+                      }
+                    ]
+                },
+  "WHATSAPP" :  {
+                    "name": "WhatsApp",
+                    "package": "com.whatsapp",
+                    "icon":  "whatsapp_icon",
+                    "tutorialActivity": "com.familyservicestoronto.shortcut.WhatsappTutActivity",
+                    "uri": "https://play.google.com/store/apps/details?id=com.whatsapp",
+                    "tutorials": [
+                      {
+                        "title": "whatsapp_tutorial_1",
+                        "instructions": ["whatsapp_tut1_a", "whatsapp_tut1_b", "whatsapp_tut1_c",
+                        "whatsapp_tut1_d"],
+                        "images": ["whatsapp1", "whatsapp2", "whatsapp3", "whatsapp4"]
+                      },
+                      {
+                        "title": "whatsapp_tutorial_2",
+                        "instructions": ["whatsapp_tut2_a", "whatsapp_tut2_b", "whatsapp_tut2_c"],
+                        "images": ["whatsapp6", "null", "null"]
+                      },
+                      {
+                        "title": "whatsapp_tutorial_3",
+                        "instructions": ["whatsapp_tut3_a", "whatsapp_tut3_b", "whatsapp_tut3_c",
+                          "whatsapp_tut3_d"],
+                        "images": ["null","whatsapp7", "whatsapp9", "null"]
+                      }]
+                },
+  "YOUTUBE"  :  {
+                    "name": "Youtube",
+                    "package": "com.google.android.youtube",
+                    "icon":  "youtube_icon",
+                    "tutorialActivity": "com.familyservicestoronto.shortcut.YoutubeTutorialActivity",
+                    "uri": "https://play.google.com/store/apps/details?id=com.google.android.youtube",
+                    "tutorials": [
+                      {
+                        "title": "youtube_search_video_title",
+                        "instructions": ["youtube_search_video_1", "youtube_search_video_2", "youtube_search_video_3",
+                                         "youtube_search_video_4"],
+                        "images": ["youtube_search_bar_btn", "youtube_search_bar_field", "youtube_search_result",
+                                   "youtube_video"]
+                      },
+                      {
+                        "title": "youtube_sign_in_title",
+                        "instructions": ["youtube_sign_in_1", "youtube_sign_in_2", "youtube_sign_in_3"],
+                        "images": ["youtube_signed_out", "youtube_add_account", "youtube_sign_in_email"]
+                      }]
+                },
+  "ZOOM"     :  {
+                    "name": "Zoom",
+                    "package": "us.zoom.videomeetings",
+                    "icon":  "zoom_icon",
+                    "tutorialActivity": "com.familyservicestoronto.shortcut.ZoomTutorialActivity",
+                    "uri": "https://play.google.com/store/apps/details?id=us.zoom.videomeetings",
+                    "tutorials": [
+                      {
+                        "title": "zoom_tutorial_1",
+                        "instructions": ["zoom_tut1_a", "zoom_tut1_b", "zoom_tut1_c", "zoom_tut1_d"],
+                        "images": ["zoom_signup_1", "zoom_signup_2", "zoom_signup_3", "zoom_signup_4"]
+                      },
+                      {
+                        "title": "zoom_tutorial_2",
+                        "instructions": ["zoom_tut2_a", "zoom_tut2_b"],
+                        "images": ["zoom_signin_1", "zoom_signin_2"]
+                      },
+                      {
+                        "title": "zoom_tutorial_3",
+                        "instructions": ["zoom_tut3_a", "zoom_tut3_b", "zoom_tut3_c"],
+                        "images": ["zoom_join_meeting_1", "zoom_join_meeting_2", "zoom_join_meeting_3"]
+                      },
+                      {
+                        "title": "zoom_tutorial_4",
+                        "instructions": ["zoom_tut4_a", "zoom_tut4_b"],
+                        "images": ["zoom_run_meeting_1", "zoom_run_meeting_2"]
+                      }
+                    ]
+                },
+  "GMAIL"    :  {
+                    "name": "Gmail",
+                    "package": "com.google.android.gm",
+                    "icon":  "gmail_icon",
+                    "tutorialActivity": "com.familyservicestoronto.shortcut.GmailTutorialActivity",
+                    "uri": "https://play.google.com/store/apps/details?id=com.google.android.gm",
+                    "tutorials": [
+                      {
+                        "title": "gmail_tutorial_1",
+                        "instructions": ["gmail_tut1_e", "gmail_tut1_a", "gmail_tut1_b", "gmail_tut1_c",
+                          "gmail_tut1_d"],
+                        "images": ["null", "gmail_account_selection", "gmail_account_list", "null", "null"]
+                      },
+                      {
+                        "title": "gmail_tutorial_2",
+                        "instructions": ["gmail_tut2_a", "gmail_tut2_b", "gmail_tut2_c",
+                          "gmail_tut2_d"],
+                        "images": ["gmail_open_contents_marked", "null", "gmail_open_attachment", "null"]
+                      },
+                      {
+                        "title": "gmail_tutorial_3",
+                        "instructions": ["gmail_tut3_a", "gmail_tut3_b", "gmail_tut3_c"],
+                        "images": ["gmail_compose_button", "gmail_compose_email_marked", "null"]
+                      }
+                    ]
+                },
+  "GOOGLE"   :  {
+                    "name": "Google",
+                    "package": "com.android.chrome",
+                    "icon":  "google_icon",
+                    "tutorialActivity": "com.familyservicestoronto.shortcut.GoogleSearchActivity",
+                    "uri": "https://play.google.com/store/apps/details?id=com.android.chrome",
+                    "tutorials": [
+                      {
+                        "title": "google_tutorials",
+                        "instructions": ["google_tut1_a"],
+                        "images": ["google_search_bar"]
+                      },
+                      {
+                        "title": "google_tutorial_2",
+                        "instructions": ["google_tut2_a", "google_tut2_b"],
+                        "images": ["google_open_all_tabs", "google_add_new_tab"]
+                      }
+                    ]
+                },
+  "SPOTIFY"  :  {
+                    "name": "Spotify",
+                    "package": "com.spotify.music",
+                    "icon":  "spotify_icon",
+                    "tutorialActivity": "com.familyservicestoronto.shortcut.SpotifyTutorialActivity",
+                    "uri": "https://play.google.com/store/apps/details?id=com.spotify.music",
+                    "tutorials": [
+                      {
+                        "title": "spotify_search_song_title",
+                        "instructions": ["spotify_search_song_1", "spotify_search_song_2", "spotify_search_song_3"],
+                        "images": ["spotify_search_song_btn", "spotify_search_song_field", "spotify_search_song_result"]
+                      },
+                      {
+                        "title": "spotify_make_playlist_title",
+                        "instructions": ["spotify_make_playlist_1", "spotify_make_playlist_2", "spotify_make_playlist_3",
+                          "spotify_make_playlist_4", "spotify_make_playlist_5"],
+                        "images": ["spotify_search_song_field", "spotify_search_song_result", "spotify_tap_dots", "spotify_tap_playlist",
+                          "spotify_choose_playlist"]
+                      },
+                      {
+                        "title": "spotify_play_library_title",
+                        "instructions": ["spotify_play_library_1", "spotify_play_library_2", "spotify_play_library_3",
+                          "spotify_make_playlist_4"],
+                        "images": ["spotify_tap_library", "spotify_choose_category", "spotify_tap_album", "spotify_play_songs"]
+                      }
+                    ]
+                  }
 }

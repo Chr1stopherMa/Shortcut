@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBtn">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:colorBackground">@color/purple_700</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="AppTitle">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="TutorialTitle">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="TutorialText">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#000</item>
+    </style>
+</resources>

@@ -1,0 +1,187 @@
+Atajo
+
+Seleccione una Aplicación
+
+Youtube
+
+Zoom
+
+Whatsapp
+
+Facebook
+
+Google
+
+Gmail
+
+atrás
+
+English
+
+Tutoriales de Facebook
+
+Añade un amigo
+
+1. Presione el icono \"Personas\" en la parte superior o inferior de la pantalla.
+
+2. Presione el icono \"Buscar\".
+
+3. Escribe el nombre de su amigo en la barra de búsqueda.
+
+4. Desplácese hasta encontrar el perfil de su amigo y toque \"Agregar amigo\".
+
+Subir foto / video
+
+1. Aquí escriba su mensaje 
+
+2. Seleccione aquí quien puede ver su publicación 
+
+3. Seleccione lo que desea publicar
+
+4. ¡Presione para publicar!
+
+Editar perfil
+
+1. Presione el icono \"Perfil\" en la parte superior o inferior de la pantalla y presione:
+
+2. Presione:
+
+3. Cambiar tu foto de perfil.
+
+4. Cambiar tu foto de portada.
+
+5. Aquí escriba su biografía.
+
+Ir a Facebook
+
+Tutorial de Google
+
+1. Presione en la barra de búsqueda para escribir lo que desee buscar.
+
+Buscar en Google
+
+Ir a Google
+
+Tutoriales de Gmail
+
+Agregar una cuenta
+
+1. Presione el círculo en la parte superior derecha de la pantalla.
+
+2. Presione para agregar otra cuenta y siga las instrucciones.
+
+Si no lo ve, presione y arrastre hacia abajo en su pantalla.
+
+Para cambiar de cuenta, presione en los nombres de cualquiera de las cuentas enumeradas.
+
+Si es la primera vez que usa Gmail, siga las instrucciones de la aplicación.
+
+Abrir correo electrónico
+
+Para abrir un correo electrónico presione el título 
+
+Presione los iconos junto a los números rojos para hacer lo siguiente: \n 1 Regrese a la bandeja de entrada. \n 2 Coloque este correo electrónico en la papelera. \n 3 Clasifíquelo como no leído. \n 4 Responda al remitente.
+
+Si hay un archivo adjunto en el correo electrónico, verá esta barra:
+
+\ 5 para descargar el archivo adjunto \n 6 para guardarlo en Google Drive.
+
+Escribir correo
+
+Presione el icono de lápiz en la parte inferior derecha para comenzar a redactar un correo electrónico.
+
+Si no lo ve, presione y arrastre hacia abajo en su pantalla.
+
+Presione los íconos etiquetados con números rojos para hacer lo siguiente: \n 1 Regrese a la bandeja de entrada. \n 2 Adjunte un archivo al correo electrónico. \n 3 Envíe el correo electrónico. \n Presione los espacios etiquetados con números rojos para seleccionar entre los siguientes: \n 4 La dirección de correo electrónico del destinatario. \n 5 El título del correo electrónico. \n 6 El cuerpo del correo electrónico. \n
+
+Cambiar a otra bandeja de entrada
+
+Ir a Gmail
+
+Ir a
+
+Tutoriales de Youtube
+
+Buscar un video
+
+1. Presionar el ícono "Buscar" en la parte superior.
+
+2. Escribe el título del video que deseas buscar.
+
+3. Seleccione uno de los videos en los resultados.
+
+4. ¡Disfruta tu video!
+
+Ingrese a su cuenta
+
+1. Haga clic en el botón Perfil en la parte superior.
+
+2. Haga clic en Agregar cuenta.
+
+3. Haga clic en el botón \"Iniciar sesión\".
+
+Tutoriales de Whatsapp
+
+Agregar nuevo contacto / grupo
+
+1. Primero haga clic en este logotipo, ubicado en la esquina inferior derecha de su aplicación
+
+2. ¡Entonces verá los iconos a la izquierda! ¡Selecciona el que quieras!
+
+3. Ahora seleccione a las personas que le gustaría agregar al grupo.
+
+4. ¡Finalmente, cree un nombre de grupo y estará listo!
+
+Subir fotos
+
+1. Primero haga clic en este logo \"clip\"
+
+2. Si desea tomar una foto y enviarla a otras personas, haga clic en el icono de la cámara
+
+3. Si desea enviar fotos de su álbum, haga clic en galería
+
+Editar perfil
+
+1. Ir a configuración
+
+2. Haga clic en el área encerrada en un círculo si desea editar su perfil.
+
+3. Haga clic aquí para cargar su foto de perfil o haga clic en el icono de la cámara para tomar una foto de perfil.
+
+4. Haga clic en el icono \"bolígrafo\" para modificar su nombre o estado personal
+
+Ir a Whatsapp
+
+Tutoriales de Zoom
+
+Registrarse
+
+1. Presione el icono \"Registrarse\" en la parte inferior izquierda de la pantalla.
+
+2. Haga clic e ingrese su fecha de nacimiento.
+
+3. Ingrese su dirección de correo electrónico, nombre y apellido. Luego, haga clic en el botón de registro azul.
+
+4. ¡Están todos registrados! ¡Asegúrate de confirmar en tu correo electrónico y podrás empezar a disfrutar del Zoom!
+
+Iniciando sesión
+
+1. Presione el icono \"Iniciar sesión\" en la parte inferior derecha de la pantalla.
+
+2. Introduzca su nombre de usuario y contraseña de Zoom y haga clic en iniciar sesión. O puede iniciar sesión con sus cuentas de Google, Facebook o SSO.
+
+Unirse a una reunión
+
+1. Presione el icono azul \"Unirse a la reunión\" en el centro de la pantalla.
+
+2. Ingrese el ID de la reunión a la que desea unirse e ingrese su nombre.
+
+3. Si la reunión requiere una contraseña, ingrese la que le dio su organizador. ¡Disfrute su llamada!
+
+Organizando una reunión
+
+1. Una vez que haya iniciado la sesión, haga clic en el botón naranja Nueva reunión en la esquina superior izquierda.
+
+2. Si desea que su video esté encendido, asegúrese de que se deslice hacia la derecha. Tener el ID de reunión personal activado permite que otros se unan a su llamada utilizando el número proporcionado.
+
+Ir a Zoom
